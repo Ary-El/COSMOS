@@ -10,9 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_28_141139) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_28_151302) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "artists", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.date "date_of_birth"
+    t.text "description"
+    t.string "email"
+    t.date "live_started_date"
+    t.date "live_ended_date"
+    t.text "url_live"
+    t.bigint "category_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_artists_on_category_id"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -26,4 +47,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_141139) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "artists", "categories"
 end
