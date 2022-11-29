@@ -1,0 +1,7 @@
+<div class="container-index">
+  <div class="artist-list">
+      <% @artists.each do |artist| %>
+        <%= render 'artist_card', artist: artist %>
+      <% end %>
+  </div>
+</div>
