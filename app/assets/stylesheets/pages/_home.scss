@@ -18,34 +18,33 @@ body {
   color: white;
 }
 
-.container {
+.home-banner-infos {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
   width: 90%;
   margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-text {
-  width: 450px;
-  position: absolute;
-  bottom: 150px;
-  right: 40px;
-  text-align: right;
-}
-
-.hero-welcome-text {
-  margin: 0;
-  padding: 0;
-  font-size: 34px;
-  margin-bottom: -10px;
+  width: 70%;
+  text-align: center;
 }
 
 .hero-country {
   font-size: 100px;
-  margin: 0;
+  margin-bottom: 200px;
   padding: 0;
 }
 
 .hero-text-description {
-  margin: 0;
+  margin-bottom: 150px;
   padding-bottom: 20px;
 }
 
