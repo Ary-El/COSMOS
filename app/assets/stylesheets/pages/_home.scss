@@ -1,1 +1,71 @@
 // Specific CSS for your home-page
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.stars {
+  z-index: 0;
+  height: 90%;
+  width: 100%;
+  background-image: url( https://www.manufosela.es/shooting_stars/hori.png), url( https://www.manufosela.es/shooting_stars/stars_5.png);
+  background-repeat: repeat-x, repeat-x repeat-y;
+  transform: translate3D(0em, 0em, 0em);
+  animation: stars 21s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-text {
+  width: 450px;
+  position: absolute;
+  bottom: 150px;
+  right: 40px;
+  text-align: right;
+}
+
+.hero-welcome-text {
+  margin: 0;
+  padding: 0;
+  font-size: 34px;
+  margin-bottom: -10px;
+}
+
+.hero-country {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-text-description {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.explore-btn {
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 4px 30px #ffc500;
+  background: #eec500;
+  padding: 12px 30px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.explore-btn:hover {
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 4px 40px #ffd900;
+  background: #ffd900;
+}
