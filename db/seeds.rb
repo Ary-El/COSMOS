@@ -531,3 +531,513 @@ artist50 = Artist.new(
 )
 
 
+photographe = Category.create(name: "Photographe")
+
+user51 = User.create(email: 'Robert Capa@yahoo.fr', password: "123456")
+artist51 = Artist.new(
+  first_name: 'Robert',
+  last_name: 'Capa',
+  date_of_birth: '1913-10-22',
+  description: "Robert Capa, pseudonyme d'Endre Ernő Friedmann, né le 22 octobre 1913 à Budapest et mort le 25 mai 1954 en Indochine, est un photographe et correspondant de guerre hongrois",
+  category: photographe,
+  user: user51
+)
+
+user52 = User.create(email:'StevemcCurry@msn.fr', password: "123456")
+artist52 = Artist.new(
+  first_name: 'Steve',
+  last_name: 'McCurry',
+  date_of_birth: '1950-02-24',
+  description: "",
+  category: photographe,
+  user: user52
+)
+
+user53 = User.create(email: 'Dorothea Lange@aol.com', password: "123456")
+artist53 = Artist.new(
+  first_name: 'Dorothea',
+  last_name: 'Lange',
+  date_of_birth: '1965-10-11',
+  description: "Dorothea Lange, née Dorothea Nutzhorn, le 26 mai 1895 à Hoboken et morte le 11 octobre 1965 à San Francisco, est une photographe américaine dont les travaux les plus connus ont été réalisés pendant la Grande Dépression, dans le cadre d'une mission confiée par la Farm Security Administration.",
+  category: photographe,
+  user: user53
+)
+
+user54 = User.create(email: 'Brassaï@yahoo.fr', password: "123456")
+artist54 = Artist.new(
+  first_name: 'Brassaï',
+  last_name: 'Halász',
+  date_of_birth: '1899-09-09',
+  description: "Brassaï, pseudonyme de Gyula Halász, né le 9 septembre 1899 à Brașov et mort le 8 juillet 1984 à Beaulieu-sur-Mer, est un photographe hongrois, naturalisé français, également dessinateur, peintre, sculpteur, médailleur et écrivain",
+  category: photographe,
+  user: user54
+)
+
+user55 = User.create(email: 'Annegeddes@aol.com', password: "123456")
+artist55 = Artist.new(
+  first_name: 'Anne',
+  last_name: 'Geddes',
+  date_of_birth: '1956-09-15',
+  description: "nne Geddes, née le 15 septembre 1956 dans le Queensland, en Australie, est une photographe australienne. Elle est spécialisée dans les photographies de nouveau-nés.",
+  category: photographe,
+  user: user55
+)
+
+user56 = User.create(email: 'Maryellenmark@gmail.fr', password: "123456")
+artist56 = Artist.new(
+  first_name: 'Mary Ellen',
+  last_name: 'Mark',
+  date_of_birth: '1940-03-20',
+  description: "Mary Ellen Mark, née le 20 mars 1940 à Philadelphie et morte le 25 mai 2015 à New York, est une photographe américaine Elle est surtout connue pour ses reportages au travers des États-Unis, dans lesquels les portraits occupent une place prépondérante",
+  category: photographe,
+  user: user56
+)
+
+user57 = User.create(email: '', password: "123456")
+artist57 = Artist.new(
+  first_name: '',
+  last_name: '',
+  date_of_birth: '',
+  description: "",
+  category: photographe,
+  user: user57
+)
+
+user58 = User.create(email: 'Malcolm Browne@msn.fr', password: "123456")
+artist58 = Artist.new(
+  first_name: 'Malcolm',
+  last_name: 'Browne',
+  date_of_birth: '1931-04-17',
+  description: "Malcolm Browne Wilde, né le 17 avril 1931 à New York et mort le 27 août 2012 à Hanover dans le New Hampshire, est un journaliste et photographe américain.",
+  category: photographe,
+  user: user58
+)
+
+user59 = User.create(email: 'Nilüferdemir@yahoo.fr', password: "123456")
+artist59 = Artist.new(
+  first_name: 'Nilüfer',
+  last_name: 'Demir',
+  date_of_birth: '1986-12-11',
+  description: "Nilüfer Dumir, est une photographe turque rendue connue en raison de sa photographie du jeune Alan Kurdi, réfugié mort sur une plage de Bodrum, dans la nuit du 2 septembre 2015",
+  category: photographe,
+  user: user59
+)
+
+user60 = User.create(email: '', password: "123456")
+artist60 = Artist.new(
+  first_name: 'Laura',
+  last_name: 'Person',
+  date_of_birth: '1997-12-02',
+  description: "Laura Person est une jeune photographe a en devenir dans le milieu. Son incroyable projet sur la gentrification, de la population au sein du quartier de la goutte d'or, lui assure une future place au sein de l'élite de la photographie international",
+  category: photographe,
+  user: user60
+)
+
+architecte = Category.create(name: "Photographe")
+
+user61 = User.create(email: 'Frank Gehry@gmail.fr', password: "123456")
+artist61 = Artist.new(
+  first_name: 'Frank',
+  last_name: 'Gehry',
+  date_of_birth: '1929',
+  description: "Frank Ghery est un architecte américano-canadien. Professeur d’architecture à l’université Yale, il est considéré au début du XXIᵉ siècle comme l'un des plus importants architectes vivants.",
+  category: architecte,
+  user: user61
+)
+
+user62 = User.create(email: 'Zahahadid@aol.com', password: "123456")
+artist62 = Artist.new(
+  first_name: 'Zaha',
+  last_name: 'Hadid',
+  date_of_birth: '1950-10-31',
+  description: "Zaha Hadid, née le 31 octobre 1950 à Bagdad et morte le 31 mars 2016 à Miami, est une architecte et urbaniste irako-britannique. Figure importante du courant déconstructiviste, elle est l’une des femmes architectes les plus récompensées par la profession.",
+  category: architecte,
+  user: user62
+)
+
+user63 = User.create(email: 'Lecorbusier@wanadoo.fr', password: "123456")
+artist63 = Artist.new(
+  first_name: 'Le',
+  last_name: 'Corbusier',
+  date_of_birth: '',
+  description: "",
+  category: architecte,
+  user: user63
+)
+
+user64 = User.create(email: 'Shigeruban@yahoo.fr', password: "123456")
+artist64 = Artist.new(
+  first_name: 'Shigeru',
+  last_name: 'Ban',
+  date_of_birth: '1957-08-05',
+  description: "",
+  category: architecte,
+  user: user64
+)
+
+user65 = User.create(email: 'Freiotto@noos.fr', password: "123456")
+artist65 = Artist.new(
+  first_name: 'Frei',
+  last_name: 'Otto',
+  date_of_birth: '1972-05-31',
+  description: "Frei Otto est un architecte allemand. Il est notamment le concepteur du toit du stade olympique de Munich, stade des Jeux olympiques d'été de 1972",
+  category: architecte,
+  user: user65
+)
+
+user66 = User.create(email: 'Ricardobofill@sfr.fr', password: "123456")
+artist66 = Artist.new(
+  first_name: 'Ricardo',
+  last_name: 'Bofill',
+  date_of_birth: '1939-12-05',
+  description: "Ricardo Bofill Leví est un architecte espagnol né le 5 décembre 1939 à Barcelone et mort le 14 janvier 2022, à Barcelone. Il est notamment connu en France pour la réalisation des espaces d'Abraxas à Noisy-le-Grand et du quartier Antigone à Montpellier",
+  category: architecte,
+  user: user66
+)
+
+user67 = User.create(email: 'Pierredemeuron@orange.fr', password: "123456")
+artist67 = Artist.new(
+  first_name: 'Pierre',
+  last_name: 'De Meuron',
+  date_of_birth: '1950-05-08',
+  description: "Pierre de Meuron, né le 8 mai 1950 à Bâle, est un architecte suisse.",
+  category: architecte,
+  user: user67
+)
+
+user68 = User.create(email: 'Sirandoudiawara@free.fr', password: "123456")
+artist68 = Artist.new(
+  first_name: 'Sirandou',
+  last_name: 'Diawara',
+  date_of_birth: '1974-03-04',
+  description: "Après avoir fait ses études à Charenton puis à l’École supérieure d’architecture de Paris-La Villette, elle crée en 2005 son cabinet d'architecture Soda Architecture",
+  category: architecte,
+  user: user68
+)
+
+user69 = User.create(email: 'Mariamkamara@bouygue.fr', password: "123456")
+artist69 = Artist.new(
+  first_name: 'Mariam',
+  last_name: 'Kamara',
+  date_of_birth: '1979',
+  description: "Mariam Kamara est une architecte nigérienne née en 1979 à Saint-Étienne, France. Après des études en informatique aux États-Unis, elle se lance dans l'architecture",
+  category: architecte,
+  user: user69
+)
+
+user70 = User.create(email: 'Danièlediwouta-Kotto@hotmail.fr', password: "123456")
+artist70 = Artist.new(
+  first_name: 'Danièle',
+  last_name: 'Diwouta-Kotto',
+  date_of_birth: '1960-02-13',
+  description: "Danièle Diwouta-Kotto est une designer et architecte camerounaise née en 1960. Elle est membre de l'ordre national des architectes du Cameroun et membre fondatrice de l'association V.A.A. Villes et Architectures d'Afrique",
+  category: architecte,
+  user: user70
+)
+
+couturier = Category.create(name: "Couturier")
+
+user71 = User.create(email: 'Karllagerfeld@gmail.fr', password: "123456")
+artist71 = Artist.new(
+  first_name: 'Karl',
+  last_name: 'Lagerfeld',
+  date_of_birth: '1933-09-10',
+  description: "Karl Lagerfeld est un grand couturier et styliste allemand, également photographe, dessinateur, designer, réalisateur et éditeur.",
+  category: couturier,
+  user: user71
+)
+
+user72 = User.create(email: 'Cocochanel@yahoo.fr', password: "123456")
+artist72 = Artist.new(
+  first_name: 'Coco',
+  last_name: 'Chanel',
+  date_of_birth: '1971',
+  description: "Coco Chanel est une créatrice de mode, modiste et grande couturière française",
+  category: couturier,
+  user: user72
+)
+
+user73 = User.create(email: '', password: "123456")
+artist73 = Artist.new(
+  first_name: '',
+  last_name: '',
+  date_of_birth: '',
+  description: "",
+  category: couturier,
+  user: user73
+)
+
+user74 = User.create(email: 'Christiandior@laposte.fr', password: "123456")
+artist74 = Artist.new(
+  first_name: 'Christian',
+  last_name: 'Dior',
+  date_of_birth: '1905-01-21',
+  description: "Christian Dior st un grand couturier français. En 1947, il donne son nom à la maison de haute couture homonyme, financée par Marcel Boussac",
+  category: couturier,
+  user: user74
+)
+
+user75 = User.create(email: 'Kenzōtakada@aol.com', password: "123456")
+artist75 = Artist.new(
+  first_name: 'Kenzō',
+  last_name: 'Takada',
+  date_of_birth: '1939-02-27',
+  description: "Kenzō Takada est un styliste japonais ayant fait carrière en France. Il est le fondateur de la marque de vêtements, d'accessoires et de parfums Kenzo",
+  category: couturier,
+  user: user75
+)
+
+user76 = User.create(email: 'Gianniversace@gmail.com', password: "123456")
+artist76 = Artist.new(
+  first_name: 'Gianni',
+  last_name: 'Versace',
+  date_of_birth: '1946-12-02',
+  description: "Gianni Versace est un styliste italien et le fondateur de la marque Versace, réputée internationalement pour ses créations vestimentaires et cosmétiques",
+  category: couturier,
+  user: user76
+)
+
+user77 = User.create(email: 'Pierrebalmain@aol.com', password: "123456")
+artist77 = Artist.new(
+  first_name: 'Pierre',
+  last_name: 'Balmain',
+  date_of_birth: '1914-05-18',
+  description: "Pierre Balmain est un couturier français qui créa sa propre maison de couture en 1945.",
+  category: couturier,
+  user: user77
+)
+
+user78 = User.create(email: 'Jp@yahoo.fr', password: "123456")
+artist78 = Artist.new(
+  first_name: 'Jean-Paul',
+  last_name: 'Gaultier',
+  date_of_birth: '1952-04-24',
+  description: "Jean-Paul Gaulthier st un styliste et grand couturier français, fondateur de l'entreprise Jean Paul Gaultier, ainsi qu'un créateur de parfums.",
+  category: couturier,
+  user: user78
+)
+
+user79 = User.create(email: 'Maryquant@msn.fr', password: "123456")
+artist79 = Artist.new(
+  first_name: 'Mary',
+  last_name: 'Quant',
+  date_of_birth: '1934-02-11',
+  description: "Mary Quant fait partie des créateurs ayant donné naissance à la minijupe.",
+  category: couturier,
+  user: user79
+)
+
+user80 = User.create(email: 'delarenta@laposte.fr', password: "123456")
+artist80 = Artist.new(
+  first_name: 'Óscar',
+  last_name: 'de la Renta',
+  date_of_birth: '1932-07-22',
+  description: "Oscar de la Renta est un styliste de mode américain d'origine dominicaine, connu pour habiller la haute société, essentiellement américaine.",
+  category: couturier,
+  user: user80
+)
+
+
+paysagiste = Category.create(name: "Paysagiste")
+
+user81 = User.create(email: 'Louisbenech@yahoo.fr', password: "123456")
+artist81 = Artist.new(
+  first_name: 'Louis',
+  last_name: 'Benech',
+  date_of_birth: '1957-02-16',
+  description: "Louis Benech acquiert une réputation internationale avec la rénovation du jardin des Tuileries, en 1990",
+  category: paysagiste,
+  user: user81
+)
+
+user82 = User.create(email: 'Andrélenôtre@yahoo.fr', password: "123456")
+artist82 = Artist.new(
+  first_name: 'André',
+  last_name: 'Le Nôtre',
+  date_of_birth: '1613-03-12',
+  description: "André le Notre  fut jardinier du roi Louis XIV de 1645 à 1700 et eut notamment pour tâche de concevoir l'aménagement du parc et des jardins du château de Versailles, mais aussi de celui de Vaux-le-Vicomte, le Château du Fayel et Chantilly",
+  category: paysagiste,
+  user: user82
+)
+
+user83 = User.create(email: 'Jacquelineosty@gmail.fr', password: "123456")
+artist83 = Artist.new(
+  first_name: 'Jacqueline',
+  last_name: 'Osty',
+  date_of_birth: '1954-02-14',
+  description: "Jacqueline Osty Formée à l'école nationale supérieure de paysage de Versailles, elle fonde sa propre agence en 1985 et a conçu, depuis, de nombreux parcs et jardins",
+  category: paysagiste,
+  user: user83
+)
+
+user84 = User.create(email: 'Claudecormier@orange.fr', password: "123456")
+artist84 = Artist.new(
+  first_name: 'Claude',
+  last_name: 'Cormier',
+  date_of_birth: '1960-06-22',
+  description: "Claude Cormier est l'un des membres de sa profession les plus influents au Canada. On retrouve notamment plusieurs de ses réalisations à Montréal et à Toronto.",
+  category: paysagiste,
+  user: user84
+)
+
+user85 = User.create(email: 'Micheldesvigne@sfr.fr', password: "123456")
+artist85 = Artist.new(
+  first_name: 'Michel',
+  last_name: 'Desvigne',
+  date_of_birth: '1958-01-24',
+  description: "Michel Desvignes a réalisé de nombreux aménagements de jardins et espaces publics, et transposé des  systèmes de parcs",
+  category: paysagiste,
+  user: user85
+)
+
+user86 = User.create(email: 'Michelcorajoud@aol.com', password: "123456")
+artist86 = Artist.new(
+  first_name: 'Michel',
+  last_name: 'Corajoud',
+  date_of_birth: '1937-07-14',
+  description: "Michel Corajoud est un paysagiste français",
+  category: paysagiste,
+  user: user86
+)
+
+user87 = User.create(email: 'Isabelle Auricoste@sfr.fr', password: "123456")
+artist87 = Artist.new(
+  first_name: 'Isabelle',
+  last_name: 'Auricoste',
+  date_of_birth: '1941-02-12',
+  description: "Isabelle Auricoste est architecte-paysagiste, écrivain et enseignante",
+  category: paysagiste,
+  user: user87
+)
+
+user88 = User.create(email: '', password: "123456")
+artist88 = Artist.new(
+  first_name: '',
+  last_name: '',
+  date_of_birth: '',
+  description: "",
+  category: paysagiste,
+  user: user88
+)
+
+user89 = User.create(email: 'Alainfaragou@orange.net', password: "123456")
+artist89 = Artist.new(
+  first_name: 'Alain',
+  last_name: 'Faragou',
+  date_of_birth: '1952-07-24',
+  description: "Alain Faragou est un concepteur paysagiste français, diplômé de l'ESAJP et membre de la Fédération française du paysage, de l'International Federation of Landscape Architects et de l'ICOMOS",
+  category: paysagiste,
+  user: user89
+)
+
+user90 = User.create(email: 'Jacquessgard@bouygue.fr', password: "123456")
+artist90 = Artist.new(
+  first_name: 'Jacques',
+  last_name: 'Sgard',
+  date_of_birth: '1929-03-12',
+  description: "Jacques Sgard est un paysagiste, urbaniste et enseignant français. Il s'est spécialisé dans les parcs urbains et péri-urbains ",
+  category: paysagiste,
+  user: user90
+)
+
+tatoueur = Category.create(name: "Tatoueur")
+
+user91 = User.create(email: 'Tin-Tin@yahoo.fr', password: "123456")
+artist91 = Artist.new(
+  first_name: 'Tin-Tin',
+  last_name: '',
+  date_of_birth: '1965-07-19',
+  description: "Tin-Tin est un artiste tatoueur français, né le 19 août 1965 à Nantes. Il travaille à Paris dans son magasin de Pigalle où il réalise des tatouages dans les styles réaliste et japonisan",
+  category: tatoueur,
+  user: user91
+)
+
+user92 = User.create(email: 'Kimsaigh@gamail.fr', password: "123456")
+artist92 = Artist.new(
+  first_name: 'Kim',
+  last_name: 'Saigh',
+  date_of_birth: '1973-06-25',
+  description: "Kim Saigh est un tatoueur américain et une personnalité de la télévision. Elle est surtout connue pour son travail en tant que tatoueuse dans l'émission de télé-réalité TLC LA Ink",
+  category: tatoueur,
+  user: user92
+)
+
+user93 = User.create(email: 'Mistercartoon@sfr.fr', password: "123456")
+artist93 = Artist.new(
+  first_name: 'Mister',
+  last_name: 'Cartoon',
+  date_of_birth: '1970-11-02',
+  description: "Mark Machado, mieux connu sous le nom de Mr. Cartoon ou plus communément simplement Cartoon, est un tatoueur et graffeur américain basé à Los Angeles, en Californie",
+  category: tatoueur,
+  user: user93
+)
+
+user94 = User.create(email: 'Markmahoney@yahoo.fr', password: "123456")
+artist94 = Artist.new(
+  first_name: 'Mark',
+  last_name: 'Mahoney',
+  date_of_birth: '1977-06-29',
+  description: "Mark Mahoney est un tatoueur américain considéré comme le père fondateur de l'art noir et gris avec une seule aiguille",
+  category: tatoueur,
+  user: user94
+)
+
+user95 = User.create(email: 'Maudstevenswagner@msn.fr', password: "123456")
+artist95 = Artist.new(
+  first_name: 'Maud Stevens ',
+  last_name: 'Wagner',
+  date_of_birth: '1961-01-30',
+  description: "Maud Stevens Wagner est une artiste de cirque et tatoueuse américainelle est considérée comme étant la première femme tatoueuse des États-Unis",
+  category: tatoueur,
+  user: user95
+)
+
+user96 = User.create(email: 'Lyletuttle@orange.fr', password: "123456")
+artist96 = Artist.new(
+  first_name: 'Lyle',
+  last_name: 'Tuttle',
+  date_of_birth: '1949-08-14',
+  description: "Lyle Gilbert Tuttle était un tatoueur américain et historien du médium, qui tatouait depuis 1949. Il tatouait Janis Joplin, Cher, Jo Baker, Paul Stanley, Jeff Scranton et de nombreux autres musiciens, acteurs et célébrités américains.",
+  category: tatoueur,
+  user: user96
+)
+
+user97 = User.create(email: 'Bangbang@gmail.fr', password: "123456")
+artist97 = Artist.new(
+  first_name: 'Bang Bang',
+  last_name: '',
+  date_of_birth: '1985-11-28',
+  description: "McCurdy est un célèbre tatoueur américain basé à New York. Il est connu pour son travail avec Rihanna, Cara Delevingne, Katy Perry, Justin Bieber, LeBron James, Adele, Miley Cyrus, Selena Gomez et Kylie Jenner.",
+  category: tatoueur,
+  user: user97
+)
+
+user98 = User.create(email: 'DonEdHardy@msn.fr', password: "123456")
+artist98 = Artist.new(
+  first_name: 'Don',
+  last_name: 'Ed Hardy',
+  date_of_birth: '1945-01-°1',
+  description: "Don Ed Hardy, né le 5 janvier 1945 à Costa Mesa, est un artiste américain. Il est connu par son travail sur le tatouage et la marque Ed Hardy basée sur celui-ci.",
+  category: tatoueur,
+  user: user98
+)
+
+user99 = User.create(email: 'Stéphanechaudesaigues@gmail.fr', password: "123456")
+artist99 = Artist.new(
+  first_name: 'Stéphane',
+  last_name: 'Chaudesaigues',
+  date_of_birth: '1968-02-23',
+  description: "Stéphane Chaudesaigues Il travaille à Paris dans son atelier. Il est le président de l'association Tatouage & Partage",
+  category: tatoueur,
+  user: user99
+)
+
+user100 = User.create(email: 'Scottcampbell@orange.fr', password: "123456")
+artist100 = Artist.new(
+  first_name: 'Scott',
+  last_name: 'Campbell',
+  date_of_birth: '1977-05-13',
+  description: "Scott Campbell est un artiste et tatoueur américain basé à New York dont les clients incluent Howard Stern, Sting, Robert Downey Jr., Courtney Love, Orlando Bloom, Josh Hartnett et Marc Jacobs",
+  category: tatoueur,
+  user: user100
+)
