@@ -1,3 +1,4 @@
+require "open-uri"
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
@@ -8,15 +9,17 @@
 
 peintre = Category.create(name: "Peintre")
 
-user1 = User.create(email: 'Léonarddevinci@hotmail.fr', password: "123456")
-artist1 = Artist.new(
-  first_name: 'Léonard',
+user1 = User.create(email: 'Leonarddevinci@hotmail.fr', password: "123456")
+artist1 = Artist.new({
+  first_name: 'Leonard',
   last_name: 'De Vinci',
   date_of_birth: '1452-04-15',
   description: "Leonardo da Vinci is a Florentine painter and a man of universal spirit, at the same time artist, scientist, engineer, inventor, anatomist, painter, sculptor, architect, urban planner, botanist, musician, poet, philosopher and writer.",
-  category: peintre,
-  user: user1
-)
+  category: peintre})
+  artist1.user = user1
+  file = URI.open("https://www.histoire-pour-tous.fr/images/articles/dossiers/biographies/leonard-de-vinci-portrait.jpg")
+  artist1.photo.attach(io: file, filename: "leonard")
+
 
 user2 = User.create(email: 'Pablopicasso@yahoo.fr', password: "123456")
 artist2 = Artist.new(
@@ -86,7 +89,7 @@ artist8 = Artist.new(
   last_name: 'Le Brun',
   date_of_birth: '1755-04-16',
   description: "Louise-Élisabeth Vigée is a French painter, considered a great portrait painter of her time, equal to Quentin de La Tour or Jean-Baptiste Greuze.",
-  category: '',
+  category: peintre,
   user: user8
 )
 
