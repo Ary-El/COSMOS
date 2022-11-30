@@ -29,6 +29,19 @@ class ArtistsController < ApplicationController
     authorize @artist
   end
 
+  def live
+    url = "https://api.whereby.dev/v1/meetings"
+    playload = {
+      'endDate': "2099-02-18T14:23:00.000Z",
+      'fields': ["hostRoomUrl"]
+    }
+    header = {"Authorization" =>  "Bearer #{ENV["API_WHEREBY"]}",
+              "Content-Type" => "application/json",
+    }
+    raise
+    RestClient.post(url, payload, headers={})
+  end
+
   private
 
   def artist_params
