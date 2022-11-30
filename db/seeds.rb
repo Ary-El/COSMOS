@@ -78,7 +78,7 @@ artist4.save!
 file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
 artist1.photo.attach(io: file, filename: "leonard")
 
-user5 = User.create(email: 'Ahmedcherkaoui.fr', password: "123456")
+user5 = User.create(email: 'Ahmedcherkaoui@laposte.fr', password: "123456")
 artist5 = Artist.new(
   first_name: 'Ahmed',
   last_name: 'Cherkaoui',
@@ -88,163 +88,238 @@ artist5 = Artist.new(
   category: peintre,
   user: user5
 )
+artist5.save!
+
 file = URI.open("https://aujourdhui.ma/wp-content/uploads/2018/02/Ahmed-Cherkaoui-.jpg")
 artist5.photo.attach(io: file, filename: "leonard")
 
-# user6 = User.create(email: 'Léonarddevinci@hotmail.fr', password: "123466")
-# artist6 = Artist.new(
-#   first_name: 'Joaquín Torres',
-#   last_name: 'García,',
-#   date_of_birth: '1874-07-28',
-#   description: "
-#   Born on July 28, 1874 in Montevideo, Uruguay, Joaquín Torres García left his native country for Spain. During his studies in Barcelona, ​​he met Pablo Picasso and Julio González.",
-#   category: peintre,
-#   user: user6
-# )
+user6 = User.create(email: 'Joaquintorres@gmail.fr', password: "123466")
+artist6 = Artist.new(
+  first_name: 'Joaquín Torres',
+  last_name: 'García,',
+  date_of_birth: '1874-07-28',
+  email: 'Joaquintorres.fr',
+  description: "
+  Born on July 28, 1874 in Montevideo, Uruguay, Joaquín Torres García left his native country for Spain. During his studies in Barcelona, ​​he met Pablo Picasso and Julio González.",
+  category: peintre,
+  user: user6
+)
+artist6.save!
 
-# user7 = User.create(email: 'Léonarddevinci@hotmail.fr', password: "123456")
-# artist7 = Artist.new(
-#   first_name: 'Frida',
-#   last_name: 'kahlo',
-#   date_of_birth: '1954-07-6',
-#   description: "The painter stages her suffering, both physical and moral. With a mixture of pain and resistance, she shows herself dignified, with her head held high and her gaze proud, but her femininity is wounded.",
-#   category: peintre,
-#   user: user7
-# )
+file = URI.open("https://www.buscabiografias.com/img/people/Joaqu%C3%ADn-Torres-Garc%C3%ADa.jpg")
+artist6.photo.attach(io: file, filename: "leonard")
 
-# user8 = User.create(email: 'Léonarddevinci@hotmail.fr', password: "123456")
-# artist8 = Artist.new(
-#   first_name: 'Élisabeth Vigée',
-#   last_name: 'Le Brun',
-#   date_of_birth: '1755-04-16',
-#   description: "Louise-Élisabeth Vigée is a French painter, considered a great portrait painter of her time, equal to Quentin de La Tour or Jean-Baptiste Greuze.",
-#   category: peintre,
-#   user: user8
-# )
+user7 = User.create(email: 'Fridakahlo@hotmail.fr', password: "123456")
+artist7 = Artist.new(
+  first_name: 'Frida',
+  last_name: 'kahlo',
+  date_of_birth: '1954-07-6',
+  email: 'Fridakahlo.fr',
+  description: "The painter stages her suffering, both physical and moral. With a mixture of pain and resistance, she shows herself dignified, with her head held high and her gaze proud, but her femininity is wounded.",
+  category: peintre,
+  user: user7
+)
+artist7.save!
 
-# user9 = User.create(email: 'Léonarddevinci@hotmail.fr', password: "123456")
-# artist9 = Artist.new(
-#   first_name: 'Artemisia',
-#   last_name: 'Gentileschi',
-#   date_of_birth: '1593',
-#   description: "Artemisia Lomi Gentileschi, is an Italian painter of the Caravaggio school, considered to be one of the first women to paint historical and religious subjects.",
-#   category: peintre,
-#   user: user9
-# )
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg")
+artist7.photo.attach(io: file, filename: "leonard")
 
-# user10 = User.create(email: 'Léonarddevinci@hotmail.fr', password: "123456")
-# artist10 = Artist.new(
-#   first_name: 'Marie',
-#   last_name: 'Laurencin',
-#   date_of_birth: '1956-10-31',
-#   description: "Marie Laurencin, is a French figurative painter, but also an engraver and an illustrator, closely associated with the birth of modern art and the School of Paris.",
-#   category: peintre,
-#   user: user10
-# )
+user8 = User.create(email: 'Elisabethvigée@yahoo.fr', password: "123456")
+artist8 = Artist.new(
+  first_name: 'Élisabeth Vigée',
+  last_name: 'Le Brun',
+  date_of_birth: '1755-04-16',
+  email: 'Elisabethvigée@yahoo.fr',
+  description: "Louise-Élisabeth Vigée is a French painter, considered a great portrait painter of her time, equal to Quentin de La Tour or Jean-Baptiste Greuze.",
+  category: peintre,
+  user: user8
+)
+artist8.save!
 
-# sculpteur = Category.create(name: "Sculpteur")
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsa6JJIpyLzV1zh6Pap6S_nAHRoVEdB7qSfAxkp-0KsWqWAXKIwczMuwQmLtILdMLDbA&usqp=CAU")
+artist8.photo.attach(io: file, filename: "leonard")
 
-# user11 = User.create(email: 'Paulahyi@gmail.fr', password: "123456")
-# artist11 = Artist.new(
-#   first_name: 'Paul',
-#   last_name: 'Ahyi',
-#   date_of_birth: '1930-01-15',
-#   description: "Born in Abomey, Benin, he is known for his outdoor works of art, reliefs and sculptures",
-#   category: sculpteur,
-#   user: user11
-# )
+user9 = User.create(email: 'ArtemisiaGentileschi@hotmail.fr', password: "123456")
+artist9 = Artist.new(
+  first_name: 'Artemisia',
+  last_name: 'Gentileschi',
+  date_of_birth: '1593',
+  email: 'ArtemisiaGentileschi@hotmail.fr',
+  description: "Artemisia Lomi Gentileschi, is an Italian painter of the Caravaggio school, considered to be one of the first women to paint historical and religious subjects.",
+  category: peintre,
+  user: user9
+)
+artist9.save!
 
-# user12 = User.create(email: 'Zhang Xiaogang@yahoo.fr', password: "123456")
-# artist12 = Artist.new(
-#   first_name: 'Zhang',
-#   last_name: 'Xiaogang',
-#   date_of_birth: '1958-01-01',
-#   description: "Zhang Xiaogang, born in 1958 in Kunming, is a Chinese contemporary artist, symbolist surrealist painter. He lives in Sichuan and Beijing.",
-#   category: sculpteur,
-#   user: user12
-# )
+file = URI.open("https://uploads3.wikiart.org/00359/images/artemisia-gentileschi/2132-1.jpg!Portrait.jpg")
+artist9.photo.attach(io: file, filename: "leonard")
 
-# user13 = User.create(email: 'muboyan@yahoo.fr', password: "123456")
-# artist13 = Artist.new(
-#   first_name: 'Mu',
-#   last_name: 'Boyan',
-#   date_of_birth: '1976-04-12',
-#   email: 'muboyan@yahoo.fr',
-#   description: "Mu Boyan is a contemporary Chinese sculptor. Best known for his small-scale, human-sized depictions of obese young men suspended in various poses, the underlying interest of his work being to transform the view of weight gain in China.",
-#   category: sculpteur,
-#   user: user13
-# )
+user10 = User.create(email: 'Marielaurencin@hotmail.fr', password: "123456")
+artist10 = Artist.new(
+  first_name: 'Marie',
+  last_name: 'Laurencin',
+  date_of_birth: '1956-10-31',
+  email: 'Marielaurencin@hotmail.fr',
+  description: "Marie Laurencin, is a French figurative painter, but also an engraver and an illustrator, closely associated with the birth of modern art and the School of Paris.",
+  category: peintre,
+  user: user10
+)
+artist10.save!
 
-# user14 = User.create(email: 'Alicia Penalba@gmail.fr', password: "123456")
-# artist14 = Artist.new(
-#   first_name: 'Alicia',
-#   last_name: 'Penalba',
-#   date_of_birth: '1913-08-9',
-#   description: "Alicia Peñalba came to settle in Paris in 1948, she abandoned painting to devote herself exclusively to sculpture",
-#   category: sculpteur,
-#   user: user14
-# )
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/8/8e/Marie_Laurencin_1949.jpg")
+artist10.photo.attach(io: file, filename: "leonard")
 
-# user15 = User.create(email: 'Alexandre Arrechea@msn.com', password: "123456")
-# artist15 = Artist.new(
-#   first_name: 'Alexandre',
-#   last_name: 'Arrechea',
-#   date_of_birth: '1970',
-#   description: "Alexandre Arrechea was born in 1970 in Trinidad (Cuba). He began his solo career in 2003, after being part of the art collective Los Carpinteros for 12 years.",
-#   category: sculpteur,
-#   user: user15
-# )
+sculpteur = Category.create(name: "Sculpteur")
 
-# user16 = User.create(email: 'Claes Oldenburg@gmail.fr', password: "123456")
-# artist16 = Artist.new(
-#   first_name: 'Claes',
-#   last_name: 'Oldenburg',
-#   date_of_birth: '1929-01-28',
-#   description: "Claes Oldenburg, born January 28, 1929 in Stockholm and died July 18, 2022 in New York, was an American sculptor. While his first works are part of the so-called ephemeral art movement, he is best known for his later creations, monumental installations, replicas of everyday objects.",
-#   category: sculpteur,
-#   user: user16
-# )
+user11 = User.create(email: 'Paulahyi@gmail.fr', password: "123456")
+artist11 = Artist.new(
+  first_name: 'Paul',
+  last_name: 'Ahyi',
+  date_of_birth: '1930-01-15',
+  email: 'Paulahyi@gmail.fr',
+  description: "Born in Abomey, Benin, he is known for his outdoor works of art, reliefs and sculptures",
+  category: sculpteur,
+  user: user11
+)
+artist11.save!
 
-# user17 = User.create(email: 'Alexander Calder@aol.com', password: "123456")
-# artist17 = Artist.new(
-#   first_name: 'Alexander',
-#   last_name: 'Calder',
-#   date_of_birth: '1898-07-22',
-#   description: "The American Alexander Calder revolutionized sculpture, the art of volume, by bringing movement and color to it!",
-#   category: sculpteur,
-#   user: user17
-# )
+file = URI.open("https://www.republicoftogo.com/var/site/storage/images/toutes-les-rubriques-novo/idees/paul-ahyi/1729516-1-fre-FR/paul-ahyi_i1200.jpg")
+artist11.photo.attach(io: file, filename: "leonard")
 
-# user18 = User.create(email: 'Amahiguere Dolo@yahoo.fr', password: "123456")
-# artist18 = Artist.new(
-#   first_name: 'Amahiguere',
-#   last_name: 'Dolo',
-#   date_of_birth: '1955-06-16',
-#   description: "Amahiguere Dolo is a Malian Dogon sculptor from a noble family of farmers.",
-#   category: sculpteur,
-#   user: user18
-# )
 
-# user19 = User.create(email: 'Abdelfattah Boussetta@msn.fr', password: "123456")
-# artist19 = Artist.new(
-#   first_name: 'Abdelfattah',
-#   last_name: 'Boussetta',
-#   date_of_birth: '1947-01-25',
-#   email: 'Abdelfattah Boussetta@msn.fr',
-#   description: "Abdelfattah Boussetta, born January 25, 1947 in Ksar Hellal, is a Tunisian sculptor and painter. He has organized numerous exhibitions and created numerous monuments in Tunisia, including the Kasbah National Monument in Tunis.",
-#   category: sculpteur,
-#   user: user19
-# )
+user12 = User.create(email: 'Zhang Xiaogang@yahoo.fr', password: "123456")
+artist12 = Artist.new(
+  first_name: 'Zhang',
+  last_name: 'Xiaogang',
+  date_of_birth: '1958-01-01',
+  email: 'Zhang Xiaogang@yahoo.fr',
+  description: "Zhang Xiaogang, born in 1958 in Kunming, is a Chinese contemporary artist, symbolist surrealist painter. He lives in Sichuan and Beijing.",
+  category: sculpteur,
+  user: user12
+)
+artist12.save!
 
-# user20 = User.create(email: 'Naoum Lvovitch@yahoo.fr', password: "123456")
-# artist20 = Artist.new(
-#   first_name: 'Naoum Lvovitch',
-#   last_name: 'Aronson',
-#   date_of_birth: '1872-12-25',
-#   description: "Naoum Lvovitch Aronson, born in December 25, 1872 at Kreslau in the Russian Empire, today Krāslava in Latvia, is a Russian sculptor",
-#   category: sculpteur,
-#   user: user20
-# )
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist12.photo.attach(io: file, filename: "leonard")
+
+
+user13 = User.create(email: 'muboyan@yahoo.fr', password: "123456")
+artist13 = Artist.new(
+  first_name: 'Mu',
+  last_name: 'Boyan',
+  date_of_birth: '1976-04-12',
+  email: 'muboyan@yahoo.fr',
+  description: "Mu Boyan is a contemporary Chinese sculptor. Best known for his small-scale, human-sized depictions of obese young men suspended in various poses, the underlying interest of his work being to transform the view of weight gain in China.",
+  category: sculpteur,
+  user: user13
+)
+artist13.save!
+
+file = URI.open("https://www.chinesenewart.com/artistes-chinois14/muboyanport.jpg")
+artist13.photo.attach(io: file, filename: "leonard")
+
+user14 = User.create(email: 'Alicia Penalba@gmail.fr', password: "123456")
+artist14 = Artist.new(
+  first_name: 'Alicia',
+  last_name: 'Penalba',
+  date_of_birth: '1913-08-9',
+  email: 'Alicia Penalba@gmail.fr',
+  description: "Alicia Peñalba came to settle in Paris in 1948, she abandoned painting to devote herself exclusively to sculpture",
+  category: sculpteur,
+  user: user14
+)
+artist12.save!
+
+file = URI.open("https://images.squarespace-cdn.com/content/v1/5dc13a7ddf3c7b576d0aa7f9/4a50ef7e-3deb-45ae-87f4-8cd5f75ac10a/penalbabig.jpg")
+artist12.photo.attach(io: file, filename: "leonard")
+
+user15 = User.create(email: 'Alexandre Arrechea@msn.com', password: "123456")
+artist15 = Artist.new(
+  first_name: 'Alexandre',
+  last_name: 'Arrechea',
+  date_of_birth: '1970',
+  email: 'Alexandre Arrechea@msn.com',
+  description: "Alexandre Arrechea was born in 1970 in Trinidad (Cuba). He began his solo career in 2003, after being part of the art collective Los Carpinteros for 12 years.",
+  category: sculpteur,
+  user: user15
+)
+artist12.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c8/Alexandre_Arrechea_2014.jpg")
+artist15.photo.attach(io: file, filename: "leonard")
+
+user16 = User.create(email: 'Claes Oldenburg@gmail.fr', password: "123456")
+artist16 = Artist.new(
+  first_name: 'Claes',
+  last_name: 'Oldenburg',
+  date_of_birth: '1929-01-28',
+  email: 'Claes Oldenburg@gmail.fr',
+  description: "Claes Oldenburg, born January 28, 1929 in Stockholm and died July 18, 2022 in New York, was an American sculptor. While his first works are part of the so-called ephemeral art movement, he is best known for his later creations, monumental installations, replicas of everyday objects.",
+  category: sculpteur,
+  user: user16
+)
+artist16.save!
+
+file = URI.open("https://img.lemde.fr/2022/07/18/0/0/4896/3264/664/0/75/0/b134d50_498f32933fc043de887182d61f1779c1-498f32933fc043de887182d61f1779c1-0.jpg")
+artist12.photo.attach(io: file, filename: "leonard")
+
+user17 = User.create(email: 'Alexander Calder@aol.com', password: "123456")
+artist17 = Artist.new(
+  first_name: 'Alexander',
+  last_name: 'Calder',
+  date_of_birth: '1898-07-22',
+  email: 'Alexander Calder@aol.com',
+  description: "The American Alexander Calder revolutionized sculpture, the art of volume, by bringing movement and color to it!",
+  category: sculpteur,
+  user: user17
+)
+artist17.save!
+
+file = URI.open("https://www.boccara.com/wp-content/uploads/2021/05/Alexander-calder-portrait.jpg")
+artist12.photo.attach(io: file, filename: "leonard")
+
+user18 = User.create(email: 'Amahiguere Dolo@yahoo.fr', password: "123456")
+artist18 = Artist.new(
+  first_name: 'Amahiguere',
+  last_name: 'Dolo',
+  date_of_birth: '1955-06-16',
+  description: "Amahiguere Dolo is a Malian Dogon sculptor from a noble family of farmers.",
+  category: sculpteur,
+  user: user18
+)
+artist18.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist12.photo.attach(io: file, filename: "leonard")
+
+user19 = User.create(email: 'Abdelfattah Boussetta@msn.fr', password: "123456")
+artist19 = Artist.new(
+  first_name: 'Abdelfattah',
+  last_name: 'Boussetta',
+  date_of_birth: '1947-01-25',
+  email: 'Abdelfattah Boussetta@msn.fr',
+  description: "Abdelfattah Boussetta, born January 25, 1947 in Ksar Hellal, is a Tunisian sculptor and painter. He has organized numerous exhibitions and created numerous monuments in Tunisia, including the Kasbah National Monument in Tunis.",
+  category: sculpteur,
+  user: user19
+)
+artist19.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist12.photo.attach(io: file, filename: "leonard")
+
+user20 = User.create(email: 'Naoum Lvovitch@yahoo.fr', password: "123456")
+artist20 = Artist.new(
+  first_name: 'Naoum Lvovitch',
+  last_name: 'Aronson',
+  date_of_birth: '1872-12-25',
+  description: "Naoum Lvovitch Aronson, born in December 25, 1872 at Kreslau in the Russian Empire, today Krāslava in Latvia, is a Russian sculptor",
+  category: sculpteur,
+  user: user20
+)
+artist20.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist12.photo.attach(io: file, filename: "leonard")
 
 # illustrateur = Category.create(name: "Illustrateur")
 
