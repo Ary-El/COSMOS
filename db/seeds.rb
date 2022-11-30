@@ -4,941 +4,941 @@ Artist.destroy_all
 Category.destroy_all
 User.destroy_all
 
-# peintre = Category.create(name: "Peintre")
-
-# user1 = User.create(email: 'Leonarddevinci@hotmail.fr', password: "123456")
-# artist1 = Artist.new(
-#   first_name: 'Leonard',
-#   last_name: 'De Vinci',
-#   date_of_birth: '1452-04-15',
-#   email: 'Leonarddevinci@hotmail.fr',
-#   description: "Leonardo da Vinci is a Florentine painter and a man of universal spirit, at the same time artist, scientist, engineer, inventor, anatomist, painter, sculptor, architect, urban planner, botanist, musician, poet, philosopher and writer.",
-#   category: peintre,
-#   user: user1
-# )
-# artist1.save!
-
-# file = URI.open("https://www.histoire-pour-tous.fr/images/articles/dossiers/biographies/leonard-de-vinci-portrait.jpg")
-# artist1.photo.attach(io: file, filename: "leonard")
-
-
-# user2 = User.create(email: 'Pablopicasso@yahoo.fr', password: "123456")
-# artist2 = Artist.new(
-#   first_name: 'Pablo Ruiz',
-#   last_name: 'Picasso',
-#   date_of_birth: '1881-10-25',
-#   email: 'Pablopicasso@yahoo.fr',
-#   description: "Pablo Picasso was a Spanish artist known for his paintings, and is one of the major artists of the 20th century.",
-#   category: peintre,
-#   user: user2
-# )
-# artist2.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/800px-Pablo_picasso_1.jpg")
-# artist1.photo.attach(io: file, filename: "leonard")
-
-
-# user3 = User.create(email: 'Benenwonwu@hotmail.fr', password: "123456")
-# artist3 = Artist.new(
-#   first_name: 'Ben',
-#   last_name: 'Enwonwu',
-#   date_of_birth: '1917-07-14',
-#   email: 'Léonarddevinci@hotmail.fr',
-#   description: "Ben Enwonwu is a nationally and internationally influential painter and Nigerian artist, he is often considered the father of Nigerian modernism",
-#   category: peintre,
-#   user: user3
-# )
-# artist3.save!
-
-# file = URI.open("https://sothebys-com.brightspotcdn.com/29/d9/288afc1f4ee5b0d52bbc1c97db0d/ben-enwonwu-2-copyright-of-the-ben-enwonwu-foundation.jpeg")
-# artist1.photo.attach(io: file, filename: "leonard")
-
-# user4 = User.create(email: 'Zhangxiaogang@hotmail.fr', password: "123456")
-# artist4 = Artist.new(
-#   first_name: 'Zhang',
-#   last_name: 'Xiaogang',
-#   date_of_birth: '1958-01-01',
-#   email: 'Zhangxiaogang@hotmail.fr',
-#   description: "Zhang Xiaogang, born in 1958 in Kunming, is a Chinese contemporary artist, symbolist surrealist painter. He lives in Sichuan and Beijing.",
-#   category: peintre,
-#   user: user4
-# )
-# artist4.save!
-
-# file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
-# artist1.photo.attach(io: file, filename: "leonard")
-
-# user5 = User.create(email: 'Ahmedcherkaoui@laposte.fr', password: "123456")
-# artist5 = Artist.new(
-#   first_name: 'Ahmed',
-#   last_name: 'Cherkaoui',
-#   date_of_birth: '1967-08-17',
-#   email: 'Ahmedcherkaoui.fr',
-#   description: "Mohamed Cherkaoui Sellami is a young Moroccan painter from Salé. He is considered one of the most famous painters in his hometown and in Morocco.",
-#   category: peintre,
-#   user: user5
-# )
-# artist5.save!
-
-# file = URI.open("https://aujourdhui.ma/wp-content/uploads/2018/02/Ahmed-Cherkaoui-.jpg")
-# artist5.photo.attach(io: file, filename: "leonard")
-
-# user6 = User.create(email: 'Joaquintorres@gmail.fr', password: "123466")
-# artist6 = Artist.new(
-#   first_name: 'Joaquín Torres',
-#   last_name: 'García,',
-#   date_of_birth: '1874-07-28',
-#   email: 'Joaquintorres.fr',
-#   description: "
-#   Born on July 28, 1874 in Montevideo, Uruguay, Joaquín Torres García left his native country for Spain. During his studies in Barcelona, ​​he met Pablo Picasso and Julio González.",
-#   category: peintre,
-#   user: user6
-# )
-# artist6.save!
-
-# file = URI.open("https://www.buscabiografias.com/img/people/Joaqu%C3%ADn-Torres-Garc%C3%ADa.jpg")
-# artist6.photo.attach(io: file, filename: "leonard")
-
-# user7 = User.create(email: 'Fridakahlo@hotmail.fr', password: "123456")
-# artist7 = Artist.new(
-#   first_name: 'Frida',
-#   last_name: 'kahlo',
-#   date_of_birth: '1954-07-6',
-#   email: 'Fridakahlo.fr',
-#   description: "The painter stages her suffering, both physical and moral. With a mixture of pain and resistance, she shows herself dignified, with her head held high and her gaze proud, but her femininity is wounded.",
-#   category: peintre,
-#   user: user7
-# )
-# artist7.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg")
-# artist7.photo.attach(io: file, filename: "leonard")
-
-# user8 = User.create(email: 'Elisabethvigée@yahoo.fr', password: "123456")
-# artist8 = Artist.new(
-#   first_name: 'Élisabeth Vigée',
-#   last_name: 'Le Brun',
-#   date_of_birth: '1755-04-16',
-#   email: 'Elisabethvigée@yahoo.fr',
-#   description: "Louise-Élisabeth Vigée is a French painter, considered a great portrait painter of her time, equal to Quentin de La Tour or Jean-Baptiste Greuze.",
-#   category: peintre,
-#   user: user8
-# )
-# artist8.save!
-
-# file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsa6JJIpyLzV1zh6Pap6S_nAHRoVEdB7qSfAxkp-0KsWqWAXKIwczMuwQmLtILdMLDbA&usqp=CAU")
-# artist8.photo.attach(io: file, filename: "leonard")
-
-# user9 = User.create(email: 'ArtemisiaGentileschi@hotmail.fr', password: "123456")
-# artist9 = Artist.new(
-#   first_name: 'Artemisia',
-#   last_name: 'Gentileschi',
-#   date_of_birth: '1593-09-21',
-#   email: 'ArtemisiaGentileschi@hotmail.fr',
-#   description: "Artemisia Lomi Gentileschi, is an Italian painter of the Caravaggio school, considered to be one of the first women to paint historical and religious subjects.",
-#   category: peintre,
-#   user: user9
-# )
-# artist9.save!
-
-# file = URI.open("https://uploads3.wikiart.org/00359/images/artemisia-gentileschi/2132-1.jpg!Portrait.jpg")
-# artist9.photo.attach(io: file, filename: "leonard")
-
-# user10 = User.create(email: 'Marielaurencin@hotmail.fr', password: "123456")
-# artist10 = Artist.new(
-#   first_name: 'Marie',
-#   last_name: 'Laurencin',
-#   date_of_birth: '1956-10-31',
-#   email: 'Marielaurencin@hotmail.fr',
-#   description: "Marie Laurencin, is a French figurative painter, but also an engraver and an illustrator, closely associated with the birth of modern art and the School of Paris.",
-#   category: peintre,
-#   user: user10
-# )
-# artist10.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/8/8e/Marie_Laurencin_1949.jpg")
-# artist10.photo.attach(io: file, filename: "leonard")
-
-# sculpteur = Category.create(name: "Sculpteur")
-
-# user11 = User.create(email: 'Paulahyi@gmail.fr', password: "123456")
-# artist11 = Artist.new(
-#   first_name: 'Paul',
-#   last_name: 'Ahyi',
-#   date_of_birth: '1930-01-15',
-#   email: 'Paulahyi@gmail.fr',
-#   description: "Born in Abomey, Benin, he is known for his outdoor works of art, reliefs and sculptures",
-#   category: sculpteur,
-#   user: user11
-# )
-# artist11.save!
-
-# file = URI.open("https://www.republicoftogo.com/var/site/storage/images/toutes-les-rubriques-novo/idees/paul-ahyi/1729516-1-fre-FR/paul-ahyi_i1200.jpg")
-# artist11.photo.attach(io: file, filename: "leonard")
-
-
-# user12 = User.create(email: 'Zhanagxiaogang@yahoo.fr', password: "123456")
-# artist12 = Artist.new(
-#   first_name: 'Zhang',
-#   last_name: 'Xiaogang',
-#   date_of_birth: '1958-01-01',
-#   email: 'Zhanagxiaogang@yahoo.fr',
-#   description: 'Zhang Xiaogang, born in 1958 in Kunming, is a Chinese contemporary artist, symbolist surrealist painter. He lives in Sichuan and Beijing.',
-#   category: sculpteur,
-#   user: user12
-# )
-# artist12.save!
-
-# file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
-# artist12.photo.attach(io: file, filename: "leonard")
-
-
-# user13 = User.create(email: 'muboyan@yahoo.fr', password: "123456")
-# artist13 = Artist.new(
-#   first_name: 'Mu',
-#   last_name: 'Boyan',
-#   date_of_birth: '1976-04-12',
-#   email: 'muboyan@yahoo.fr',
-#   description: "Mu Boyan is a contemporary Chinese sculptor. Best known for his small-scale, human-sized depictions of obese young men suspended in various poses, the underlying interest of his work being to transform the view of weight gain in China.",
-#   category: sculpteur,
-#   user: user13
-# )
-# artist13.save!
-
-# file = URI.open("https://www.chinesenewart.com/artistes-chinois14/muboyanport.jpg")
-# artist13.photo.attach(io: file, filename: "leonard")
-
-# user14 = User.create(email: 'AliciaPenalba@gmail.fr', password: "123456")
-# artist14 = Artist.new(
-#   first_name: 'Alicia',
-#   last_name: 'Penalba',
-#   date_of_birth: '1913-08-09',
-#   email: 'AliciaPenalba@gmail.fr',
-#   description: "Alicia Peñalba came to settle in Paris in 1948, she abandoned painting to devote herself exclusively to sculpture",
-#   category: sculpteur,
-#   user: user14
-# )
-# artist14.save!
-
-# file = URI.open("https://images.squarespace-cdn.com/content/v1/5dc13a7ddf3c7b576d0aa7f9/4a50ef7e-3deb-45ae-87f4-8cd5f75ac10a/penalbabig.jpg")
-# artist14.photo.attach(io: file, filename: "leonard")
-
-# user15 = User.create(email: 'AlexandreArrechea@msn.com', password: "123456")
-# artist15 = Artist.new(
-#   first_name: 'Alexandre',
-#   last_name: 'Arrechea',
-#   date_of_birth: '1970-02-02',
-#   email: 'AlexandreArrechea@msn.com',
-#   description: "Alexandre Arrechea was born in 1970 in Trinidad (Cuba). He began his solo career in 2003, after being part of the art collective Los Carpinteros for 12 years.",
-#   category: sculpteur,
-#   user: user15
-# )
-# artist15.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c8/Alexandre_Arrechea_2014.jpg")
-# artist15.photo.attach(io: file, filename: "leonard")
-
-# user16 = User.create!(email: 'ClaesOldenburg@gmail.fr', password: "123456")
-# artist16 = Artist.new(
-#   first_name: 'Claes',
-#   last_name: 'Oldenburg',
-#   date_of_birth: '1929-01-28',
-#   email: 'Claes Oldenburg@gmail.fr',
-#   description: "Claes Oldenburg, born January 28, 1929 in Stockholm and died July 18, 2022 in New York, was an American sculptor. While his first works are part of the so-called ephemeral art movement, he is best known for his later creations, monumental installations, replicas of everyday objects.",
-#   category: sculpteur,
-#   user: user16
-# )
-# artist16.save!
-
-# file = URI.open("https://img.lemde.fr/2022/07/18/0/0/4896/3264/664/0/75/0/b134d50_498f32933fc043de887182d61f1779c1-498f32933fc043de887182d61f1779c1-0.jpg")
-# artist16.photo.attach(io: file, filename: "leonard")
-
-# user17 = User.create(email: 'Alexandercalder@aol.com', password: "123456")
-# artist17 = Artist.new(
-#   first_name: 'Alexander',
-#   last_name: 'Calder',
-#   date_of_birth: '1898-07-22',
-#   email: 'AlexanderCalder@aol.com',
-#   description: "The American Alexander Calder revolutionized sculpture, the art of volume, by bringing movement and color to it!",
-#   category: sculpteur,
-#   user: user17
-# )
-# artist17.save!
-
-# file = URI.open("https://www.boccara.com/wp-content/uploads/2021/05/Alexander-calder-portrait.jpg")
-# artist17.photo.attach(io: file, filename: "leonard")
-
-# user18 = User.create(email: 'AmahiguereDolo@yahoo.fr', password: "123456")
-# artist18 = Artist.new(
-#   first_name: 'Amahiguere',
-#   last_name: 'Dolo',
-#   date_of_birth: '1955-06-16',
-#   email: 'AmahiguereDolo@yahoo.fr',
-#   description: "Amahiguere Dolo is a Malian Dogon sculptor from a noble family of farmers.",
-#   category: sculpteur,
-#   user: user18
-# )
-# artist18.save!
-
-# file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
-# artist18.photo.attach(io: file, filename: "leonard")
-
-# user19 = User.create(email: 'AbdelfattahBoussetta@msn.fr', password: "123456")
-# artist19 = Artist.new(
-#   first_name: 'Abdelfattah',
-#   last_name: 'Boussetta',
-#   date_of_birth: '1947-01-25',
-#   email: 'AbdelfattahBoussetta@msn.fr',
-#   description: "Abdelfattah Boussetta, born January 25, 1947 in Ksar Hellal, is a Tunisian sculptor and painter. He has organized numerous exhibitions and created numerous monuments in Tunisia, including the Kasbah National Monument in Tunis.",
-#   category: sculpteur,
-#   user: user19
-# )
-# artist19.save!
-
-# file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
-# artist19.photo.attach(io: file, filename: "leonard")
-
-# user20 = User.create(email: 'NaoumLvovitch@yahoo.fr', password: "123456")
-# artist20 = Artist.new(
-#   first_name: 'Naoum Lvovitch',
-#   last_name: 'Aronson',
-#   date_of_birth: '1872-12-25',
-#   email: 'NaoumLvovitch@yahoo.fr',
-#   description: "Naoum Lvovitch Aronson, born in December 25, 1872 at Kreslau in the Russian Empire, today Krāslava in Latvia, is a Russian sculptor",
-#   category: sculpteur,
-#   user: user20
-# )
-# artist20.save!
-
-# file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
-# artist20.photo.attach(io: file, filename: "leonard")
-
-# illustrateur = Category.create(name: "Illustrateur")
-
-# user21 = User.create(email: 'KimJungGi@yahoo.fr', password: "123456")
-# artist21 = Artist.new(
-#   first_name: 'Kim Jung',
-#   last_name: 'Gi',
-#   date_of_birth: '1975-02-7',
-#   email: 'KimJungGi@yahoo.fr',
-#   description: "Kim Jung Gi entered fine arts school at age 19 to graduate with a master's degree in art and design. He continues his studies at the College of Art and Design of Dong-eui University",
-#   category: illustrateur,
-#   user: user21
-# )
-# artist21.save!
-
-# file = URI.open("https://www.bedetheque.com/media/Photos/Photo_35965.jpg")
-# artist21.photo.attach(io: file, filename: "leonard")
-
-
-# user22 = User.create(email: 'MalikaFavre@yahoo.fr', password: "123456")
-# artist22 = Artist.new(
-#   first_name: 'Malika',
-#   last_name: 'Favre',
-#   date_of_birth: '1982-12-01',
-#   email: 'MalikaFavre@yahoo.fr',
-#   description: "Malika Favre, born in December 1982 in Paris, is a French illustrator.",
-#   category: illustrateur,
-#   user: user22
-# )
-# artist22.save!
-
-# file = URI.open("https://cdn.shopify.com/s/files/1/2802/2616/products/MF_bcncopie_300x.jpg?v=1632730715")
-# artist22.photo.attach(io: file, filename: "leonard")
-
-# user23 = User.create(email: 'Onajinalaba@msn.fr', password: "123456")
-# artist23 = Artist.new(
-#   first_name: 'Onajin',
-#   last_name: 'Alaba',
-#   date_of_birth: '1986-03-12',
-#   email: 'Onajinalaba@msn.fr',
-#   description: "He was born in Lagos, Nigeria, but after a few years moved with his family to Ondo Town",
-#   category: illustrateur,
-#   user: user23
-# )
-# artist23.save!
-
-# file = URI.open("https://www.2709books.com/wp-content/uploads/2020/12/Alaba-Onajin-1024x991.jpg")
-# artist23.photo.attach(io: file, filename: "leonard")
-
-# user24 = User.create(email: 'NormanRockwell@gmail.fr', password: "123456")
-# artist24 = Artist.new(
-#   first_name: 'Norman',
-#   last_name: 'Rockwell',
-#   date_of_birth: '1894-02-03',
-#   email: 'NormanRockwell@gmail.fr',
-#   description: "Norman Rockwell is surely the most famous American press illustrator in the world. Born in New York in 1894 and died in Massachusetts in 1978, he is rightly nicknamed the storyteller of America",
-#   category: illustrateur,
-#   user: user24
-# )
-# artist24.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/3/37/Rockwell-Norman-LOC.jpg")
-# artist21.photo.attach(io: file, filename: "leonard")
-
-# user25 = User.create(email: 'Christopherrush@gmail.fr', password: "123456")
-# artist25 = Artist.new(
-#   first_name: 'Christopher',
-#   last_name: 'Rush',
-#   date_of_birth: '1965-04-6',
-#   email: 'Christopherrush@gmail.fr',
-#   description: "Christopher Rush is an American illustrator for Magic. In total, he illustrated over 100 cards for the series, including the game's most expensive card, the Lotus No.",
-#   category: illustrateur,
-#   user: user25
-# )
-# artist25.save!
-
-# file = URI.open("https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/4/4c/Christopher_Rush.jpg/revision/latest/scale-to-width-down/250?cb=20100908131054")
-# artist25.photo.attach(io: file, filename: "leonard")
-
-# user26 = User.create(email: 'Gustavedoré@yahoo.fr', password: "123456")
-# artist26 = Artist.new(
-#   first_name: 'Gustave',
-#   last_name: 'Doré',
-#   date_of_birth: '1832-01-06',
-#   email: 'Gustavedoré@yahoo.fr',
-#   description: "He quickly knows the celebrity by illustrating famous novels like The Divine Comedy of Dante or the Tales of Perrault like Barbe Bleue.",
-#   category: illustrateur,
-#   user: user26
-# )
-# artist26.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Dor%C3%A9_by_Nadar_1867_cropped.jpg/260px-Dor%C3%A9_by_Nadar_1867_cropped.jpg")
-# artist26.photo.attach(io: file, filename: "leonard")
-
-
-
-# user27 = User.create(email: 'RichardZielenkiewicz@yahoo.fr', password: "123456")
-# artist27 = Artist.new(
-#   first_name: 'Richard',
-#   last_name: 'Zielenkiewicz',
-#   date_of_birth: '1965-01-16',
-#   email: 'RichardZielenkiewicz@yahoo.fr',
-#   description: "Richard Zielenkiewicz, known under the pseudonym Monsieur Z, is a French illustrator and graphic designer, born January 16, 1965",
-#   category: illustrateur,
-#   user: user27
-# )
-# artist27.save!
-
-# file = URI.open("https://www.creads.com/wp-content/uploads/2021/05/monsieur_z_arludik1.jpg")
-# artist27.photo.attach(io: file, filename: "leonard")
-
-# user28 = User.create(email: 'Johnhowe@msn.com', password: "123456")
-# artist28 = Artist.new(
-#   first_name: 'John',
-#   last_name: 'Howe',
-#   date_of_birth: '1957-08-21',
-#   email: 'Johnhowe@msn.com',
-#   description: "John Franklin Howe, born August 21, 1957 in Vancouver, is a Canadian illustrator famous for his work on the Lord of the Rings universe.",
-#   category: illustrateur,
-#   user: user28
-# )
-# artist28.save!
-
-# file = URI.open("https://www.imaginales.fr/wp-content/uploads/2018/02/John_Howe_-_Lucca_2017-1024x1024.jpg")
-# artist28.photo.attach(io: file, filename: "leonard")
-
-# user29 = User.create(email: 'Jeanbruller@gmail.fr', password: "123456")
-# artist29 = Artist.new(
-#   first_name: 'Jean Bruller',
-#   last_name: 'Vercors',
-#   date_of_birth: '1902-02-26',
-#   email: 'Jeanbruller@gmail.fr',
-#   description: "Vercors is a French illustrator and writer. He adopted the literary pseudonym Vercors in 1941 during the Resistance",
-#   category: illustrateur,
-#   user: user29
-# )
-# artist29.save!
-
-# file = URI.open("https://www.radiofrance.fr/s3/cruiser-production/2016/02/fa16a56e-5ced-4537-8034-8e257ae7c470/870x489_vercors.jpg")
-# artist29.photo.attach(io: file, filename: "leonard")
-
-# user30 = User.create(email: 'AbelQuezada@yahoo.fr', password: "123456")
-# artist30 = Artist.new(
-#   first_name: 'Abel',
-#   last_name: 'Quezada',
-#   date_of_birth: '1920-12-13',
-#   email: 'AbelQuezada@yahoo.fr',
-#   description: "Abel Quezada is a Mexican illustrator known for numerous Mexican and American publications including Ovaciones, Cine Mundial, Últimas noticias, Excélsior, Novedades, La Jornada, The New Yorker and The New York Times.",
-#   category: illustrateur,
-#   user: user30
-# )
-# artist30.save!
-
-# file = URI.open("https://1.bp.blogspot.com/-7xt9Dueu_Iw/X9bj11tnhAI/AAAAAAABxHo/cUxKrrM574EC_pAqY4Q1GxUwOusJ97QEQCLcBGAsYHQ/s960/Abel%2BQuezada%2BCaldero%25CC%2581n%2B.jpg")
-# artist30.photo.attach(io: file, filename: "leonard")
-
-# beatmaker = Category.create(name: "Beatmaker")
-
-# user31 = User.create(email: 'Bamaoyendé@msn.fr', password: "123456")
-# artist31 = Artist.new(
-#   first_name: 'Bamao',
-#   last_name: 'Yendé',
-#   date_of_birth: '1993-10-18',
-#   email: 'Bamaoyendé@msn.fr',
-#   description: "When he's not showing off with his group Nyoko Bokbae, the 26-year-old DJ electrifies parties by mixing Afro rhythms with house and UK garage",
-#   category: beatmaker,
-#   user: user31
-# )
-# artist31.save!
-
-# file = URI.open("https://pan-african-music.com/wp-content/uploads/2018/07/Bamao-Yend%C3%A9-cut.jpg")
-# artist31.photo.attach(io: file, filename: "leonard")
-
-# user32 = User.create(email: 'AmineFarsi@hotmail.fr', password: "123456")
-# artist32 = Artist.new(
-#   first_name: 'Amine',
-#   last_name: 'Farsi',
-#   date_of_birth: '1997-04-11',
-#   email: 'AmineFarsi@hotmail.fr',
-#   description: "Amine Farsi is a French beatmaker. He has notably worked with French-speaking rappers such as PNL, Ninho, Freeze Corleone and Nekfeu..",
-#   category: beatmaker,
-#   user: user32
-# )
-# artist32.save!
-
-# file = URI.open("https://sansrefrain.fr/wp-content/uploads/2022/05/Amine-Farsi-300x300.jpeg")
-# artist32.photo.attach(io: file, filename: "leonard")
-
-# user33 = User.create(email: 'MetroBoomin@noos.fr', password: "123456")
-# artist33 = Artist.new(
-#   first_name: 'Metro',
-#   last_name: 'Boomin',
-#   date_of_birth: '1993-09-16',
-#   email: 'MetroBoomin@noos.fr',
-#   description: "Metro Boomin, whose real name is Leland Tyler Wayne, born September 16, 1993 in Saint-Louis, Missouri, is an American beatmaker",
-#   category: beatmaker,
-#   user: user33
-# )
-# artist33.save!
-
-# file = URI.open("https://hiphopcorner.fr/wp-content/uploads/2022/10/Metro-Boomin.jpeg")
-# artist33.photo.attach(io: file, filename: "leonard")
-
-# user34 = User.create(email: 'Junioralaprod@gmail.fr', password: "123456")
-# artist34 = Artist.new(
-#   first_name: 'Junior',
-#   last_name: 'À La Prod',
-#   date_of_birth: '1996-02-17',
-#   email: 'Junioralaprod@gmail.fr',
-#   description: "Real name, Junior BULA MONGA Jr is a young Franco-Congolese beatmaker living in Paris, France, very talented",
-#   category: beatmaker,
-#   user: user34
-# )
-# artist34.save!
-
-# file = URI.open("https://i.discogs.com/L5JZ3T-ldtVl9HgId8a0qNUfWOz7z9NXQ3H7QUaBssk/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU0MDg5/MzQtMTUxMjE2MDE2/Ny03MzgwLmpwZWc.jpeg")
-# artist34.photo.attach(io: file, filename: "leonard")
-
-# user35 = User.create(email: 'Djkhaled@msn.fr', password: "123456")
-# artist35 = Artist.new(
-#   first_name: 'DJ',
-#   last_name: 'Khaled',
-#   date_of_birth: '1975-11-26',
-#   email: 'Djkhaled@msn.fr',
-#   description: "DJ Khaled, real name Khaled Mohamed Khaled, born November 26, 1975 in New Orleans, Louisiana, is an American beatmaker. He is a DJ and host of the radio station WEDR, in Miami, which broadcasts several musical styles",
-#   category: beatmaker,
-#   user: user35
-# )
-# artist35.save!
-
-# file = URI.open("http://media.nrj.fr/1900x1200/2017/06/dj-khaled_1365653.jpg")
-# artist35.photo.attach(io: file, filename: "leonard")
-
-# user36 = User.create(email: 'Danysynthé@yahoo.fr', password: "123456")
-# artist36 = Artist.new(
-#   first_name: 'Dany',
-#   last_name: 'Synthé',
-#   date_of_birth: '1991-12-27',
-#   email: 'Danysynthé@yahoo.fr',
-#   description: "Dany Synthé, born December 27, 1991 in Villiers-sur-Marne, is a French beatmaker and producer. He has collaborated for several years with many artists",
-#   category: beatmaker,
-#   user: user36
-# )
-# artist36.save!
-
-# file = URI.open("https://arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/XVBSVMEILLXTVXGKSQBBFEUVXI.jpg")
-# artist36.photo.attach(io: file, filename: "leonard")
-
-# user37 = User.create(email: 'Murdabeatz@gmail.fr', password: "123456")
-# artist37 = Artist.new(
-#   first_name: 'Murda',
-#   last_name: 'Beatz',
-#   date_of_birth: '1994-02-11',
-#   email: 'Murdabeatz@gmail.fr',
-#   description: "Murda Beatz, born February 11, 1994 in Ontario, is a beatmaker. He produced the song No Shopping by French Montana and the song Back on Road by Gucci Mane",
-#   category: beatmaker,
-#   user: user37
-# )
-# artist37.save!
-
-# file = URI.open("https://www.image-line.com/wp-content/uploads/2022/07/murda_beatz.png")
-# artist37.photo.attach(io: file, filename: "leonard")
-
-# user38 = User.create(email: 'Timbaland@myspace.fr', password: "123456")
-# artist38 = Artist.new(
-#   first_name: 'Timbaland',
-#   last_name: 'timbaland',
-#   date_of_birth: '1972-03-10',
-#   email: 'Timbaland@myspace.fr',
-#   description: "Timbaland, real name Timothy Zachery Mosley, born March 10, 1972 in Norfolk, Virginia, is an American beatmaker. He is one of America's best-known hip-hop and RnB producers.",
-#   category: beatmaker,
-#   user: user38
-# )
-# artist38.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/05/Timbaland_%2847903248821%29_%28cropped%29.jpg")
-# artist38.photo.attach(io: file, filename: "leonard")
-
-# user39 = User.create(email: 'Grandmasterflash@laposte.fr', password: "123456")
-# artist39 = Artist.new(
-#   first_name: 'Grandmaster',
-#   last_name: 'Flash',
-#   date_of_birth: '1958-01-01',
-#   email: 'Grandmasterflash@laposte.fr',
-#   description: "Grandmaster Flash, real name Joseph Saddler, is an American beatmaker. He is considered one of the pioneers of hip-hop, scratch and remix. He is the inventor of certain techniques such as cutting",
-#   category: beatmaker,
-#   user: user39
-# )
-# artist39.save!
-
-# file = URI.open("https://m.media-amazon.com/images/I/51My+mzNQPL._SY355_.jpg")
-# artist39.photo.attach(io: file, filename: "leonard")
-
-# user40 = User.create(email: 'Drdre@laposte.fr', password: "123456")
-# artist40 = Artist.new(
-#   first_name: 'Dr',
-#   last_name: 'Dre',
-#   date_of_birth: '1965-02-18',
-#   email: 'Drdre@laposte.fr',
-#   description: "André Romelle Young, alias Dr. Dre, is a producer, beatmaker, rapper... He has largely contributed to popularizing Gangsta rap, his hometown Compton and Californian hip hop culture in general.",
-#   category: beatmaker,
-#   user: user40
-# )
-# artist40.save!
-
-# file = URI.open("https://www.abcdrduson.com/wp-content/uploads/2015/08/dr.dre_hero-1024x768.jpg")
-# artist40.photo.attach(io: file, filename: "leonard")
-
-# compositeur = Category.create(name: "Compositeur")
-
-# user40 = User.create(email: 'WolfgangAmadeus@yahoo.fr', password: "123456")
-# artist40 = Artist.new(
-#   first_name: 'Wolfgang Amadeus',
-#   last_name: 'Mozart',
-#   date_of_birth: '1756-01-27',
-#   email: 'WolfgangAmadeus@yahoo.fr',
-#   description: "Mozart wrote his first opera at the age of 11!",
-#   category: compositeur,
-#   user: user40
-# )
-# artist40.save!
-
-# file = URI.open("https://www.musicologie.org/Biographies/m/mozart.jpg")
-# artist40.photo.attach(io: file, filename: "leonard")
-
-# user41 = User.create(email: 'ManuDibango@yahoo.fr', password: "123456")
-# artist41 = Artist.new(
-#   first_name: 'Manu',
-#   last_name: 'Dibango',
-#   date_of_birth: '1933-12-13',
-#   email: 'ManuDibango@yahoo.fr',
-#   description: "Manu Dibango, nicknamed Papa Groove, is a Cameroonian world jazz saxophonist and composer.",
-#   category: compositeur,
-#   user: user41
-# )
-# artist41.save!
-
-# file = URI.open("https://resize-parismatch.lanmedia.fr/var/pm/public/media/image/2022/03/01/22/Manu-Dibango-legende-du-saxophone-a-succombe-au-coronavirus.jpg?VersionId=jXUXCU6gOliWrukfyKGxaCLDbhL4RUhb")
-# artist41.photo.attach(io: file, filename: "leonard")
-
-# user42 = User.create(email: 'Salifkeita@laposte.fr', password: "123456")
-# artist42 = Artist.new(
-#   first_name: 'Salif',
-#   last_name: 'Keïta',
-#   date_of_birth: '1949-08-25',
-#   email: 'Salifkeita@laposte.fr',
-#   description: "Salif keïta Since the international success of his albums of the 1980s, he has been one of the recognized musicians of World music and one of the main artists of his country.",
-#   category: compositeur,
-#   user: user42
-# )
-# artist42.save!
-
-# file = URI.open("https://pbs.twimg.com/profile_images/140033007/Salif_Keita_400x400.jpg")
-# artist42.photo.attach(io: file, filename: "leonard")
-
-# user43 = User.create(email: 'Felakuti@yahoo.fr', password: "123456")
-# artist43 = Artist.new(
-#   first_name: 'Fela',
-#   last_name: 'Kuti',
-#   date_of_birth: '1938-02-02',
-#   email: 'Felakuti@yahoo.fr',
-#   description: "Fela Anikulapo Kuti moved to London in 1958 to study medicine, but eventually enrolled at Trinity College of Music. He forms the group Koola Lobitos, with which he begins to define the Afro-beat style",
-#   category: compositeur,
-#   user: user43
-# )
-# artist43.save!
-
-# file = URI.open("https://www.radiofrance.fr/s3/cruiser-production/2020/05/d363dc73-c800-4a91-841b-2b8ca2f6d639/560x315_gettyimages-486113644.jpg")
-# artist43.photo.attach(io: file, filename: "leonard")
-
-# user44 = User.create(email: 'Pierrebachelet@yahoo.fr', password: "123456")
-# artist44 = Artist.new(
-#   first_name: 'Pierre',
-#   last_name: 'Bachelet',
-#   date_of_birth: '1944-05-25',
-#   email: 'Pierrebachelet@yahoo.fr',
-#   description: "Pierre Bachele evokes the North in several of his songs, as in Les Corons, and his memories of Calais",
-#   category: compositeur,
-#   user: user44
-# )
-# artist44.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist44.photo.attach(io: file, filename: "leonard")
-
-# user45 = User.create(email: 'HeitorVilla-Lobos@outlook.com', password: "123456")
-# artist45 = Artist.new(
-#   first_name: 'Heitor',
-#   last_name: 'Villa-Lobos',
-#   date_of_birth: '1887-03-05',
-#   email: 'HeitorVilla-Lobos@outlook.com',
-#   description: "He learns to play the guitar in secret. Very young, he played in popular music groups and from the age of 16 worked as an independent musician.",
-#   category: compositeur,
-#   user: user45
-# )
-# artist45.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist45.photo.attach(io: file, filename: "leonard")
-
-# user46 = User.create(email: 'julioIglesias@icloud.com', password: "123456")
-# artist46 = Artist.new(
-#   first_name: 'Julio',
-#   last_name: 'Iglesias',
-#   date_of_birth: '1943-09-23',
-#   email: 'julioIglesias@icloud.com',
-#   description: "Crooner, lover of women, Julio Iglesias is one of the best sellers of records. Like the Beatles or Elvis Presley, he managed the feat of remaining in the top places of American hits at the start of the 80s with no less than six albums.",
-#   category: compositeur,
-#   user: user46
-# )
-# artist44.save!
-
-# file = URI.open("https://www.melody.tv/wp-content/uploads/2022/08/Julio-IGLESIAS-02-1980%E2%88%8FXDR-INA-scaled.jpg")
-# artist44.photo.attach(io: file, filename: "leonard")
-
-# user47 = User.create(email: 'Jimihendrix@yahoo.fr', password: "123456")
-# artist47 = Artist.new(
-#   first_name: 'Jimi',
-#   last_name: 'Hendrix',
-#   date_of_birth: '1942-11-27',
-#   email: 'Jimihendrix@yahoo.fr',
-#   description: "James Marshall Hendrix is ​​an American guitarist, songwriter and singer, founder of the British-American band The Jimi Hendrix...",
-#   category: compositeur,
-#   user: user47
-# )
-# artist47.save!
-
-# file = URI.open("https://www.babelio.com/users/AVT_Jimi-Hendrix_9001.jpg")
-# artist47.photo.attach(io: file, filename: "leonard")
-
-# user48 = User.create(email: 'Yōkoshimomura@yahoo.fr', password: "123456")
-# artist48 = Artist.new(
-#   first_name: 'Yōko',
-#   last_name: 'Shimomura',
-#   date_of_birth: '1967-10-19',
-#   email: 'Yōkoshimomura@yahoo.fr',
-#   description: "Shimomura is the music of adventure, very rhythmic and very catchy. I know that many love his work on kingdom hearts, but I much prefer his compositions on PARASITE EVE and LEGEND OF MANA.",
-#   category: compositeur,
-#   user: user48
-# )
-# artist48.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/56/Yoko_Shimomura.jpg")
-# artist48.photo.attach(io: file, filename: "leonard")
-
-# user49 = User.create(email: 'Khaled@mail.com', password: "123456")
-# artist49 = Artist.new(
-#   first_name: 'Khaled',
-#   last_name: 'Hadj',
-#   date_of_birth: '1960-02-29',
-#   email: 'Khaled@mail.com',
-#   description: "Khaled Hadj Ibrahim, known by the stage name Cheb Khaled then just Khaled, born February 29, 1960 in Oran, Algeria, is an Algerian singer, composer and multi-instrumentalist of Algerian raï",
-#   category: compositeur,
-#   user: user49
-# )
-# artist49.save!
-
-# file = URI.open("https://voi.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F06.2F30.2F07034fe3-a598-4dc7-9d2a-b2c40e2b37c1.2Ejpeg/2048x1536/quality/80/khaled.jpeg")
-# artist49.photo.attach(io: file, filename: "leonard")
-
-# user50 = User.create(email: 'Joehisaishi@orange.fr', password: "123456")
-# artist50 = Artist.new(
-#   first_name: 'Joe ',
-#   last_name: 'Hisaishi',
-#   date_of_birth: '1950-01-06',
-#   email: 'Joehisaishi@orange.fr',
-#   description: "Immense composer known for his work on the films of hayao miyazaki and takeshi kitano.",
-#   category: compositeur,
-#   user: user50
-# )
-# artist50.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Joe_Hisaishi_2011.jpg/260px-Joe_Hisaishi_2011.jpg")
-# artist50.photo.attach(io: file, filename: "leonard")
-
-
-# photographe = Category.create(name: "Photographe")
-
-# user51 = User.create(email: 'RobertCapa@yahoo.fr', password: "123456")
-# artist51 = Artist.new(
-#   first_name: 'Robert',
-#   last_name: 'Capa',
-#   date_of_birth: '1913-10-22',
-#   email: 'RobertCapa@yahoo.fr',
-#   description: "Robert Capa, pseudonym of Endre Ernő Friedmann, born October 22, 1913 in Budapest and died May 25, 1954 in Indochina, was a Hungarian photographer and war correspondent.",
-#   category: photographe,
-#   user: user51
-# )
-# artist51.save!
-
-# file = URI.open("https://images.radio-canada.ca/v1/ici-premiere/16x9/robert-capa-photographie-guerre-espagne-magnum.jpg")
-# artist51.photo.attach(io: file, filename: "leonard")
-
-# user52 = User.create(email: 'StevemcCurry@msn.fr', password: "123456")
-# artist52 = Artist.new(
-#   first_name: 'Steve',
-#   last_name: 'McCurry',
-#   date_of_birth: '1950-02-24',
-#   email: 'StevemcCurry@msn.fr',
-#   description: "bon mec sympa",
-#   category: photographe,
-#   user: user52
-# )
-# artist52.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Steve_McCurry_%285824371040%29_%28cropped%29.jpg/800px-Steve_McCurry_%285824371040%29_%28cropped%29.jpg")
-# artist52.photo.attach(io: file, filename: "leonard")
-
-# user53 = User.create(email: 'DorotheaLange@aol.com', password: "123456")
-# artist53 = Artist.new(
-#   first_name: 'Dorothea',
-#   last_name: 'Lange',
-#   date_of_birth: '1965-10-11',
-#   email: 'DorotheaLange@aol.com',
-#   description: "Dorothea Lange, born Dorothea Nutzhorn, May 26, 1895 in Hoboken and died October 11, 1965 in San Francisco, was an American photographer whose best-known works were made during the Great Depression, as part of a mission entrusted by the Farm Security Administration.",
-#   category: photographe,
-#   user: user53
-# )
-# artist53.save!
-
-# file = URI.open("https://jeudepaume.org/wp-content/uploads/2021/04/2018_DorotheaLange-01.jpg")
-# artist53.photo.attach(io: file, filename: "leonard")
-
-# user54 = User.create(email: 'Brassaï@yahoo.fr', password: "123456")
-# artist54 = Artist.new(
-#   first_name: 'Brassaï',
-#   last_name: 'Halász',
-#   date_of_birth: '1899-09-09',
-#   email: 'Brassaï@yahoo.fr',
-#   description: "Brassaï, pseudonym of Gyula Halász, born September 9, 1899 in Brașov and died July 8, 1984 in Beaulieu-sur-Mer, is a Hungarian photographer, naturalized French, also designer, painter, sculptor, medallist and writer",
-#   category: photographe,
-#   user: user54
-# )
-# artist54.save!
-
-# file = URI.open("https://delpireandco.com/wp-content/uploads/2021/07/Brassai-1955-delpire-scaled.jpg")
-# artist54.photo.attach(io: file, filename: "leonard")
-
-# user55 = User.create(email: 'Annegeddes@aol.com', password: "123456")
-# artist55 = Artist.new(
-#   first_name: 'Anne',
-#   last_name: 'Geddes',
-#   date_of_birth: '1956-09-15',
-#   email: 'Annegeddes@aol.com',
-#   description: "Anne Geddes (born September 15, 1956 in Queensland, Australia) is an Australian photographer. She specializes in newborn photography.",
-#   category: photographe,
-#   user: user55
-# )
-# artist55.save!
-
-# file = URI.open("http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQRh7aUMY3TvoW_KoPseVkL9RZ1BzOK-Y25zrl4mnW0TMATH3i9ShysjZOQi8nnc-6l")
-# artist55.photo.attach(io: file, filename: "leonard")
-
-# user56 = User.create(email: 'Maryellenmark@gmail.fr', password: "123456")
-# artist56 = Artist.new(
-#   first_name: 'Mary Ellen',
-#   last_name: 'Mark',
-#   date_of_birth: '1940-03-20',
-#   email: 'Maryellenmark@gmail.fr',
-#   description: "Mary Ellen Mark, born March 20, 1940 in Philadelphia and died May 25, 2015 in New York, is an American photographer She is best known for her reports across the United States, in which portraits occupy a prominent place",
-#   category: photographe,
-#   user: user56
-# )
-# artist56.save!
-
-# file = URI.open("https://phototrend.fr/wp-content/uploads/2017/10/maryellen_mark.jpg")
-# artist56.photo.attach(io: file, filename: "leonard")
-
-# user57 = User.create(email: 'Manray@yahoo.fr', password: "123456")
-# artist57 = Artist.new(
-#   first_name: 'Man',
-#   last_name: 'Ray',
-#   date_of_birth: '1890-07-18',
-#   email: 'Manray@yahoo.fr',
-#   description: "Man ray  est un peintre, photographe et réalisateur américain naturalisé français",
-#   category: photographe,
-#   user: user57
-# )
-# artist57.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a1/Man_Ray_portrait.jpg")
-# artist57.photo.attach(io: file, filename: "leonard")
-
-# user58 = User.create(email: 'MalcolmBrowne@msn.fr', password: "123456")
-# artist58 = Artist.new(
-#   first_name: 'Malcolm',
-#   last_name: 'Browne',
-#   date_of_birth: '1931-04-17',
-#   email: 'MalcolmBrowne@msn.fr',
-#   description: "Malcolm Browne Wilde, born April 17, 1931 in New York and died August 27, 2012 in Hanover, New Hampshire, was an American journalist and photographer.",
-#   category: photographe,
-#   user: user58
-# )
-# artist58.save!
-
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/53/Malcolm_Browne_1964.jpg")
-# artist58.photo.attach(io: file, filename: "leonard")
-
-# user59 = User.create(email: 'Nilüferdemir@yahoo.fr', password: "123456")
-# artist59 = Artist.new(
-#   first_name: 'Nilüfer',
-#   last_name: 'Demir',
-#   date_of_birth: '1986-12-11',
-#   email: 'Nilüferdemir@yahoo.fr',
-#   description: "Nilüfer Dumir, is a Turkish photographer made known because of her photograph of the young Alan Kurdi, a refugee who died on a beach in Bodrum, on the night of September 2, 2015",
-#   category: photographe,
-#   user: user59
-# )
-# artist59.save!
-
-# file = URI.open("https://images.thedailystar.net/sites/default/files/feature/images/nilufer-web.jpg")
-# artist59.photo.attach(io: file, filename: "leonard")
-
-# user60 = User.create(email: 'Lauraperson@yahoo.fr', password: "123456")
-# artist60 = Artist.new(
-#   first_name: 'Laura',
-#   last_name: 'Person',
-#   date_of_birth: '1997-12-02',
-#   email: 'Lauraperson@yahoo.fr',
-#   description: "Laura Person is a young photographer in the making. His incredible project on gentrification, of the population within the golden drop district, assures him of a future place within the elite of international photography.",
-#   category: photographe,
-#   user: user60
-# )
-# artist60.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
+peintre = Category.create(name: "Peintre")
+
+user1 = User.create(email: 'Leonarddevinci@hotmail.fr', password: "123456")
+artist1 = Artist.new(
+  first_name: 'Leonard',
+  last_name: 'De Vinci',
+  date_of_birth: '1452-04-15',
+  email: 'Leonarddevinci@hotmail.fr',
+  description: "Leonardo da Vinci is a Florentine painter and a man of universal spirit, at the same time artist, scientist, engineer, inventor, anatomist, painter, sculptor, architect, urban planner, botanist, musician, poet, philosopher and writer.",
+  category: peintre,
+  user: user1
+)
+artist1.save!
+
+file = URI.open("https://www.histoire-pour-tous.fr/images/articles/dossiers/biographies/leonard-de-vinci-portrait.jpg")
+artist1.photo.attach(io: file, filename: "leonard")
+
+
+user2 = User.create(email: 'Pablopicasso@yahoo.fr', password: "123456")
+artist2 = Artist.new(
+  first_name: 'Pablo Ruiz',
+  last_name: 'Picasso',
+  date_of_birth: '1881-10-25',
+  email: 'Pablopicasso@yahoo.fr',
+  description: "Pablo Picasso was a Spanish artist known for his paintings, and is one of the major artists of the 20th century.",
+  category: peintre,
+  user: user2
+)
+artist2.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/800px-Pablo_picasso_1.jpg")
+artist1.photo.attach(io: file, filename: "leonard")
+
+
+user3 = User.create(email: 'Benenwonwu@hotmail.fr', password: "123456")
+artist3 = Artist.new(
+  first_name: 'Ben',
+  last_name: 'Enwonwu',
+  date_of_birth: '1917-07-14',
+  email: 'Léonarddevinci@hotmail.fr',
+  description: "Ben Enwonwu is a nationally and internationally influential painter and Nigerian artist, he is often considered the father of Nigerian modernism",
+  category: peintre,
+  user: user3
+)
+artist3.save!
+
+file = URI.open("https://sothebys-com.brightspotcdn.com/29/d9/288afc1f4ee5b0d52bbc1c97db0d/ben-enwonwu-2-copyright-of-the-ben-enwonwu-foundation.jpeg")
+artist1.photo.attach(io: file, filename: "leonard")
+
+user4 = User.create(email: 'Zhangxiaogang@hotmail.fr', password: "123456")
+artist4 = Artist.new(
+  first_name: 'Zhang',
+  last_name: 'Xiaogang',
+  date_of_birth: '1958-01-01',
+  email: 'Zhangxiaogang@hotmail.fr',
+  description: "Zhang Xiaogang, born in 1958 in Kunming, is a Chinese contemporary artist, symbolist surrealist painter. He lives in Sichuan and Beijing.",
+  category: peintre,
+  user: user4
+)
+artist4.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist1.photo.attach(io: file, filename: "leonard")
+
+user5 = User.create(email: 'Ahmedcherkaoui@laposte.fr', password: "123456")
+artist5 = Artist.new(
+  first_name: 'Ahmed',
+  last_name: 'Cherkaoui',
+  date_of_birth: '1967-08-17',
+  email: 'Ahmedcherkaoui.fr',
+  description: "Mohamed Cherkaoui Sellami is a young Moroccan painter from Salé. He is considered one of the most famous painters in his hometown and in Morocco.",
+  category: peintre,
+  user: user5
+)
+artist5.save!
+
+file = URI.open("https://aujourdhui.ma/wp-content/uploads/2018/02/Ahmed-Cherkaoui-.jpg")
+artist5.photo.attach(io: file, filename: "leonard")
+
+user6 = User.create(email: 'Joaquintorres@gmail.fr', password: "123466")
+artist6 = Artist.new(
+  first_name: 'Joaquín Torres',
+  last_name: 'García,',
+  date_of_birth: '1874-07-28',
+  email: 'Joaquintorres.fr',
+  description: "
+  Born on July 28, 1874 in Montevideo, Uruguay, Joaquín Torres García left his native country for Spain. During his studies in Barcelona, ​​he met Pablo Picasso and Julio González.",
+  category: peintre,
+  user: user6
+)
+artist6.save!
+
+file = URI.open("https://www.buscabiografias.com/img/people/Joaqu%C3%ADn-Torres-Garc%C3%ADa.jpg")
+artist6.photo.attach(io: file, filename: "leonard")
+
+user7 = User.create(email: 'Fridakahlo@hotmail.fr', password: "123456")
+artist7 = Artist.new(
+  first_name: 'Frida',
+  last_name: 'kahlo',
+  date_of_birth: '1954-07-6',
+  email: 'Fridakahlo.fr',
+  description: "The painter stages her suffering, both physical and moral. With a mixture of pain and resistance, she shows herself dignified, with her head held high and her gaze proud, but her femininity is wounded.",
+  category: peintre,
+  user: user7
+)
+artist7.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg")
+artist7.photo.attach(io: file, filename: "leonard")
+
+user8 = User.create(email: 'Elisabethvigée@yahoo.fr', password: "123456")
+artist8 = Artist.new(
+  first_name: 'Élisabeth Vigée',
+  last_name: 'Le Brun',
+  date_of_birth: '1755-04-16',
+  email: 'Elisabethvigée@yahoo.fr',
+  description: "Louise-Élisabeth Vigée is a French painter, considered a great portrait painter of her time, equal to Quentin de La Tour or Jean-Baptiste Greuze.",
+  category: peintre,
+  user: user8
+)
+artist8.save!
+
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsa6JJIpyLzV1zh6Pap6S_nAHRoVEdB7qSfAxkp-0KsWqWAXKIwczMuwQmLtILdMLDbA&usqp=CAU")
+artist8.photo.attach(io: file, filename: "leonard")
+
+user9 = User.create(email: 'ArtemisiaGentileschi@hotmail.fr', password: "123456")
+artist9 = Artist.new(
+  first_name: 'Artemisia',
+  last_name: 'Gentileschi',
+  date_of_birth: '1593-09-21',
+  email: 'ArtemisiaGentileschi@hotmail.fr',
+  description: "Artemisia Lomi Gentileschi, is an Italian painter of the Caravaggio school, considered to be one of the first women to paint historical and religious subjects.",
+  category: peintre,
+  user: user9
+)
+artist9.save!
+
+file = URI.open("https://uploads3.wikiart.org/00359/images/artemisia-gentileschi/2132-1.jpg!Portrait.jpg")
+artist9.photo.attach(io: file, filename: "leonard")
+
+user10 = User.create(email: 'Marielaurencin@hotmail.fr', password: "123456")
+artist10 = Artist.new(
+  first_name: 'Marie',
+  last_name: 'Laurencin',
+  date_of_birth: '1956-10-31',
+  email: 'Marielaurencin@hotmail.fr',
+  description: "Marie Laurencin, is a French figurative painter, but also an engraver and an illustrator, closely associated with the birth of modern art and the School of Paris.",
+  category: peintre,
+  user: user10
+)
+artist10.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/8/8e/Marie_Laurencin_1949.jpg")
+artist10.photo.attach(io: file, filename: "leonard")
+
+sculpteur = Category.create(name: "Sculpteur")
+
+user11 = User.create(email: 'Paulahyi@gmail.fr', password: "123456")
+artist11 = Artist.new(
+  first_name: 'Paul',
+  last_name: 'Ahyi',
+  date_of_birth: '1930-01-15',
+  email: 'Paulahyi@gmail.fr',
+  description: "Born in Abomey, Benin, he is known for his outdoor works of art, reliefs and sculptures",
+  category: sculpteur,
+  user: user11
+)
+artist11.save!
+
+file = URI.open("https://www.republicoftogo.com/var/site/storage/images/toutes-les-rubriques-novo/idees/paul-ahyi/1729516-1-fre-FR/paul-ahyi_i1200.jpg")
+artist11.photo.attach(io: file, filename: "leonard")
+
+
+user12 = User.create(email: 'Zhanagxiaogang@yahoo.fr', password: "123456")
+artist12 = Artist.new(
+  first_name: 'Zhang',
+  last_name: 'Xiaogang',
+  date_of_birth: '1958-01-01',
+  email: 'Zhanagxiaogang@yahoo.fr',
+  description: 'Zhang Xiaogang, born in 1958 in Kunming, is a Chinese contemporary artist, symbolist surrealist painter. He lives in Sichuan and Beijing.',
+  category: sculpteur,
+  user: user12
+)
+artist12.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist12.photo.attach(io: file, filename: "leonard")
+
+
+user13 = User.create(email: 'muboyan@yahoo.fr', password: "123456")
+artist13 = Artist.new(
+  first_name: 'Mu',
+  last_name: 'Boyan',
+  date_of_birth: '1976-04-12',
+  email: 'muboyan@yahoo.fr',
+  description: "Mu Boyan is a contemporary Chinese sculptor. Best known for his small-scale, human-sized depictions of obese young men suspended in various poses, the underlying interest of his work being to transform the view of weight gain in China.",
+  category: sculpteur,
+  user: user13
+)
+artist13.save!
+
+file = URI.open("https://www.chinesenewart.com/artistes-chinois14/muboyanport.jpg")
+artist13.photo.attach(io: file, filename: "leonard")
+
+user14 = User.create(email: 'AliciaPenalba@gmail.fr', password: "123456")
+artist14 = Artist.new(
+  first_name: 'Alicia',
+  last_name: 'Penalba',
+  date_of_birth: '1913-08-09',
+  email: 'AliciaPenalba@gmail.fr',
+  description: "Alicia Peñalba came to settle in Paris in 1948, she abandoned painting to devote herself exclusively to sculpture",
+  category: sculpteur,
+  user: user14
+)
+artist14.save!
+
+file = URI.open("https://images.squarespace-cdn.com/content/v1/5dc13a7ddf3c7b576d0aa7f9/4a50ef7e-3deb-45ae-87f4-8cd5f75ac10a/penalbabig.jpg")
+artist14.photo.attach(io: file, filename: "leonard")
+
+user15 = User.create(email: 'AlexandreArrechea@msn.com', password: "123456")
+artist15 = Artist.new(
+  first_name: 'Alexandre',
+  last_name: 'Arrechea',
+  date_of_birth: '1970-02-02',
+  email: 'AlexandreArrechea@msn.com',
+  description: "Alexandre Arrechea was born in 1970 in Trinidad (Cuba). He began his solo career in 2003, after being part of the art collective Los Carpinteros for 12 years.",
+  category: sculpteur,
+  user: user15
+)
+artist15.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c8/Alexandre_Arrechea_2014.jpg")
+artist15.photo.attach(io: file, filename: "leonard")
+
+user16 = User.create!(email: 'ClaesOldenburg@gmail.fr', password: "123456")
+artist16 = Artist.new(
+  first_name: 'Claes',
+  last_name: 'Oldenburg',
+  date_of_birth: '1929-01-28',
+  email: 'Claes Oldenburg@gmail.fr',
+  description: "Claes Oldenburg, born January 28, 1929 in Stockholm and died July 18, 2022 in New York, was an American sculptor. While his first works are part of the so-called ephemeral art movement, he is best known for his later creations, monumental installations, replicas of everyday objects.",
+  category: sculpteur,
+  user: user16
+)
+artist16.save!
+
+file = URI.open("https://img.lemde.fr/2022/07/18/0/0/4896/3264/664/0/75/0/b134d50_498f32933fc043de887182d61f1779c1-498f32933fc043de887182d61f1779c1-0.jpg")
+artist16.photo.attach(io: file, filename: "leonard")
+
+user17 = User.create(email: 'Alexandercalder@aol.com', password: "123456")
+artist17 = Artist.new(
+  first_name: 'Alexander',
+  last_name: 'Calder',
+  date_of_birth: '1898-07-22',
+  email: 'AlexanderCalder@aol.com',
+  description: "The American Alexander Calder revolutionized sculpture, the art of volume, by bringing movement and color to it!",
+  category: sculpteur,
+  user: user17
+)
+artist17.save!
+
+file = URI.open("https://www.boccara.com/wp-content/uploads/2021/05/Alexander-calder-portrait.jpg")
+artist17.photo.attach(io: file, filename: "leonard")
+
+user18 = User.create(email: 'AmahiguereDolo@yahoo.fr', password: "123456")
+artist18 = Artist.new(
+  first_name: 'Amahiguere',
+  last_name: 'Dolo',
+  date_of_birth: '1955-06-16',
+  email: 'AmahiguereDolo@yahoo.fr',
+  description: "Amahiguere Dolo is a Malian Dogon sculptor from a noble family of farmers.",
+  category: sculpteur,
+  user: user18
+)
+artist18.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist18.photo.attach(io: file, filename: "leonard")
+
+user19 = User.create(email: 'AbdelfattahBoussetta@msn.fr', password: "123456")
+artist19 = Artist.new(
+  first_name: 'Abdelfattah',
+  last_name: 'Boussetta',
+  date_of_birth: '1947-01-25',
+  email: 'AbdelfattahBoussetta@msn.fr',
+  description: "Abdelfattah Boussetta, born January 25, 1947 in Ksar Hellal, is a Tunisian sculptor and painter. He has organized numerous exhibitions and created numerous monuments in Tunisia, including the Kasbah National Monument in Tunis.",
+  category: sculpteur,
+  user: user19
+)
+artist19.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist19.photo.attach(io: file, filename: "leonard")
+
+user20 = User.create(email: 'NaoumLvovitch@yahoo.fr', password: "123456")
+artist20 = Artist.new(
+  first_name: 'Naoum Lvovitch',
+  last_name: 'Aronson',
+  date_of_birth: '1872-12-25',
+  email: 'NaoumLvovitch@yahoo.fr',
+  description: "Naoum Lvovitch Aronson, born in December 25, 1872 at Kreslau in the Russian Empire, today Krāslava in Latvia, is a Russian sculptor",
+  category: sculpteur,
+  user: user20
+)
+artist20.save!
+
+file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
+artist20.photo.attach(io: file, filename: "leonard")
+
+illustrateur = Category.create(name: "Illustrateur")
+
+user21 = User.create(email: 'KimJungGi@yahoo.fr', password: "123456")
+artist21 = Artist.new(
+  first_name: 'Kim Jung',
+  last_name: 'Gi',
+  date_of_birth: '1975-02-7',
+  email: 'KimJungGi@yahoo.fr',
+  description: "Kim Jung Gi entered fine arts school at age 19 to graduate with a master's degree in art and design. He continues his studies at the College of Art and Design of Dong-eui University",
+  category: illustrateur,
+  user: user21
+)
+artist21.save!
+
+file = URI.open("https://www.bedetheque.com/media/Photos/Photo_35965.jpg")
+artist21.photo.attach(io: file, filename: "leonard")
+
+
+user22 = User.create(email: 'MalikaFavre@yahoo.fr', password: "123456")
+artist22 = Artist.new(
+  first_name: 'Malika',
+  last_name: 'Favre',
+  date_of_birth: '1982-12-01',
+  email: 'MalikaFavre@yahoo.fr',
+  description: "Malika Favre, born in December 1982 in Paris, is a French illustrator.",
+  category: illustrateur,
+  user: user22
+)
+artist22.save!
+
+file = URI.open("https://cdn.shopify.com/s/files/1/2802/2616/products/MF_bcncopie_300x.jpg?v=1632730715")
+artist22.photo.attach(io: file, filename: "leonard")
+
+user23 = User.create(email: 'Onajinalaba@msn.fr', password: "123456")
+artist23 = Artist.new(
+  first_name: 'Onajin',
+  last_name: 'Alaba',
+  date_of_birth: '1986-03-12',
+  email: 'Onajinalaba@msn.fr',
+  description: "He was born in Lagos, Nigeria, but after a few years moved with his family to Ondo Town",
+  category: illustrateur,
+  user: user23
+)
+artist23.save!
+
+file = URI.open("https://www.2709books.com/wp-content/uploads/2020/12/Alaba-Onajin-1024x991.jpg")
+artist23.photo.attach(io: file, filename: "leonard")
+
+user24 = User.create(email: 'NormanRockwell@gmail.fr', password: "123456")
+artist24 = Artist.new(
+  first_name: 'Norman',
+  last_name: 'Rockwell',
+  date_of_birth: '1894-02-03',
+  email: 'NormanRockwell@gmail.fr',
+  description: "Norman Rockwell is surely the most famous American press illustrator in the world. Born in New York in 1894 and died in Massachusetts in 1978, he is rightly nicknamed the storyteller of America",
+  category: illustrateur,
+  user: user24
+)
+artist24.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/3/37/Rockwell-Norman-LOC.jpg")
+artist21.photo.attach(io: file, filename: "leonard")
+
+user25 = User.create(email: 'Christopherrush@gmail.fr', password: "123456")
+artist25 = Artist.new(
+  first_name: 'Christopher',
+  last_name: 'Rush',
+  date_of_birth: '1965-04-6',
+  email: 'Christopherrush@gmail.fr',
+  description: "Christopher Rush is an American illustrator for Magic. In total, he illustrated over 100 cards for the series, including the game's most expensive card, the Lotus No.",
+  category: illustrateur,
+  user: user25
+)
+artist25.save!
+
+file = URI.open("https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/4/4c/Christopher_Rush.jpg/revision/latest/scale-to-width-down/250?cb=20100908131054")
+artist25.photo.attach(io: file, filename: "leonard")
+
+user26 = User.create(email: 'Gustavedoré@yahoo.fr', password: "123456")
+artist26 = Artist.new(
+  first_name: 'Gustave',
+  last_name: 'Doré',
+  date_of_birth: '1832-01-06',
+  email: 'Gustavedoré@yahoo.fr',
+  description: "He quickly knows the celebrity by illustrating famous novels like The Divine Comedy of Dante or the Tales of Perrault like Barbe Bleue.",
+  category: illustrateur,
+  user: user26
+)
+artist26.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Dor%C3%A9_by_Nadar_1867_cropped.jpg/260px-Dor%C3%A9_by_Nadar_1867_cropped.jpg")
+artist26.photo.attach(io: file, filename: "leonard")
+
+
+
+user27 = User.create(email: 'RichardZielenkiewicz@yahoo.fr', password: "123456")
+artist27 = Artist.new(
+  first_name: 'Richard',
+  last_name: 'Zielenkiewicz',
+  date_of_birth: '1965-01-16',
+  email: 'RichardZielenkiewicz@yahoo.fr',
+  description: "Richard Zielenkiewicz, known under the pseudonym Monsieur Z, is a French illustrator and graphic designer, born January 16, 1965",
+  category: illustrateur,
+  user: user27
+)
+artist27.save!
+
+file = URI.open("https://www.creads.com/wp-content/uploads/2021/05/monsieur_z_arludik1.jpg")
+artist27.photo.attach(io: file, filename: "leonard")
+
+user28 = User.create(email: 'Johnhowe@msn.com', password: "123456")
+artist28 = Artist.new(
+  first_name: 'John',
+  last_name: 'Howe',
+  date_of_birth: '1957-08-21',
+  email: 'Johnhowe@msn.com',
+  description: "John Franklin Howe, born August 21, 1957 in Vancouver, is a Canadian illustrator famous for his work on the Lord of the Rings universe.",
+  category: illustrateur,
+  user: user28
+)
+artist28.save!
+
+file = URI.open("https://www.imaginales.fr/wp-content/uploads/2018/02/John_Howe_-_Lucca_2017-1024x1024.jpg")
+artist28.photo.attach(io: file, filename: "leonard")
+
+user29 = User.create(email: 'Jeanbruller@gmail.fr', password: "123456")
+artist29 = Artist.new(
+  first_name: 'Jean Bruller',
+  last_name: 'Vercors',
+  date_of_birth: '1902-02-26',
+  email: 'Jeanbruller@gmail.fr',
+  description: "Vercors is a French illustrator and writer. He adopted the literary pseudonym Vercors in 1941 during the Resistance",
+  category: illustrateur,
+  user: user29
+)
+artist29.save!
+
+file = URI.open("https://www.radiofrance.fr/s3/cruiser-production/2016/02/fa16a56e-5ced-4537-8034-8e257ae7c470/870x489_vercors.jpg")
+artist29.photo.attach(io: file, filename: "leonard")
+
+user30 = User.create(email: 'AbelQuezada@yahoo.fr', password: "123456")
+artist30 = Artist.new(
+  first_name: 'Abel',
+  last_name: 'Quezada',
+  date_of_birth: '1920-12-13',
+  email: 'AbelQuezada@yahoo.fr',
+  description: "Abel Quezada is a Mexican illustrator known for numerous Mexican and American publications including Ovaciones, Cine Mundial, Últimas noticias, Excélsior, Novedades, La Jornada, The New Yorker and The New York Times.",
+  category: illustrateur,
+  user: user30
+)
+artist30.save!
+
+file = URI.open("https://1.bp.blogspot.com/-7xt9Dueu_Iw/X9bj11tnhAI/AAAAAAABxHo/cUxKrrM574EC_pAqY4Q1GxUwOusJ97QEQCLcBGAsYHQ/s960/Abel%2BQuezada%2BCaldero%25CC%2581n%2B.jpg")
+artist30.photo.attach(io: file, filename: "leonard")
+
+beatmaker = Category.create(name: "Beatmaker")
+
+user31 = User.create(email: 'Bamaoyendé@msn.fr', password: "123456")
+artist31 = Artist.new(
+  first_name: 'Bamao',
+  last_name: 'Yendé',
+  date_of_birth: '1993-10-18',
+  email: 'Bamaoyendé@msn.fr',
+  description: "When he's not showing off with his group Nyoko Bokbae, the 26-year-old DJ electrifies parties by mixing Afro rhythms with house and UK garage",
+  category: beatmaker,
+  user: user31
+)
+artist31.save!
+
+file = URI.open("https://pan-african-music.com/wp-content/uploads/2018/07/Bamao-Yend%C3%A9-cut.jpg")
+artist31.photo.attach(io: file, filename: "leonard")
+
+user32 = User.create(email: 'AmineFarsi@hotmail.fr', password: "123456")
+artist32 = Artist.new(
+  first_name: 'Amine',
+  last_name: 'Farsi',
+  date_of_birth: '1997-04-11',
+  email: 'AmineFarsi@hotmail.fr',
+  description: "Amine Farsi is a French beatmaker. He has notably worked with French-speaking rappers such as PNL, Ninho, Freeze Corleone and Nekfeu..",
+  category: beatmaker,
+  user: user32
+)
+artist32.save!
+
+file = URI.open("https://sansrefrain.fr/wp-content/uploads/2022/05/Amine-Farsi-300x300.jpeg")
+artist32.photo.attach(io: file, filename: "leonard")
+
+user33 = User.create(email: 'MetroBoomin@noos.fr', password: "123456")
+artist33 = Artist.new(
+  first_name: 'Metro',
+  last_name: 'Boomin',
+  date_of_birth: '1993-09-16',
+  email: 'MetroBoomin@noos.fr',
+  description: "Metro Boomin, whose real name is Leland Tyler Wayne, born September 16, 1993 in Saint-Louis, Missouri, is an American beatmaker",
+  category: beatmaker,
+  user: user33
+)
+artist33.save!
+
+file = URI.open("https://hiphopcorner.fr/wp-content/uploads/2022/10/Metro-Boomin.jpeg")
+artist33.photo.attach(io: file, filename: "leonard")
+
+user34 = User.create(email: 'Junioralaprod@gmail.fr', password: "123456")
+artist34 = Artist.new(
+  first_name: 'Junior',
+  last_name: 'À La Prod',
+  date_of_birth: '1996-02-17',
+  email: 'Junioralaprod@gmail.fr',
+  description: "Real name, Junior BULA MONGA Jr is a young Franco-Congolese beatmaker living in Paris, France, very talented",
+  category: beatmaker,
+  user: user34
+)
+artist34.save!
+
+file = URI.open("https://i.discogs.com/L5JZ3T-ldtVl9HgId8a0qNUfWOz7z9NXQ3H7QUaBssk/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU0MDg5/MzQtMTUxMjE2MDE2/Ny03MzgwLmpwZWc.jpeg")
+artist34.photo.attach(io: file, filename: "leonard")
+
+user35 = User.create(email: 'Djkhaled@msn.fr', password: "123456")
+artist35 = Artist.new(
+  first_name: 'DJ',
+  last_name: 'Khaled',
+  date_of_birth: '1975-11-26',
+  email: 'Djkhaled@msn.fr',
+  description: "DJ Khaled, real name Khaled Mohamed Khaled, born November 26, 1975 in New Orleans, Louisiana, is an American beatmaker. He is a DJ and host of the radio station WEDR, in Miami, which broadcasts several musical styles",
+  category: beatmaker,
+  user: user35
+)
+artist35.save!
+
+file = URI.open("http://media.nrj.fr/1900x1200/2017/06/dj-khaled_1365653.jpg")
+artist35.photo.attach(io: file, filename: "leonard")
+
+user36 = User.create(email: 'Danysynthé@yahoo.fr', password: "123456")
+artist36 = Artist.new(
+  first_name: 'Dany',
+  last_name: 'Synthé',
+  date_of_birth: '1991-12-27',
+  email: 'Danysynthé@yahoo.fr',
+  description: "Dany Synthé, born December 27, 1991 in Villiers-sur-Marne, is a French beatmaker and producer. He has collaborated for several years with many artists",
+  category: beatmaker,
+  user: user36
+)
+artist36.save!
+
+file = URI.open("https://arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/XVBSVMEILLXTVXGKSQBBFEUVXI.jpg")
+artist36.photo.attach(io: file, filename: "leonard")
+
+user37 = User.create(email: 'Murdabeatz@gmail.fr', password: "123456")
+artist37 = Artist.new(
+  first_name: 'Murda',
+  last_name: 'Beatz',
+  date_of_birth: '1994-02-11',
+  email: 'Murdabeatz@gmail.fr',
+  description: "Murda Beatz, born February 11, 1994 in Ontario, is a beatmaker. He produced the song No Shopping by French Montana and the song Back on Road by Gucci Mane",
+  category: beatmaker,
+  user: user37
+)
+artist37.save!
+
+file = URI.open("https://www.image-line.com/wp-content/uploads/2022/07/murda_beatz.png")
+artist37.photo.attach(io: file, filename: "leonard")
+
+user38 = User.create(email: 'Timbaland@myspace.fr', password: "123456")
+artist38 = Artist.new(
+  first_name: 'Timbaland',
+  last_name: 'timbaland',
+  date_of_birth: '1972-03-10',
+  email: 'Timbaland@myspace.fr',
+  description: "Timbaland, real name Timothy Zachery Mosley, born March 10, 1972 in Norfolk, Virginia, is an American beatmaker. He is one of America's best-known hip-hop and RnB producers.",
+  category: beatmaker,
+  user: user38
+)
+artist38.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/05/Timbaland_%2847903248821%29_%28cropped%29.jpg")
+artist38.photo.attach(io: file, filename: "leonard")
+
+user39 = User.create(email: 'Grandmasterflash@laposte.fr', password: "123456")
+artist39 = Artist.new(
+  first_name: 'Grandmaster',
+  last_name: 'Flash',
+  date_of_birth: '1958-01-01',
+  email: 'Grandmasterflash@laposte.fr',
+  description: "Grandmaster Flash, real name Joseph Saddler, is an American beatmaker. He is considered one of the pioneers of hip-hop, scratch and remix. He is the inventor of certain techniques such as cutting",
+  category: beatmaker,
+  user: user39
+)
+artist39.save!
+
+file = URI.open("https://m.media-amazon.com/images/I/51My+mzNQPL._SY355_.jpg")
+artist39.photo.attach(io: file, filename: "leonard")
+
+user40 = User.create(email: 'Drdre@laposte.fr', password: "123456")
+artist40 = Artist.new(
+  first_name: 'Dr',
+  last_name: 'Dre',
+  date_of_birth: '1965-02-18',
+  email: 'Drdre@laposte.fr',
+  description: "André Romelle Young, alias Dr. Dre, is a producer, beatmaker, rapper... He has largely contributed to popularizing Gangsta rap, his hometown Compton and Californian hip hop culture in general.",
+  category: beatmaker,
+  user: user40
+)
+artist40.save!
+
+file = URI.open("https://www.abcdrduson.com/wp-content/uploads/2015/08/dr.dre_hero-1024x768.jpg")
+artist40.photo.attach(io: file, filename: "leonard")
+
+compositeur = Category.create(name: "Compositeur")
+
+user40 = User.create(email: 'WolfgangAmadeus@yahoo.fr', password: "123456")
+artist40 = Artist.new(
+  first_name: 'Wolfgang Amadeus',
+  last_name: 'Mozart',
+  date_of_birth: '1756-01-27',
+  email: 'WolfgangAmadeus@yahoo.fr',
+  description: "Mozart wrote his first opera at the age of 11!",
+  category: compositeur,
+  user: user40
+)
+artist40.save!
+
+file = URI.open("https://www.musicologie.org/Biographies/m/mozart.jpg")
+artist40.photo.attach(io: file, filename: "leonard")
+
+user41 = User.create(email: 'ManuDibango@yahoo.fr', password: "123456")
+artist41 = Artist.new(
+  first_name: 'Manu',
+  last_name: 'Dibango',
+  date_of_birth: '1933-12-13',
+  email: 'ManuDibango@yahoo.fr',
+  description: "Manu Dibango, nicknamed Papa Groove, is a Cameroonian world jazz saxophonist and composer.",
+  category: compositeur,
+  user: user41
+)
+artist41.save!
+
+file = URI.open("https://resize-parismatch.lanmedia.fr/var/pm/public/media/image/2022/03/01/22/Manu-Dibango-legende-du-saxophone-a-succombe-au-coronavirus.jpg?VersionId=jXUXCU6gOliWrukfyKGxaCLDbhL4RUhb")
+artist41.photo.attach(io: file, filename: "leonard")
+
+user42 = User.create(email: 'Salifkeita@laposte.fr', password: "123456")
+artist42 = Artist.new(
+  first_name: 'Salif',
+  last_name: 'Keïta',
+  date_of_birth: '1949-08-25',
+  email: 'Salifkeita@laposte.fr',
+  description: "Salif keïta Since the international success of his albums of the 1980s, he has been one of the recognized musicians of World music and one of the main artists of his country.",
+  category: compositeur,
+  user: user42
+)
+artist42.save!
+
+file = URI.open("https://pbs.twimg.com/profile_images/140033007/Salif_Keita_400x400.jpg")
+artist42.photo.attach(io: file, filename: "leonard")
+
+user43 = User.create(email: 'Felakuti@yahoo.fr', password: "123456")
+artist43 = Artist.new(
+  first_name: 'Fela',
+  last_name: 'Kuti',
+  date_of_birth: '1938-02-02',
+  email: 'Felakuti@yahoo.fr',
+  description: "Fela Anikulapo Kuti moved to London in 1958 to study medicine, but eventually enrolled at Trinity College of Music. He forms the group Koola Lobitos, with which he begins to define the Afro-beat style",
+  category: compositeur,
+  user: user43
+)
+artist43.save!
+
+file = URI.open("https://www.radiofrance.fr/s3/cruiser-production/2020/05/d363dc73-c800-4a91-841b-2b8ca2f6d639/560x315_gettyimages-486113644.jpg")
+artist43.photo.attach(io: file, filename: "leonard")
+
+user44 = User.create(email: 'Pierrebachelet@yahoo.fr', password: "123456")
+artist44 = Artist.new(
+  first_name: 'Pierre',
+  last_name: 'Bachelet',
+  date_of_birth: '1944-05-25',
+  email: 'Pierrebachelet@yahoo.fr',
+  description: "Pierre Bachele evokes the North in several of his songs, as in Les Corons, and his memories of Calais",
+  category: compositeur,
+  user: user44
+)
+artist44.save!
+
+file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
+artist44.photo.attach(io: file, filename: "leonard")
+
+user45 = User.create(email: 'HeitorVilla-Lobos@outlook.com', password: "123456")
+artist45 = Artist.new(
+  first_name: 'Heitor',
+  last_name: 'Villa-Lobos',
+  date_of_birth: '1887-03-05',
+  email: 'HeitorVilla-Lobos@outlook.com',
+  description: "He learns to play the guitar in secret. Very young, he played in popular music groups and from the age of 16 worked as an independent musician.",
+  category: compositeur,
+  user: user45
+)
+artist45.save!
+
+file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
+artist45.photo.attach(io: file, filename: "leonard")
+
+user46 = User.create(email: 'julioIglesias@icloud.com', password: "123456")
+artist46 = Artist.new(
+  first_name: 'Julio',
+  last_name: 'Iglesias',
+  date_of_birth: '1943-09-23',
+  email: 'julioIglesias@icloud.com',
+  description: "Crooner, lover of women, Julio Iglesias is one of the best sellers of records. Like the Beatles or Elvis Presley, he managed the feat of remaining in the top places of American hits at the start of the 80s with no less than six albums.",
+  category: compositeur,
+  user: user46
+)
+artist44.save!
+
+file = URI.open("https://www.melody.tv/wp-content/uploads/2022/08/Julio-IGLESIAS-02-1980%E2%88%8FXDR-INA-scaled.jpg")
+artist44.photo.attach(io: file, filename: "leonard")
+
+user47 = User.create(email: 'Jimihendrix@yahoo.fr', password: "123456")
+artist47 = Artist.new(
+  first_name: 'Jimi',
+  last_name: 'Hendrix',
+  date_of_birth: '1942-11-27',
+  email: 'Jimihendrix@yahoo.fr',
+  description: "James Marshall Hendrix is ​​an American guitarist, songwriter and singer, founder of the British-American band The Jimi Hendrix...",
+  category: compositeur,
+  user: user47
+)
+artist47.save!
+
+file = URI.open("https://www.babelio.com/users/AVT_Jimi-Hendrix_9001.jpg")
+artist47.photo.attach(io: file, filename: "leonard")
+
+user48 = User.create(email: 'Yōkoshimomura@yahoo.fr', password: "123456")
+artist48 = Artist.new(
+  first_name: 'Yōko',
+  last_name: 'Shimomura',
+  date_of_birth: '1967-10-19',
+  email: 'Yōkoshimomura@yahoo.fr',
+  description: "Shimomura is the music of adventure, very rhythmic and very catchy. I know that many love his work on kingdom hearts, but I much prefer his compositions on PARASITE EVE and LEGEND OF MANA.",
+  category: compositeur,
+  user: user48
+)
+artist48.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/56/Yoko_Shimomura.jpg")
+artist48.photo.attach(io: file, filename: "leonard")
+
+user49 = User.create(email: 'Khaled@mail.com', password: "123456")
+artist49 = Artist.new(
+  first_name: 'Khaled',
+  last_name: 'Hadj',
+  date_of_birth: '1960-02-29',
+  email: 'Khaled@mail.com',
+  description: "Khaled Hadj Ibrahim, known by the stage name Cheb Khaled then just Khaled, born February 29, 1960 in Oran, Algeria, is an Algerian singer, composer and multi-instrumentalist of Algerian raï",
+  category: compositeur,
+  user: user49
+)
+artist49.save!
+
+file = URI.open("https://voi.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F06.2F30.2F07034fe3-a598-4dc7-9d2a-b2c40e2b37c1.2Ejpeg/2048x1536/quality/80/khaled.jpeg")
+artist49.photo.attach(io: file, filename: "leonard")
+
+user50 = User.create(email: 'Joehisaishi@orange.fr', password: "123456")
+artist50 = Artist.new(
+  first_name: 'Joe ',
+  last_name: 'Hisaishi',
+  date_of_birth: '1950-01-06',
+  email: 'Joehisaishi@orange.fr',
+  description: "Immense composer known for his work on the films of hayao miyazaki and takeshi kitano.",
+  category: compositeur,
+  user: user50
+)
+artist50.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Joe_Hisaishi_2011.jpg/260px-Joe_Hisaishi_2011.jpg")
+artist50.photo.attach(io: file, filename: "leonard")
+
+
+photographe = Category.create(name: "Photographe")
+
+user51 = User.create(email: 'RobertCapa@yahoo.fr', password: "123456")
+artist51 = Artist.new(
+  first_name: 'Robert',
+  last_name: 'Capa',
+  date_of_birth: '1913-10-22',
+  email: 'RobertCapa@yahoo.fr',
+  description: "Robert Capa, pseudonym of Endre Ernő Friedmann, born October 22, 1913 in Budapest and died May 25, 1954 in Indochina, was a Hungarian photographer and war correspondent.",
+  category: photographe,
+  user: user51
+)
+artist51.save!
+
+file = URI.open("https://images.radio-canada.ca/v1/ici-premiere/16x9/robert-capa-photographie-guerre-espagne-magnum.jpg")
+artist51.photo.attach(io: file, filename: "leonard")
+
+user52 = User.create(email: 'StevemcCurry@msn.fr', password: "123456")
+artist52 = Artist.new(
+  first_name: 'Steve',
+  last_name: 'McCurry',
+  date_of_birth: '1950-02-24',
+  email: 'StevemcCurry@msn.fr',
+  description: "bon mec sympa",
+  category: photographe,
+  user: user52
+)
+artist52.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Steve_McCurry_%285824371040%29_%28cropped%29.jpg/800px-Steve_McCurry_%285824371040%29_%28cropped%29.jpg")
+artist52.photo.attach(io: file, filename: "leonard")
+
+user53 = User.create(email: 'DorotheaLange@aol.com', password: "123456")
+artist53 = Artist.new(
+  first_name: 'Dorothea',
+  last_name: 'Lange',
+  date_of_birth: '1965-10-11',
+  email: 'DorotheaLange@aol.com',
+  description: "Dorothea Lange, born Dorothea Nutzhorn, May 26, 1895 in Hoboken and died October 11, 1965 in San Francisco, was an American photographer whose best-known works were made during the Great Depression, as part of a mission entrusted by the Farm Security Administration.",
+  category: photographe,
+  user: user53
+)
+artist53.save!
+
+file = URI.open("https://jeudepaume.org/wp-content/uploads/2021/04/2018_DorotheaLange-01.jpg")
+artist53.photo.attach(io: file, filename: "leonard")
+
+user54 = User.create(email: 'Brassaï@yahoo.fr', password: "123456")
+artist54 = Artist.new(
+  first_name: 'Brassaï',
+  last_name: 'Halász',
+  date_of_birth: '1899-09-09',
+  email: 'Brassaï@yahoo.fr',
+  description: "Brassaï, pseudonym of Gyula Halász, born September 9, 1899 in Brașov and died July 8, 1984 in Beaulieu-sur-Mer, is a Hungarian photographer, naturalized French, also designer, painter, sculptor, medallist and writer",
+  category: photographe,
+  user: user54
+)
+artist54.save!
+
+file = URI.open("https://delpireandco.com/wp-content/uploads/2021/07/Brassai-1955-delpire-scaled.jpg")
+artist54.photo.attach(io: file, filename: "leonard")
+
+user55 = User.create(email: 'Annegeddes@aol.com', password: "123456")
+artist55 = Artist.new(
+  first_name: 'Anne',
+  last_name: 'Geddes',
+  date_of_birth: '1956-09-15',
+  email: 'Annegeddes@aol.com',
+  description: "Anne Geddes (born September 15, 1956 in Queensland, Australia) is an Australian photographer. She specializes in newborn photography.",
+  category: photographe,
+  user: user55
+)
+artist55.save!
+
+file = URI.open("http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQRh7aUMY3TvoW_KoPseVkL9RZ1BzOK-Y25zrl4mnW0TMATH3i9ShysjZOQi8nnc-6l")
+artist55.photo.attach(io: file, filename: "leonard")
+
+user56 = User.create(email: 'Maryellenmark@gmail.fr', password: "123456")
+artist56 = Artist.new(
+  first_name: 'Mary Ellen',
+  last_name: 'Mark',
+  date_of_birth: '1940-03-20',
+  email: 'Maryellenmark@gmail.fr',
+  description: "Mary Ellen Mark, born March 20, 1940 in Philadelphia and died May 25, 2015 in New York, is an American photographer She is best known for her reports across the United States, in which portraits occupy a prominent place",
+  category: photographe,
+  user: user56
+)
+artist56.save!
+
+file = URI.open("https://phototrend.fr/wp-content/uploads/2017/10/maryellen_mark.jpg")
+artist56.photo.attach(io: file, filename: "leonard")
+
+user57 = User.create(email: 'Manray@yahoo.fr', password: "123456")
+artist57 = Artist.new(
+  first_name: 'Man',
+  last_name: 'Ray',
+  date_of_birth: '1890-07-18',
+  email: 'Manray@yahoo.fr',
+  description: "Man ray  est un peintre, photographe et réalisateur américain naturalisé français",
+  category: photographe,
+  user: user57
+)
+artist57.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a1/Man_Ray_portrait.jpg")
+artist57.photo.attach(io: file, filename: "leonard")
+
+user58 = User.create(email: 'MalcolmBrowne@msn.fr', password: "123456")
+artist58 = Artist.new(
+  first_name: 'Malcolm',
+  last_name: 'Browne',
+  date_of_birth: '1931-04-17',
+  email: 'MalcolmBrowne@msn.fr',
+  description: "Malcolm Browne Wilde, born April 17, 1931 in New York and died August 27, 2012 in Hanover, New Hampshire, was an American journalist and photographer.",
+  category: photographe,
+  user: user58
+)
+artist58.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/53/Malcolm_Browne_1964.jpg")
+artist58.photo.attach(io: file, filename: "leonard")
+
+user59 = User.create(email: 'Nilüferdemir@yahoo.fr', password: "123456")
+artist59 = Artist.new(
+  first_name: 'Nilüfer',
+  last_name: 'Demir',
+  date_of_birth: '1986-12-11',
+  email: 'Nilüferdemir@yahoo.fr',
+  description: "Nilüfer Dumir, is a Turkish photographer made known because of her photograph of the young Alan Kurdi, a refugee who died on a beach in Bodrum, on the night of September 2, 2015",
+  category: photographe,
+  user: user59
+)
+artist59.save!
+
+file = URI.open("https://images.thedailystar.net/sites/default/files/feature/images/nilufer-web.jpg")
+artist59.photo.attach(io: file, filename: "leonard")
+
+user60 = User.create(email: 'Lauraperson@yahoo.fr', password: "123456")
+artist60 = Artist.new(
+  first_name: 'Laura',
+  last_name: 'Person',
+  date_of_birth: '1997-12-02',
+  email: 'Lauraperson@yahoo.fr',
+  description: "Laura Person is a young photographer in the making. His incredible project on gentrification, of the population within the golden drop district, assures him of a future place within the elite of international photography.",
+  category: photographe,
+  user: user60
+)
+artist60.save!
+
+file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
+artist60.photo.attach(io: file, filename: "leonard")
 
 architecte = Category.create(name: "Architecte")
 
