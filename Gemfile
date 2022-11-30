@@ -76,4 +76,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem "devise"
+  gem 'rest-client', '~> 1.8'
 end
