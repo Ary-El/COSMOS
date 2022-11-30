@@ -1108,360 +1108,462 @@ file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdqePrfLK
 artist70.photo.attach(io: file, filename: "leonard")
 
 
-# couturier = Category.create(name: "Couturier")
+couturier = Category.create(name: "Couturier")
 
-# user71 = User.create(email: 'Karllagerfeld@gmail.fr', password: "123456")
-# artist71 = Artist.new(
-#   first_name: 'Karl',
-#   last_name: 'Lagerfeld',
-#   date_of_birth: '1933-09-10',
-#   description: "Karl Lagerfeld is a great German couturier and stylist, also a photographer, draftsman, designer, director and editor.",
-#   category: couturier,
-#   user: user71
-# )
-# artist60.save!
+user71 = User.create(email: 'Karllagerfeld@gmail.fr', password: "123456")
+artist71 = Artist.new(
+  first_name: 'Karl',
+  last_name: 'Lagerfeld',
+  date_of_birth: '1933-09-10',
+  email: 'Karllagerfeld@gmail.fr',
+  description: "Karl Lagerfeld is a great German couturier and stylist, also a photographer, draftsman, designer, director and editor.",
+  category: couturier,
+  user: user71
+)
+artist71.save!
 
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
-
-
-# user72 = User.create(email: 'Cocochanel@yahoo.fr', password: "123456")
-# artist72 = Artist.new(
-#   first_name: 'Coco',
-#   last_name: 'Chanel',
-#   date_of_birth: '1971',
-#   description: "Coco Chanel is a French fashion designer, milliner and seamstress.",
-#   category: couturier,
-#   user: user72
-# )
-# artist60.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
+file = URI.open("https://www.grazia.fr/wp-content/uploads/grazia/2019/02/karl-lagerfeld.jpg")
+artist71.photo.attach(io: file, filename: "leonard")
 
 
-# user73 = User.create(email: '', password: "123456")
-# artist73 = Artist.new(
-#   first_name: '',
-#   last_name: '',
-#   date_of_birth: '',
-#   description: "",
-#   category: couturier,
-#   user: user73
-# )
-# artist60.save!
+user72 = User.create(email: 'Cocochanel@yahoo.fr', password: "123456")
+artist72 = Artist.new(
+  first_name: 'Coco',
+  last_name: 'Chanel',
+  date_of_birth: '1971',
+  email: 'Cocochanel@yahoo.fr',
+  description: "Coco Chanel is a French fashion designer, milliner and seamstress.",
+  category: couturier,
+  user: user72
+)
+artist72.save!
 
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
-
-
-# user74 = User.create(email: 'Christiandior@laposte.fr', password: "123456")
-# artist74 = Artist.new(
-#   first_name: 'Christian',
-#   last_name: 'Dior',
-#   date_of_birth: '1905-01-21',
-#   description: "Christian Dior st un grand couturier français. En 1947, il donne son nom à la maison de haute couture homonyme, financée par Marcel Boussac",
-#   category: couturier,
-#   user: user74
-# )
-# artist60.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
+file = URI.open("https://histoireparlesfemmes.files.wordpress.com/2012/12/coco-chanel.jpg")
+artist72.photo.attach(io: file, filename: "leonard")
 
 
-# user75 = User.create(email: 'Kenzōtakada@aol.com', password: "123456")
-# artist75 = Artist.new(
-#   first_name: 'Kenzō',
-#   last_name: 'Takada',
-#   date_of_birth: '1939-02-27',
-#   description: "Kenzō Takada is a Japanese designer who made a career in France. He is the founder of the clothing, accessories and perfume brand Kenzo",
-#   category: couturier,
-#   user: user75
-# )
-# artist60.save!
+user73 = User.create(email: 'Hubertgivenchy@yahoo.fr', password: "123456")
+artist73 = Artist.new(
+  first_name: 'Hubert',
+  last_name: 'givenchy',
+  date_of_birth: '1927-02-20',
+  description: "Hubert Taffin de Givenchy est un grand couturier français, créateur de la marque de haute couture Givenchy.",
+  category: couturier,
+  user: user73
+)
+artist73.save!
 
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
-
-
-# user76 = User.create(email: 'Gianniversace@gmail.com', password: "123456")
-# artist76 = Artist.new(
-#   first_name: 'Gianni',
-#   last_name: 'Versace',
-#   date_of_birth: '1946-12-02',
-#   description: "Gianni Versace is an Italian designer and the founder of the Versace brand, internationally renowned for its clothing and cosmetics creations",
-#   category: couturier,
-#   user: user76
-# )
-# artist60.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
+file = URI.open("https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/mode/les-news-mode/hommage-hubert-de-givenchy-gentleman-createur-3648890/86338115-2-fre-FR/Hommage-Hubert-de-Givenchy-gentleman-createur.jpg")
+artist73.photo.attach(io: file, filename: "leonard")
 
 
-# user77 = User.create(email: 'Pierrebalmain@aol.com', password: "123456")
-# artist77 = Artist.new(
-#   first_name: 'Pierre',
-#   last_name: 'Balmain',
-#   date_of_birth: '1914-05-18',
-#   description: "Pierre Balmain is a French fashion designer who created his own fashion house in 1945.",
-#   category: couturier,
-#   user: user77
-# )
-# artist60.save!
+user74 = User.create(email: 'Christiandior@laposte.fr', password: "123456")
+artist74 = Artist.new(
+  first_name: 'Christian',
+  last_name: 'Dior',
+  date_of_birth: '1905-01-21',
+  email: 'Christiandior@laposte.fr',
+  description: "Christian Dior st un grand couturier français. En 1947, il donne son nom à la maison de haute couture homonyme, financée par Marcel Boussac",
+  category: couturier,
+  user: user74
+)
+artist74.save!
 
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
-
-
-# user78 = User.create(email: 'Jp@yahoo.fr', password: "123456")
-# artist78 = Artist.new(
-#   first_name: 'Jean-Paul',
-#   last_name: 'Gaultier',
-#   date_of_birth: '1952-04-24',
-#   description: "Jean-Paul Gaulthier is a stylist and great French couturier, founder of the Jean Paul Gaultier company, as well as a perfume designer.",
-#   category: couturier,
-#   user: user78
-# )
-# artist60.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
+file = URI.open("https://www.gala.fr/imgre/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2018.2F11.2F15.2F3208172d-fdca-4b7b-81aa-57251e302d36.2Ejpeg/920x518/quality/80/christian-dior.jpg")
+artist74.photo.attach(io: file, filename: "leonard")
 
 
-# user79 = User.create(email: 'Maryquant@msn.fr', password: "123456")
-# artist79 = Artist.new(
-#   first_name: 'Mary',
-#   last_name: 'Quant',
-#   date_of_birth: '1934-02-11',
-#   description: "Mary Quant is one of the creators who gave birth to the miniskirt.",
-#   category: couturier,
-#   user: user79
-# )
-# artist60.save!
+user75 = User.create(email: 'Kenzōtakada@aol.com', password: "123456")
+artist75 = Artist.new(
+  first_name: 'Kenzō',
+  last_name: 'Takada',
+  date_of_birth: '1939-02-27',
+  email: 'Kenzōtakada@aol.com',
+  description: "Kenzō Takada is a Japanese designer who made a career in France. He is the founder of the clothing, accessories and perfume brand Kenzo",
+  category: couturier,
+  user: user75
+)
+artist75.save!
 
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
-
-
-# user80 = User.create(email: 'delarenta@laposte.fr', password: "123456")
-# artist80 = Artist.new(
-#   first_name: 'Óscar',
-#   last_name: 'de la Renta',
-#   date_of_birth: '1932-07-22',
-#   description: "Oscar de la Renta is a Dominican-American fashion designer known for dressing the mostly American high society.",
-#   category: couturier,
-#   user: user80
-# )
-# artist60.save!
-
-# file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
-# artist60.photo.attach(io: file, filename: "leonard")
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/KenzoTakada2.jpg/170px-KenzoTakada2.jpg")
+artist75.photo.attach(io: file, filename: "leonard")
 
 
+user76 = User.create(email: 'Gianniversace@gmail.com', password: "123456")
+artist76 = Artist.new(
+  first_name: 'Gianni',
+  last_name: 'Versace',
+  date_of_birth: '1946-12-02',
+  email: 'Gianniversace@gmail.com',
+  description: "Gianni Versace is an Italian designer and the founder of the Versace brand, internationally renowned for its clothing and cosmetics creations",
+  category: couturier,
+  user: user76
+)
+artist76.save!
 
-# paysagiste = Category.create(name: "Paysagiste")
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mario_Biondi_%28R%29_interviews_Gianni_Versace_%28cropped%29.jpg/260px-Mario_Biondi_%28R%29_interviews_Gianni_Versace_%28cropped%29.jpg")
+artist76.photo.attach(io: file, filename: "leonard")
 
-# user81 = User.create(email: 'Louisbenech@yahoo.fr', password: "123456")
-# artist81 = Artist.new(
-#   first_name: 'Louis',
-#   last_name: 'Benech',
-#   date_of_birth: '1957-02-16',
-#   description: "Louis Benech acquired an international reputation with the renovation of the Tuileries Gardens in 1990",
-#   category: paysagiste,
-#   user: user81
-# )
 
-# user82 = User.create(email: 'Andrélenôtre@yahoo.fr', password: "123456")
-# artist82 = Artist.new(
-#   first_name: 'André',
-#   last_name: 'Le Nôtre',
-#   date_of_birth: '1613-03-12',
-#   description: "André le Notre was gardener to King Louis XIV from 1645 to 1700 and had the particular task of designing the layout of the park and gardens of the Palace of Versailles, but also that of Vaux-le-Vicomte, the Château du Fayel and Chantilly.",
-#   category: paysagiste,
-#   user: user82
-# )
+user77 = User.create(email: 'Pierrebalmain@aol.com', password: "123456")
+artist77 = Artist.new(
+  first_name: 'Pierre',
+  last_name: 'Balmain',
+  date_of_birth: '1914-05-18',
+  email: 'Pierrebalmain@aol.com',
+  description: "Pierre Balmain is a French fashion designer who created his own fashion house in 1945.",
+  category: couturier,
+  user: user77
+)
+artist77.save!
 
-# user83 = User.create(email: 'Jacquelineosty@gmail.fr', password: "123456")
-# artist83 = Artist.new(
-#   first_name: 'Jacqueline',
-#   last_name: 'Osty',
-#   date_of_birth: '1954-02-14',
-#   description: "Jacqueline Osty Trained at the National School of Landscape in Versailles, she founded her own agency in 1985 and has since designed many parks and gardens.",
-#   category: paysagiste,
-#   user: user83
-# )
+file = URI.open("https://allianceinternationale.org/wp-content/uploads/2015/03/pierre_balmain_2-e1288259055142_463.jpg")
+artist77.photo.attach(io: file, filename: "leonard")
 
-# user84 = User.create(email: 'Claudecormier@orange.fr', password: "123456")
-# artist84 = Artist.new(
-#   first_name: 'Claude',
-#   last_name: 'Cormier',
-#   date_of_birth: '1960-06-22',
-#   description: "Claude Cormier is one of the most influential members of his profession in Canada. Many of his creations can be found in Montreal and Toronto.",
-#   category: paysagiste,
-#   user: user84
-# )
 
-# user85 = User.create(email: 'Micheldesvigne@sfr.fr', password: "123456")
-# artist85 = Artist.new(
-#   first_name: 'Michel',
-#   last_name: 'Desvigne',
-#   date_of_birth: '1958-01-24',
-#   description: "Michel Desvignes has carried out numerous arrangements of gardens and public spaces, and transposed park systems",
-#   category: paysagiste,
-#   user: user85
-# )
+user78 = User.create(email: 'Jp@yahoo.fr', password: "123456")
+artist78 = Artist.new(
+  first_name: 'Jean-Paul',
+  last_name: 'Gaultier',
+  date_of_birth: '1952-04-24',
+  description: "Jean-Paul Gaulthier is a stylist and great French couturier, founder of the Jean Paul Gaultier company, as well as a perfume designer.",
+  category: couturier,
+  user: user78
+)
+artist78.save!
 
-# user86 = User.create(email: 'Michelcorajoud@aol.com', password: "123456")
-# artist86 = Artist.new(
-#   first_name: 'Michel',
-#   last_name: 'Corajoud',
-#   date_of_birth: '1937-07-14',
-#   description: "Michel Corajoud is a French landscape designer",
-#   category: paysagiste,
-#   user: user86
-# )
+file = URI.open("https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/people/la-vie-des-people/jean-paul-gaultier-engage-contre-le-sida-il-devoile-un-rare-portrait-de-son-ex-compagnon-3900604/94320767-1-fre-FR/Jean-Paul-Gaultier-engage-contre-le-sida-il-devoile-un-rare-portrait-de-son-ex-compagnon.jpg")
+artist78.photo.attach(io: file, filename: "leonard")
 
-# user87 = User.create(email: 'Isabelle Auricoste@sfr.fr', password: "123456")
-# artist87 = Artist.new(
-#   first_name: 'Isabelle',
-#   last_name: 'Auricoste',
-#   date_of_birth: '1941-02-12',
-#   description: "Isabelle Auricoste is a landscape architect, writer and teacher",
-#   category: paysagiste,
-#   user: user87
-# )
 
-# user88 = User.create(email: '', password: "123456")
-# artist88 = Artist.new(
-#   first_name: '',
-#   last_name: '',
-#   date_of_birth: '',
-#   description: "",
-#   category: paysagiste,
-#   user: user88
-# )
+user79 = User.create(email: 'Maryquant@msn.fr', password: "123456")
+artist79 = Artist.new(
+  first_name: 'Mary',
+  last_name: 'Quant',
+  date_of_birth: '1934-02-11',
+  email: 'Maryquant@msn.fr',
+  description: "Mary Quant is one of the creators who gave birth to the miniskirt.",
+  category: couturier,
+  user: user79
+)
+artist79.save!
 
-# user89 = User.create(email: 'Alainfaragou@orange.net', password: "123456")
-# artist89 = Artist.new(
-#   first_name: 'Alain',
-#   last_name: 'Faragou',
-#   date_of_birth: '1952-07-24',
-#   description: "Alain Faragou is a French landscape designer, graduate of ESAJP and member of the French Landscape Federation, the International Federation of Landscape Architects and ICOMOS",
-#   category: paysagiste,
-#   user: user89
-# )
+file = URI.open("https://www.brunette-coiffure.com/media/Mary-Quant-%C3%A0-Londres/medium/1-mary-quant-portant-l-un-de-ses-fameux-cols-claudine-getty-images.jpg")
+artist79.photo.attach(io: file, filename: "leonard")
 
-# user90 = User.create(email: 'Jacquessgard@bouygue.fr', password: "123456")
-# artist90 = Artist.new(
-#   first_name: 'Jacques',
-#   last_name: 'Sgard',
-#   date_of_birth: '1929-03-12',
-#   description: "Jacques Sgard is a French landscape architect, urban planner and teacher. He specializes in urban and peri-urban parks",
-#   category: paysagiste,
-#   user: user90
-# )
 
-# tatoueur = Category.create(name: "Tatoueur")
+user80 = User.create(email: 'delarenta@laposte.fr', password: "123456")
+artist80 = Artist.new(
+  first_name: 'Óscar',
+  last_name: 'de la Renta',
+  date_of_birth: '1932-07-22',
+  description: "Oscar de la Renta is a Dominican-American fashion designer known for dressing the mostly American high society.",
+  category: couturier,
+  user: user80
+)
+artist80.save!
 
-# user91 = User.create(email: 'Tin-Tin@yahoo.fr', password: "123456")
-# artist91 = Artist.new(
-#   first_name: 'Tin-Tin',
-#   last_name: '',
-#   date_of_birth: '1965-07-19',
-#   description: "
-#   Tin-Tin is a French tattoo artist, born August 19, 1965 in Nantes. He works in Paris in his store in Pigalle where he makes tattoos in realistic and Japanese styles.",
-#   category: tatoueur,
-#   user: user91
-# )
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/03/Oscar_de_la_Renta_by_foto_di_matti.jpg")
+artist80.photo.attach(io: file, filename: "leonard")
 
-# user92 = User.create(email: 'Kimsaigh@gamail.fr', password: "123456")
-# artist92 = Artist.new(
-#   first_name: 'Kim',
-#   last_name: 'Saigh',
-#   date_of_birth: '1973-06-25',
-#   description: "Kim Saigh is an American tattoo artist and television personality. She is best known for her work as a tattoo artist on the TLC reality show LA Ink.",
-#   category: tatoueur,
-#   user: user92
-# )
 
-# user93 = User.create(email: 'Mistercartoon@sfr.fr', password: "123456")
-# artist93 = Artist.new(
-#   first_name: 'Mister',
-#   last_name: 'Cartoon',
-#   date_of_birth: '1970-11-02',
-#   description: "Mark Machado, better known as Mr. Cartoon or more commonly simply Cartoon, is an American tattoo and graffiti artist based in Los Angeles, California.",
-#   category: tatoueur,
-#   user: user93
-# )
 
-# user94 = User.create(email: 'Markmahoney@yahoo.fr', password: "123456")
-# artist94 = Artist.new(
-#   first_name: 'Mark',
-#   last_name: 'Mahoney',
-#   date_of_birth: '1977-06-29',
-#   description: "Mark Mahoney is an American tattoo artist considered the founding father of black and gray art with a single needle",
-#   category: tatoueur,
-#   user: user94
-# )
+paysagiste = Category.create(name: "Paysagiste")
 
-# user95 = User.create(email: 'Maudstevenswagner@msn.fr', password: "123456")
-# artist95 = Artist.new(
-#   first_name: 'Maud Stevens ',
-#   last_name: 'Wagner',
-#   date_of_birth: '1961-01-30',
-#   description: "Maud Stevens Wagner is an American circus artist and tattoo artist, considered to be the first female tattoo artist in the United States.",
-#   category: tatoueur,
-#   user: user95
-# )
+user81 = User.create(email: 'Louisbenech@yahoo.fr', password: "123456")
+artist81 = Artist.new(
+  first_name: 'Louis',
+  last_name: 'Benech',
+  date_of_birth: '1957-02-16',
+  email: 'Louisbenech@yahoo.fr',
+  description: "Louis Benech acquired an international reputation with the renovation of the Tuileries Gardens in 1990",
+  category: paysagiste,
+  user: user81
+)
+artist81.save!
 
-# user96 = User.create(email: 'Lyletuttle@orange.fr', password: "123456")
-# artist96 = Artist.new(
-#   first_name: 'Lyle',
-#   last_name: 'Tuttle',
-#   date_of_birth: '1949-08-14',
-#   description: "Lyle Gilbert Tuttle was an American tattoo artist and historian of the medium, who had been tattooing since 1949. He tattooed Janis Joplin, Cher, Jo Baker, Paul Stanley, Jeff Scranton, and many other American musicians, actors, and celebrities.",
-#   category: tatoueur,
-#   user: user96
-# )
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/03/Oscar_de_la_Renta_by_foto_di_matti.jpg")
+artist81.photo.attach(io: file, filename: "leonard")
 
-# user97 = User.create(email: 'Bangbang@gmail.fr', password: "123456")
-# artist97 = Artist.new(
-#   first_name: 'Bang Bang',
-#   last_name: '',
-#   date_of_birth: '1985-11-28',
-#   description: "McCurdy is a famous American tattoo artist based in New York. He is known for his work with Rihanna, Cara Delevingne, Katy Perry, Justin Bieber, LeBron James, Adele, Miley Cyrus, Selena Gomez and Kylie Jenner.",
-#   category: tatoueur,
-#   user: user97
-# )
+user82 = User.create(email: 'Andrélenôtre@yahoo.fr', password: "123456")
+artist82 = Artist.new(
+  first_name: 'André',
+  last_name: 'Le Nôtre',
+  date_of_birth: '1613-03-12',
+  email: 'Andrélenôtre@yahoo.fr',
+  description: "André le Notre was gardener to King Louis XIV from 1645 to 1700 and had the particular task of designing the layout of the park and gardens of the Palace of Versailles, but also that of Vaux-le-Vicomte, the Château du Fayel and Chantilly.",
+  category: paysagiste,
+  user: user82
+)
+artist82.save!
 
-# user98 = User.create(email: 'DonEdHardy@msn.fr', password: "123456")
-# artist98 = Artist.new(
-#   first_name: 'Don',
-#   last_name: 'Ed Hardy',
-#   date_of_birth: '1945-01-°1',
-#   description: "Don Ed Hardy, born January 5, 1945 in Costa Mesa, is an American artist. He is known for his tattoo work and the Ed Hardy brand based on it.",
-#   category: tatoueur,
-#   user: user98
-# )
+file = URI.open("https://proprietes.lefigaro.fr/images/PDF/CMS/articles/11052611.jpg")
+artist82.photo.attach(io: file, filename: "leonard")
 
-# user99 = User.create(email: 'Stéphanechaudesaigues@gmail.fr', password: "123456")
-# artist99 = Artist.new(
-#   first_name: 'Stéphane',
-#   last_name: 'Chaudesaigues',
-#   date_of_birth: '1968-02-23',
-#   description: "Stéphane Chaudesaigues works in Paris in his studio. He is the president of the association Tatouage & Partage",
-#   category: tatoueur,
-#   user: user99
-# )
+user83 = User.create(email: 'Jacquelineosty@gmail.fr', password: "123456")
+artist83 = Artist.new(
+  first_name: 'Jacqueline',
+  last_name: 'Osty',
+  date_of_birth: '1954-02-14',
+  email: 'Jacquelineosty@gmail.fr',
+  description: "Jacqueline Osty Trained at the National School of Landscape in Versailles, she founded her own agency in 1985 and has since designed many parks and gardens.",
+  category: paysagiste,
+  user: user83
+)
+artist83.save!
 
-# user100 = User.create(email: 'Scottcampbell@orange.fr', password: "123456")
-# artist100 = Artist.new(
-#   first_name: 'Scott',
-#   last_name: 'Campbell',
-#   date_of_birth: '1977-05-13',
-#   description: "Scott Campbell is an American artist and tattoo artist based in New York whose clients include Howard Stern, Sting, Robert Downey Jr., Courtney Love, Orlando Bloom, Josh Hartnett and Marc Jacobs",
-#   category: tatoueur,
-#   user: user100
-# )
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/03/Oscar_de_la_Renta_by_foto_di_matti.jpg")
+artist83.photo.attach(io: file, filename: "leonard")
+
+user84 = User.create(email: 'Claudecormier@orange.fr', password: "123456")
+artist84 = Artist.new(
+  first_name: 'Claude',
+  last_name: 'Cormier',
+  date_of_birth: '1960-06-22',
+  email: 'Claudecormier@orange.fr',
+  description: "Claude Cormier is one of the most influential members of his profession in Canada. Many of his creations can be found in Montreal and Toronto.",
+  category: paysagiste,
+  user: user84
+)
+artist84.save!
+
+file = URI.open("https://www.aapc-csla.ca/sites/csla-aapc.ca/files/images/fellows/Claude.jpg")
+artist84.photo.attach(io: file, filename: "leonard")
+
+user85 = User.create(email: 'Micheldesvigne@sfr.fr', password: "123456")
+artist85 = Artist.new(
+  first_name: 'Michel',
+  last_name: 'Desvigne',
+  date_of_birth: '1958-01-24',
+  email: 'Micheldesvigne@sfr.fr',
+  description: "Michel Desvignes has carried out numerous arrangements of gardens and public spaces, and transposed park systems",
+  category: paysagiste,
+  user: user85
+)
+artist85.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/2/2c/Michel_Desvigne.jpg")
+artist85.photo.attach(io: file, filename: "leonard")
+
+user86 = User.create(email: 'Michelcorajoud@aol.com', password: "123456")
+artist86 = Artist.new(
+  first_name: 'Michel',
+  last_name: 'Corajoud',
+  date_of_birth: '1937-07-14',
+  email: 'Michelcorajoud@aol.com',
+  description: "Michel Corajoud is a French landscape designer",
+  category: paysagiste,
+  user: user86
+)
+artist86.save!
+
+file = URI.open("https://www.babelio.com/users/AVT_Michel-Corajoud_4671.jpg")
+artist86.photo.attach(io: file, filename: "leonard")
+
+user87 = User.create(email: 'Isabelle Auricoste@sfr.fr', password: "123456")
+artist87 = Artist.new(
+  first_name: 'Isabelle',
+  last_name: 'Auricoste',
+  date_of_birth: '1941-02-12',
+  email: 'Isabelle Auricoste@sfr.fr',
+  description: "Isabelle Auricoste is a landscape architect, writer and teacher",
+  category: paysagiste,
+  user: user87
+)
+artist87.save!
+
+file = URI.open("https://www.editions-ixe.fr/storage/2018/07/auricoste.jpg")
+artist87.photo.attach(io: file, filename: "leonard")
+
+user88 = User.create(email: 'Joseph@yahoo.fr', password: "123456")
+artist88 = Artist.new(
+  first_name: 'Joseph',
+  last_name: 'Jacques Ramée',
+  date_of_birth: '1842-05-18',
+  email: 'Joseph@yahoo.fr',
+  description: "Joseph-Jacques Ramée est un architecte, décorateur et paysagiste néoclassique français.",
+  category: paysagiste,
+  user: user88
+)
+artist80.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/03/Oscar_de_la_Renta_by_foto_di_matti.jpg")
+artist80.photo.attach(io: file, filename: "leonard")
+
+user89 = User.create(email: 'Alainfaragou@orange.net', password: "123456")
+artist89 = Artist.new(
+  first_name: 'Alain',
+  last_name: 'Faragou',
+  date_of_birth: '1952-07-24',
+  email: 'Alainfaragou@orange.net',
+  description: "Alain Faragou is a French landscape designer, graduate of ESAJP and member of the French Landscape Federation, the International Federation of Landscape Architects and ICOMOS",
+  category: paysagiste,
+  user: user89
+)
+artist89.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/6/60/Alain_Faragou.jpg")
+artist89.photo.attach(io: file, filename: "leonard")
+
+user90 = User.create(email: 'Jacquessgard@bouygue.fr', password: "123456")
+artist90 = Artist.new(
+  first_name: 'Jacques',
+  last_name: 'Sgard',
+  date_of_birth: '1929-03-12',
+  email: 'Jacquessgard@bouygue.fr',
+  description: "Jacques Sgard is a French landscape architect, urban planner and teacher. He specializes in urban and peri-urban parks",
+  category: paysagiste,
+  user: user90
+)
+artist90.save!
+
+file = URI.open("https://hdsmag.hauts-de-seine.fr/wp-content/uploads/2006SGO016192.jpg")
+artist90.photo.attach(io: file, filename: "leonard")
+
+tatoueur = Category.create(name: "Tatoueur")
+
+user91 = User.create(email: 'Tin-Tin@yahoo.fr', password: "123456")
+artist91 = Artist.new(
+  first_name: 'Tin-Tin',
+  last_name: '',
+  date_of_birth: '1965-07-19',
+  email: 'Tin-Tin@yahoo.fr',
+  description: "Tin-Tin is a French tattoo artist, born August 19, 1965 in Nantes. He works in Paris in his store in Pigalle where he makes tattoos in realistic and Japanese styles.",
+  category: tatoueur,
+  user: user91
+)
+artist91.save!
+
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVeJBddYMF0AfJtnimhetl5gX6Dlf6PbAUwx3Yei552w&s")
+artist91.photo.attach(io: file, filename: "leonard")
+
+user92 = User.create(email: 'Kimsaigh@gamail.fr', password: "123456")
+artist92 = Artist.new(
+  first_name: 'Kim',
+  last_name: 'Saigh',
+  date_of_birth: '1973-06-25',
+  email: 'Kimsaigh@gamail.fr',
+  description: "Kim Saigh is an American tattoo artist and television personality. She is best known for her work as a tattoo artist on the TLC reality show LA Ink.",
+  category: tatoueur,
+  user: user92
+)
+artist92.save!
+
+file = URI.open("http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQWzioHduD55enZ_nrbz8uqGbjNnIVAWdumJgD5rGBaXCwy7Ut7SvQ7Ga6XekBm6cUF")
+artist92.photo.attach(io: file, filename: "leonard")
+
+user93 = User.create(email: 'Mistercartoon@sfr.fr', password: "123456")
+artist93 = Artist.new(
+  first_name: 'Mister',
+  last_name: 'Cartoon',
+  date_of_birth: '1970-11-02',
+  email: 'Mistercartoon@sfr.fr',
+  description: "Mark Machado, better known as Mr. Cartoon or more commonly simply Cartoon, is an American tattoo and graffiti artist based in Los Angeles, California.",
+  category: tatoueur,
+  user: user93
+)
+artist93.save!
+
+file = URI.open("http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcToSNJJqOdiqxVsVQwaEf1-0B920WaJUgV8d-2Fvzu6P0pcRNM7SMNcs-PpTkMyb5Cg")
+artist93.photo.attach(io: file, filename: "leonard")
+
+user94 = User.create(email: 'Markmahoney@yahoo.fr', password: "123456")
+artist94 = Artist.new(
+  first_name: 'Mark',
+  last_name: 'Mahoney',
+  date_of_birth: '1977-06-29',
+  email: 'Markmahoney@yahoo.fr',
+  description: "Mark Mahoney is an American tattoo artist considered the founding father of black and gray art with a single needle",
+  category: tatoueur,
+  user: user94
+)
+artist94.save!
+
+file = URI.open("https://m.media-amazon.com/images/M/MV5BODY2NGY4N2YtZjc5Ny00YjlmLTgzZDAtODFmYmUxZjgwMjQyXkEyXkFqcGdeQXVyMzQ3Nzk5MTU@._V1_.jpg")
+artist94.photo.attach(io: file, filename: "leonard")
+
+user95 = User.create(email: 'Maudstevenswagner@msn.fr', password: "123456")
+artist95 = Artist.new(
+  first_name: 'Maud Stevens ',
+  last_name: 'Wagner',
+  date_of_birth: '1961-01-30',
+  email: 'Maudstevenswagner@msn.fr',
+  description: "Maud Stevens Wagner is an American circus artist and tattoo artist, considered to be the first female tattoo artist in the United States.",
+  category: tatoueur,
+  user: user95
+)
+artist95.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a5/Maud_Stevens_Wagner.jpeg")
+artist95.photo.attach(io: file, filename: "leonard")
+
+user96 = User.create(email: 'Lyletuttle@orange.fr', password: "123456")
+artist96 = Artist.new(
+  first_name: 'Lyle',
+  last_name: 'Tuttle',
+  date_of_birth: '1949-08-14',
+  email: 'Lyletuttle@orange.fr',
+  description: "Lyle Gilbert Tuttle was an American tattoo artist and historian of the medium, who had been tattooing since 1949. He tattooed Janis Joplin, Cher, Jo Baker, Paul Stanley, Jeff Scranton, and many other American musicians, actors, and celebrities.",
+  category: tatoueur,
+  user: user96
+)
+artist96.save!
+
+file = URI.open("https://static01.nyt.com/images/2019/04/07/obituaries/07Tuttle-obit2/merlin_152785818_030b8ebb-b3b2-44ce-86f4-dfcbed958d4e-superJumbo.jpg")
+artist96.photo.attach(io: file, filename: "leonard")
+
+user97 = User.create(email: 'Bangbang@gmail.fr', password: "123456")
+artist97 = Artist.new(
+  first_name: 'Bang Bang',
+  last_name: '',
+  date_of_birth: '1985-11-28',
+  description: "McCurdy is a famous American tattoo artist based in New York. He is known for his work with Rihanna, Cara Delevingne, Katy Perry, Justin Bieber, LeBron James, Adele, Miley Cyrus, Selena Gomez and Kylie Jenner.",
+  category: tatoueur,
+  user: user97
+)
+artist97.save!
+
+file = URI.open("https://journalmetro.com/wp-content/uploads/2015/06/tatouer-rihanna.jpg?resize=1004%2C591")
+artist97.photo.attach(io: file, filename: "leonard")
+
+user98 = User.create(email: 'DonEdHardy@msn.fr', password: "123456")
+artist98 = Artist.new(
+  first_name: 'Don',
+  last_name: 'Ed Hardy',
+  date_of_birth: '1945-01-°1',
+  description: "Don Ed Hardy, born January 5, 1945 in Costa Mesa, is an American artist. He is known for his tattoo work and the Ed Hardy brand based on it.",
+  category: tatoueur,
+  user: user98
+)
+artist98.save!
+
+file = URI.open("https://imageio.forbes.com/blogs-images/derekscancarelli/files/2019/07/HARDY-7-1200x800.jpg?format=jpg&width=1200")
+artist98.photo.attach(io: file, filename: "leonard")
+
+user99 = User.create(email: 'Stéphanechaudesaigues@gmail.fr', password: "123456")
+artist99 = Artist.new(
+  first_name: 'Stéphane',
+  last_name: 'Chaudesaigues',
+  date_of_birth: '1968-02-23',
+  description: "Stéphane Chaudesaigues works in Paris in his studio. He is the president of the association Tatouage & Partage",
+  category: tatoueur,
+  user: user99
+)
+artist99.save!
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/9/96/St%C3%A9phane_Chaudesaigues.jpg")
+artist99.photo.attach(io: file, filename: "leonard")
+
+user100 = User.create(email: 'Scottcampbell@orange.fr', password: "123456")
+artist100 = Artist.new(
+  first_name: 'Scott',
+  last_name: 'Campbell',
+  date_of_birth: '1977-05-13',
+  description: "Scott Campbell is an American artist and tattoo artist based in New York whose clients include Howard Stern, Sting, Robert Downey Jr., Courtney Love, Orlando Bloom, Josh Hartnett and Marc Jacobs",
+  category: tatoueur,
+  user: user100
+)
+artist100.save!
+
+file = URI.open("http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQHRghFM0GSkZBPVxFRUJ7fAn6uUJNRnVjYJrFSGkrXJJs--QVfI5vZNkKO2R-Ihp5b")
+artist100.photo.attach(io: file, filename: "leonard")
