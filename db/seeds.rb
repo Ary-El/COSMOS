@@ -1,19 +1,9 @@
 require "open-uri"
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
 
-puts "destroying records..."
 Artist.destroy_all
 Category.destroy_all
 User.destroy_all
-puts "Everything destroyed!!"
 
-puts "Creation user 1 with artist..."
 peintre = Category.create(name: "Peintre")
 
 user1 = User.create(email: 'Leonarddevinci@hotmail.fr', password: "123456")
@@ -481,7 +471,7 @@ artist31 = Artist.new(
   first_name: 'Bamao',
   last_name: 'Yendé',
   date_of_birth: '1993-10-18',
-  email: 'Bamaoyendé@msn.fr'
+  email: 'Bamaoyendé@msn.fr',
   description: "When he's not showing off with his group Nyoko Bokbae, the 26-year-old DJ electrifies parties by mixing Afro rhythms with house and UK garage",
   category: beatmaker,
   user: user31
