@@ -1,3 +1,14 @@
+import { Controller } from "@hotwired/stimulus"
+
+export default class extends Controller {
+
+  connect() {
+    console.log("Hello from Ary-el Home controller")
+  }
+}
+
+
+
 //Get context and screen size;
 var ctx = cnv.getContext("2d");
 var W = window.innerWidth;
