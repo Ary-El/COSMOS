@@ -1,9 +1,11 @@
 <div class="artist-card-show">
   <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %></div>
     <div class="artist-text-show">
-    <h3 class="artist-card-title"><%= artist.first_name %>-<%= artist.last_name %></h3>
-    <h5 class="artist-card-subtitle"><%= animal.date_of_birth%></h5>
-    <p class="artist-card-text"><%= artist.category %></p>
-    <%= link_to "Live", artists_path, class: "explore-btn" %>
+      <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
+      <h5 class="artist-card-subtitle"><%= @artist.date_of_birth%></h5>
+      <h5 class="artist-card-text"><%= @artist.category.name %></h5>
+      <p class="artist-card-text"><%= @artist.description %></p>
+      <%= link_to "Live", artists_path, class: "explore-btn" %>
+    </div>
   </div>
 </div>
