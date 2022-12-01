@@ -4,18 +4,19 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  position: relative;
 }
 
 .stars {
   z-index: 0;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image: url(https://www.manufosela.es/shooting_stars/hori.png), url(https://www.manufosela.es/shooting_stars/stars_5.png);
   background-repeat: repeat-x, repeat-x repeat-y;
   transform: translate3D(0em, 0em, 0em);
   animation: stars 100s ease;
   transform-style: preserve-3d;
-  position: relative;
+  position: absolute;
   color: white;
 }
 
