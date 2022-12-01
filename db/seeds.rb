@@ -38,7 +38,7 @@ artist2 = Artist.new(
 artist2.save!
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/800px-Pablo_picasso_1.jpg")
-artist1.photo.attach(io: file, filename: "leonard")
+artist2.photo.attach(io: file, filename: "leonard")
 
 
 user3 = User.create(email: 'Benenwonwu@hotmail.fr', password: "123456")
@@ -54,7 +54,7 @@ artist3 = Artist.new(
 artist3.save!
 
 file = URI.open("https://sothebys-com.brightspotcdn.com/29/d9/288afc1f4ee5b0d52bbc1c97db0d/ben-enwonwu-2-copyright-of-the-ben-enwonwu-foundation.jpeg")
-artist1.photo.attach(io: file, filename: "leonard")
+artist3.photo.attach(io: file, filename: "leonard")
 
 user4 = User.create(email: 'Zhangxiaogang@hotmail.fr', password: "123456")
 artist4 = Artist.new(
@@ -69,7 +69,7 @@ artist4 = Artist.new(
 artist4.save!
 
 file = URI.open("https://flv-prd-oxud8mggj93od145.imgix.net/7cb333ac-4159-4331-8d9e-8feda61e9e9d/XiaogangZhang.jpeg")
-artist1.photo.attach(io: file, filename: "leonard")
+artist4.photo.attach(io: file, filename: "leonard")
 
 user5 = User.create(email: 'Ahmedcherkaoui@laposte.fr', password: "123456")
 artist5 = Artist.new(
@@ -185,7 +185,7 @@ artist12 = Artist.new(
   first_name: 'Zhang',
   last_name: 'Xiaogang',
   date_of_birth: '1958-01-01',
-  email: 'Zhang Xiaogang@yahoo.fr',
+  email: 'Zhangxiaogang@yahoo.fr',
   description: "Zhang Xiaogang, born in 1958 in Kunming, is a Chinese contemporary artist, symbolist surrealist painter. He lives in Sichuan and Beijing.",
   category: painter,
   user: user12
@@ -211,12 +211,13 @@ artist13.save!
 file = URI.open("https://www.chinesenewart.com/artistes-chinois14/muboyanport.jpg")
 artist13.photo.attach(io: file, filename: "leonard")
 
+
 user14 = User.create(email: 'Aliciapenalba@gmail.fr', password: "123456")
 artist14 = Artist.new(
   first_name: 'Alicia',
   last_name: 'Penalba',
-  date_of_birth: '1913-08-9',
-  email: 'Alicia Penalba@gmail.fr',
+  date_of_birth: '1913-08-09',
+  email: 'AliciaPenalba@gmail.fr',
   description: "Alicia Peñalba came to settle in Paris in 1948, she abandoned painting to devote herself exclusively to sculpture",
   category: painter,
   user: user14
@@ -231,7 +232,7 @@ artist15 = Artist.new(
   first_name: 'Alexandre',
   last_name: 'Arrechea',
   date_of_birth: '1970-02-01',
-  email: 'Alexandre Arrechea@msn.com',
+  email: 'Alexandrearrechea@msn.com',
   description: "Alexandre Arrechea was born in 1970 in Trinidad (Cuba). He began his solo career in 2003, after being part of the art collective Los Carpinteros for 12 years.",
   category: painter,
   user: user15
@@ -240,6 +241,7 @@ artist15.save!
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c8/Alexandre_Arrechea_2014.jpg")
 artist15.photo.attach(io: file, filename: "leonard")
+
 
 user16 = User.create(email: 'ClaesOldenburg@gmail.fr', password: "123456")
 artist16 = Artist.new(
@@ -256,12 +258,13 @@ artist16.save!
 file = URI.open("https://img.lemde.fr/2022/07/18/0/0/4896/3264/664/0/75/0/b134d50_498f32933fc043de887182d61f1779c1-498f32933fc043de887182d61f1779c1-0.jpg")
 artist16.photo.attach(io: file, filename: "leonard")
 
+
 user17 = User.create(email: 'AlexanderCalder@aol.com', password: "123456")
 artist17 = Artist.new(
   first_name: 'Alexander',
   last_name: 'Calder',
   date_of_birth: '1898-07-22',
-  email: 'Alexander Calder@aol.com',
+  email: 'AlexanderCalder@aol.com',
   description: "The American Alexander Calder revolutionized sculpture, the art of volume, by bringing movement and color to it!",
   category: painter,
   user: user17
@@ -276,7 +279,7 @@ artist18 = Artist.new(
   first_name: 'Amahiguere',
   last_name: 'Dolo',
   date_of_birth: '1955-06-16',
-  email: 'Amahiguere Dolo@yahoo.fr',
+  email: 'AmahiguereDolo@yahoo.fr',
   description: "Amahiguere Dolo is a Malian Dogon sculptor from a noble family of farmers.",
   category: painter,
   user: user18
@@ -291,7 +294,7 @@ artist19 = Artist.new(
   first_name: 'Abdelfattah',
   last_name: 'Boussetta',
   date_of_birth: '1947-01-25',
-  email: 'Abdelfattah Boussetta@msn.fr',
+  email: 'AbdelfattahBoussetta@msn.fr',
   description: "Abdelfattah Boussetta, born January 25, 1947 in Ksar Hellal, is a Tunisian sculptor and painter. He has organized numerous exhibitions and created numerous monuments in Tunisia, including the Kasbah National Monument in Tunis.",
   category: painter,
   user: user19
@@ -417,7 +420,7 @@ artist27 = Artist.new(
   first_name: 'Richard',
   last_name: 'Zielenkiewicz',
   date_of_birth: '1965-01-16',
-  email: 'Richard Zielenkiewicz@yahoo.fr',
+  email: 'RichardZielenkiewicz@yahoo.fr',
   description: "Richard Zielenkiewicz, known under the pseudonym Monsieur Z, is a French illustrator and graphic designer, born January 16, 1965",
   category: sculptor,
   user: user27
@@ -624,28 +627,28 @@ file = URI.open("https://www.abcdrduson.com/wp-content/uploads/2015/08/dr.dre_he
 artist40.photo.attach(io: file, filename: "leonard")
 
 
-
 user41 = User.create(email: 'WolfgangAmadeus@yahoo.fr', password: "123456")
 artist41 = Artist.new(
   first_name: 'Wolfgang Amadeus',
   last_name: 'Mozart',
   date_of_birth: '1756-01-27',
-  email: 'Wolfgang Amadeus@yahoo.fr',
+  email: 'WolfgangAmadeus@yahoo.fr',
   description: "Mozart wrote his first opera at the age of 11!",
   category: musician,
-  user: user40
+  user: user41
 )
 artist41.save!
 
 file = URI.open("https://www.musicologie.org/Biographies/m/mozart.jpg")
-artist40.photo.attach(io: file, filename: "leonard")
+artist41.photo.attach(io: file, filename: "leonard")
+
 
 user42 = User.create(email: 'ManuDibango@yahoo.fr', password: "123456")
 artist42 = Artist.new(
   first_name: 'Manu',
   last_name: 'Dibango',
   date_of_birth: '1933-12-13',
-  email: 'Manu Dibango@yahoo.fr',
+  email: 'ManuDibango@yahoo.fr',
   description: "Manu Dibango, nicknamed Papa Groove, is a Cameroonian world jazz saxophonist and composer.",
   category: musician,
   user: user42
@@ -654,6 +657,7 @@ artist42.save!
 
 file = URI.open("https://resize-parismatch.lanmedia.fr/var/pm/public/media/image/2022/03/01/22/Manu-Dibango-legende-du-saxophone-a-succombe-au-coronavirus.jpg?VersionId=jXUXCU6gOliWrukfyKGxaCLDbhL4RUhb")
 artist42.photo.attach(io: file, filename: "leonard")
+
 
 user43 = User.create(email: 'Salifkeita@laposte.fr', password: "123456")
 artist43 = Artist.new(
@@ -738,7 +742,7 @@ artist48 = Artist.new(
   email: 'Jimihendrix@yahoo.fr',
   description: "James Marshall Hendrix is ​​an American guitarist, songwriter and singer, founder of the British-American band The Jimi Hendrix...",
   category: musician,
-  user: user47
+  user: user48
 )
 artist48.save!
 
@@ -773,7 +777,7 @@ artist50 = Artist.new(
 artist50.save!
 
 file = URI.open("https://voi.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F06.2F30.2F07034fe3-a598-4dc7-9d2a-b2c40e2b37c1.2Ejpeg/2048x1536/quality/80/khaled.jpeg")
-artist49.photo.attach(io: file, filename: "leonard")
+artist50.photo.attach(io: file, filename: "leonard")
 
 user51 = User.create(email: 'Joehisaishi@orange.fr', password: "123456")
 artist51 = Artist.new(
@@ -785,10 +789,11 @@ artist51 = Artist.new(
   category: musician,
   user: user51
 )
-artist50.save!
+artist51.save!
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Joe_Hisaishi_2011.jpg/260px-Joe_Hisaishi_2011.jpg")
 artist51.photo.attach(io: file, filename: "leonard")
+
 
 
 user52 = User.create(email: 'RobertCapa@yahoo.fr', password: "123456")
@@ -801,10 +806,11 @@ artist52 = Artist.new(
   category: photographer,
   user: user52
 )
-artist51.save!
+artist52.save!
 
 file = URI.open("https://images.radio-canada.ca/v1/ici-premiere/16x9/robert-capa-photographie-guerre-espagne-magnum.jpg")
 artist52.photo.attach(io: file, filename: "leonard")
+
 
 user53 = User.create(email:'StevemcCurry@msn.fr', password: "123456")
 artist53 = Artist.new(
@@ -821,6 +827,7 @@ artist53.save!
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Steve_McCurry_%285824371040%29_%28cropped%29.jpg/800px-Steve_McCurry_%285824371040%29_%28cropped%29.jpg")
 artist53.photo.attach(io: file, filename: "leonard")
 
+
 user54 = User.create(email: 'DorotheaLange@aol.com', password: "123456")
 artist54 = Artist.new(
   first_name: 'Dorothea',
@@ -829,7 +836,7 @@ artist54 = Artist.new(
   email: 'DorotheaLange@aol.com',
   description: "Dorothea Lange, born Dorothea Nutzhorn, May 26, 1895 in Hoboken and died October 11, 1965 in San Francisco, was an American photographer whose best-known works were made during the Great Depression, as part of a mission entrusted by the Farm Security Administration.",
   category: photographer,
-  user: user53
+  user: user54
 )
 artist54.save!
 
@@ -874,12 +881,13 @@ artist57 = Artist.new(
   email: 'Maryellenmark@gmail.fr',
   description: "Mary Ellen Mark, born March 20, 1940 in Philadelphia and died May 25, 2015 in New York, is an American photographer She is best known for her reports across the United States, in which portraits occupy a prominent place",
   category: photographer,
-  user: user56
+  user: user57
 )
 artist57.save!
 
 file = URI.open("https://phototrend.fr/wp-content/uploads/2017/10/maryellen_mark.jpg")
 artist57.photo.attach(io: file, filename: "leonard")
+
 
 user58 = User.create(email: 'Manray@yahoo.fr', password: "123456")
 artist58 = Artist.new(
@@ -896,6 +904,7 @@ artist58.save!
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a1/Man_Ray_portrait.jpg")
 artist58.photo.attach(io: file, filename: "leonard")
 
+
 user59 = User.create(email: 'MalcolmBrowne@msn.fr', password: "123456")
 artist59 = Artist.new(
   first_name: 'Malcolm',
@@ -909,7 +918,7 @@ artist59 = Artist.new(
 artist59.save!
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/53/Malcolm_Browne_1964.jpg")
-artist58.photo.attach(io: file, filename: "leonard")
+artist59.photo.attach(io: file, filename: "leonard")
 
 user60 = User.create(email: 'Nilüferdemir@yahoo.fr', password: "123456")
 artist60 = Artist.new(
@@ -919,12 +928,12 @@ artist60 = Artist.new(
   email: 'Nilüferdemir@yahoo.fr',
   description: "Nilüfer Dumir, is a Turkish photographer made known because of her photograph of the young Alan Kurdi, a refugee who died on a beach in Bodrum, on the night of September 2, 2015",
   category: photographer,
-  user: user59
+  user: user60
 )
 artist60.save!
 
 file = URI.open("https://images.thedailystar.net/sites/default/files/feature/images/nilufer-web.jpg")
-artist59.photo.attach(io: file, filename: "leonard")
+artist60.photo.attach(io: file, filename: "leonard")
 
 user61 = User.create(email: 'Lauraperson@yahoo.fr', password: "123456")
 artist61 = Artist.new(
@@ -940,6 +949,7 @@ artist61.save!
 
 file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
 artist61.photo.attach(io: file, filename: "leonard")
+
 
 
 user62 = User.create(email: 'FrankGehry@gmail.fr', password: "123456")
@@ -1020,7 +1030,7 @@ artist66 = Artist.new(
 artist66.save!
 
 file = URI.open("https://parcolympique.qc.ca/toiture/wp-content/uploads/2018/06/otto-1.jpg")
-artist6.photo.attach(io: file, filename: "leonard")
+artist66.photo.attach(io: file, filename: "leonard")
 
 
 user67 = User.create(email: 'Ricardobofill@sfr.fr', password: "123456")
@@ -1063,7 +1073,7 @@ artist69 = Artist.new(
   email: 'Sirandoudiawara@free.fr',
   description: "After studying in Charenton and then at the Paris-La Villette School of Architecture, in 2005 she created her architecture firm Soda Architecture.",
   category: photographer,
-  user: user68
+  user: user69
 )
 artist69.save!
 
@@ -1127,7 +1137,7 @@ artist73 = Artist.new(
   email: 'Cocochanel@yahoo.fr',
   description: "Coco Chanel is a French fashion designer, milliner and seamstress.",
   category: sculptor,
-  user: user72
+  user: user73
 )
 artist73.save!
 
@@ -1159,7 +1169,7 @@ artist75 = Artist.new(
   email: 'Christiandior@laposte.fr',
   description: "Christian Dior st un grand couturier français. En 1947, il donne son nom à la maison de haute couture homonyme, financée par Marcel Boussac",
   category: sculptor,
-  user: user74
+  user: user75
 )
 artist75.save!
 
@@ -1175,7 +1185,7 @@ artist76 = Artist.new(
   email: 'Kenzōtakada@aol.com',
   description: "Kenzō Takada is a Japanese designer who made a career in France. He is the founder of the clothing, accessories and perfume brand Kenzo",
   category: sculptor,
-  user: user75
+  user: user76
 )
 artist76.save!
 
@@ -1207,7 +1217,7 @@ artist78 = Artist.new(
   email: 'Pierrebalmain@aol.com',
   description: "Pierre Balmain is a French fashion designer who created his own fashion house in 1945.",
   category: sculptor,
-  user: user77
+  user: user78
 )
 artist78.save!
 
@@ -1223,7 +1233,7 @@ artist79 = Artist.new(
   email: 'Jp@yahoo.fr',
   description: "Jean-Paul Gaulthier is a stylist and great French sculptor, founder of the Jean Paul Gaultier company, as well as a perfume designer.",
   category: sculptor,
-  user: user78
+  user: user79
 )
 artist79.save!
 
@@ -1286,7 +1296,7 @@ artist83 = Artist.new(
   email: 'Andrélenôtre@yahoo.fr',
   description: "André le Notre was gardener to King Louis XIV from 1645 to 1700 and had the particular task of designing the layout of the park and gardens of the Palace of Versailles, but also that of Vaux-le-Vicomte, the Château du Fayel and Chantilly.",
   category: sculptor,
-  user: user82
+  user: user83
 )
 artist83.save!
 
@@ -1301,12 +1311,13 @@ artist84 = Artist.new(
   email: 'Jacquelineosty@gmail.fr',
   description: "Jacqueline Osty Trained at the National School of Landscape in Versailles, she founded her own agency in 1985 and has since designed many parks and gardens.",
   category: sculptor,
-  user: user83
+  user: user84
 )
 artist84.save!
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/03/Oscar_de_la_Renta_by_foto_di_matti.jpg")
 artist84.photo.attach(io: file, filename: "leonard")
+
 
 user85 = User.create(email: 'Claudecormier@orange.fr', password: "123456")
 artist85 = Artist.new(
@@ -1331,7 +1342,7 @@ artist86 = Artist.new(
   email: 'Micheldesvigne@sfr.fr',
   description: "Michel Desvignes has carried out numerous arrangements of gardens and public spaces, and transposed park systems",
   category: sculptor,
-  user: user85
+  user: user86
 )
 artist86.save!
 
@@ -1346,19 +1357,20 @@ artist87 = Artist.new(
   email: 'Michelcorajoud@aol.com',
   description: "Michel Corajoud is a French landscape designer",
   category: sculptor,
-  user: user86
+  user: user87
 )
 artist87.save!
 
 file = URI.open("https://www.babelio.com/users/AVT_Michel-Corajoud_4671.jpg")
 artist87.photo.attach(io: file, filename: "leonard")
 
+
 user88 = User.create(email: 'IsabelleAuricoste@sfr.fr', password: "123456")
 artist88 = Artist.new(
   first_name: 'Isabelle',
   last_name: 'Auricoste',
   date_of_birth: '1941-02-12',
-  email: 'Isabelle Auricoste@sfr.fr',
+  email: 'IsabelleAuricoste@sfr.fr',
   description: "Isabelle Auricoste is a landscape architect, writer and teacher",
   category: sculptor,
   user: user88
@@ -1414,12 +1426,13 @@ file = URI.open("https://hdsmag.hauts-de-seine.fr/wp-content/uploads/2006SGO0161
 artist91.photo.attach(io: file, filename: "leonard")
 
 
+
 user92 = User.create(email: 'Tin-Tin@yahoo.fr', password: "123456")
 artist92 = Artist.new(
   first_name: 'Tin-Tin',
   last_name: 'Tin',
   date_of_birth: '1965-07-19',
-  email: 'Tin-Tin@yahoo.fr',
+  email: 'TinTin@yahoo.fr',
   description: "Tin-Tin is a French tattoo artist, born August 19, 1965 in Nantes. He works in Paris in his store in Pigalle where he makes tattoos in realistic and Japanese styles.",
   category: musician,
   user: user92
@@ -1437,7 +1450,7 @@ artist93 = Artist.new(
   email: 'Kimsaigh@gamail.fr',
   description: "Kim Saigh is an American tattoo artist and television personality. She is best known for her work as a tattoo artist on the TLC reality show LA Ink.",
   category: musician,
-  user: user92
+  user: user93
 )
 artist93.save!
 
@@ -1452,7 +1465,7 @@ artist94 = Artist.new(
   email: 'Mistercartoon@sfr.fr',
   description: "Mark Machado, better known as Mr. Cartoon or more commonly simply Cartoon, is an American tattoo and graffiti artist based in Los Angeles, California.",
   category: musician,
-  user: user93
+  user: user94
 )
 artist94.save!
 
@@ -1512,7 +1525,7 @@ artist98 = Artist.new(
   email: 'Bangbang@gmail.fr',
   description: "McCurdy is a famous American tattoo artist based in New York. He is known for his work with Rihanna, Cara Delevingne, Katy Perry, Justin Bieber, LeBron James, Adele, Miley Cyrus, Selena Gomez and Kylie Jenner.",
   category: musician,
-  user: user97
+  user: user98
 )
 artist98.save!
 
