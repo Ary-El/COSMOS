@@ -13,9 +13,15 @@
 }
 
 .navbar-lewagon .nav-link {
-color: white;
+color: black;
 }
 
 .navbar, .navbar-brand {
   padding: 0;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
+
+.fa-solid .fa-list{
+  padding-left: 10%;
 }

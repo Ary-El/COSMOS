@@ -1,5 +1,22 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
+  <div class="">
+    <ul class="nav navbar-nav">
+            <li class="dropdown">
+            <i class="fa-solid fa-list"></i>
+              <%# <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a> %>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="nav-link">Categories</a></li>
+                <li><a href="#" class="nav-link">Artists</a></li>
+                <li><a href="#" class="nav-link">News</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#" class="nav-link">FAQ</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#" class="nav-link">Contacts</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </nav>
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "cosmos-logo.png" %>
     <% end %>
@@ -20,17 +37,19 @@
           <li class="nav-item dropdown">
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
+              <%= link_to "My profile", "#", class: "dropdown-item" %>
+              <%= link_to "start a live", "#", class: "dropdown-item" %>
+              <%= link_to "Message", "#", class: "dropdown-item" %>
+              <%= link_to "Activity", "#", class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "A propos", root_path, class: "nav-link" %>
+            <%= link_to "About", root_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Explorez", root_path, class: "nav-link" %>
+            <%= link_to "Explore", root_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
@@ -40,6 +59,7 @@
     </div>
   </div>
 </div>
+
 
 <%# <nav class="navbar navbar-dark bg-primary">
     <ul class="navbar-nav">
