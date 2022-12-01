@@ -5,13 +5,13 @@
             <i class="fa-solid fa-list"></i>
               <%# <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a> %>
               <ul class="dropdown-menu">
-                <li><a href="#" class="nav-link">Categories</a></li>
-                <li><a href="#" class="nav-link">Artists</a></li>
-                <li><a href="#" class="nav-link">News</a></li>
+                <li><%= link_to "Categories", artists_path, class: "dropdown-item" %></li>
+                <li><%= link_to "Artists", artists_path, class: "dropdown-item" %></li>
+                <li><%= link_to "News", artists_path, class: "dropdown-item" %></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#" class="nav-link">FAQ</a></li>
+                <li><%= link_to "FAQs", artists_path, class: "dropdown-item" %></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#" class="nav-link">Contacts</a></li>
+                <li><%= link_to "Contacts", artists_path, class: "dropdown-item" %></li>
               </ul>
             </li>
           </ul>
@@ -38,7 +38,7 @@
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "My profile", "#", class: "dropdown-item" %>
-              <%= link_to "start a live", "#", class: "dropdown-item" %>
+              <%= link_to "Start Live", "#", class: "dropdown-item" %>
               <%= link_to "Message", "#", class: "dropdown-item" %>
               <%= link_to "Activity", "#", class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
@@ -59,6 +59,11 @@
     </div>
   </div>
 </div>
+
+
+
+
+
 
 
 <%# <nav class="navbar navbar-dark bg-primary">
