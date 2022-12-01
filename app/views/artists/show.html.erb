@@ -5,12 +5,12 @@
       <div>
         <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %>
 
-          <div class="artist-text-show">
+          <div class="artist-text-show shadow p-2 mb-4 bg-body">
             <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
             <h5 class="artist-card-subtitle"><%= @artist.date_of_birth%></h5>
           </div>
         </div>
-        <div class="artist-card-category bg-info p-2 border border-2">
+        <div class="artist-card-category shadow p-3 mb-4 bg-body">
             <h5><%= @artist.category.name %></h5>
           </div>
       </div>
@@ -18,7 +18,7 @@
 
 
 
-      <div class="artist-card-text bg-info p-2 border border-2">
+      <div class="artist-card-text shadow p-3 mb-3 bg-body">
         <p><%= @artist.description %></p>
       </div>
 

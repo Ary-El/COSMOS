@@ -3,6 +3,7 @@
  width: 100%;
  padding: 40px;
  opacity: 30px;
+ background-color: rgba($color: #faf6f6, $alpha: 0.10);
 }
 
 
@@ -32,10 +33,22 @@ justify-content: space-around;
 // left: 0px;
   text-align:center;
   margin-top:30px;
+  border-radius: 10px;
   h5 {
     margin-bottom:0;
   }
 }
 .artist-text-show {
   position: relative;
+  width: 70%;
+  border-radius: 10px;
+  text-align: center;
+}
+.artist-card-text{
+  text-align: justify;
+  height: 50%;
+  border-radius: 10px;
+  p {
+    margin-bottom: 0;
+  }
 }
