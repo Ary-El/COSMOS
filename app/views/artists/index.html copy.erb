@@ -1,0 +1,13 @@
+<div class="container-index">
+  <div class="artist-list">
+      <% @artists.each do |artist| %>
+        <%= link_to artist_path(artist) do %>
+        <ul>
+          <li><%= artist.first_name %> - <%= artist.last_name %></li>
+          <div class="star star-s artist"></div>
+        </ul>
+        <% end %>
+      <% end %>
+  </div>
+  <%= render "music_constellation" %>
+</div>
