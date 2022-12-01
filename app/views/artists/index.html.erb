@@ -1,11 +1,106 @@
+<% position = [["140px", "130px"], ["150px", "330px"], ["240px", "170px"], ["40px", "380px"], ["200px", "340px"], ["140px", "390px"], ["240px", "120px"], ["340px", "210px"]] %>
+
 <div class="container-index">
-  <div class="artist-list">
-      <% @artists.each do |artist| %>
-        <%= link_to artist_path(artist) do %>
-        <ul>
-          <li><%= artist.first_name %> - <%= artist.last_name %></li>
-        </ul>
-        <% end %>
-      <% end %>
+
+  <div class="music-artists">
+        <div class="constellation-music">
+          <div class="box-artist">
+            <% @artists.each do |artist| %>
+              <%= link_to artist_path(artist) do %>
+                <%# # A enlever quand les paires seront faites : (le if end) %>
+                <% if artist.id < 3 %>
+                  <div class="star-artist star-s live" style="top: <%= position[artist.id][0] %> ; left: <%= position[artist.id][1]  %>"></div>
+                <% end %>
+              <% end %>
+            <% end %>
+
+          </div>
+          <div class="first">
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-l"></div>
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-l"></div>
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-l"></div>
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-l"></div>
+            <div class="star star-l"></div>
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-l"></div>
+            <div class="star star-l"></div>
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-l"></div>
+            <div class="star star-l"></div>
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-l"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+
+            <div class="star star-m"></div>
+            <div class="star star-m"></div>
+            <div class="star star-m"></div>
+            <div class="star star-m"></div>
+            <div class="star star-m"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-s"></div>
+            <div class="star star-m"></div>
+            <div class="star star-s"></div>
+            <div class="second">
+              <div class="star star-l"></div>
+              <div class="star star-m"></div>
+              <div class="star star-l"></div>
+              <div class="star star-l"></div>
+              <div class="star star-l"></div>
+              <div class="star star-l"></div>
+              <div class="star star-l"></div>
+              <div class="star star-l"></div>
+                      <div class="star star-l"></div>
+              <div class="star star-l"></div>
+              <div class="star star-m"></div>
+                      <div class="star star-l"></div>
+              <div class="star star-l"></div>
+              <div class="star star-l"></div>
+              <div class="third">
+                <div class="star star-xs"></div>
+                <div class="star star-xs"></div>
+                <div class="star star-xs"></div>
+              </div>
+            </div>
+          </div>
+        </div>
   </div>
+
 </div>

@@ -5,7 +5,7 @@
       <h5 class="artist-card-subtitle"><%= @artist.date_of_birth%></h5>
       <h5 class="artist-card-text"><%= @artist.category.name %></h5>
       <p class="artist-card-text"><%= @artist.description %></p>
-      <%= link_to "Live", artists_path, class: "explore-btn" %>
+      <%= link_to "Live", live_artist_path, class: "explore-btn" %>
     </div>
   </div>
 </div>

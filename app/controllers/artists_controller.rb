@@ -30,16 +30,22 @@ class ArtistsController < ApplicationController
   end
 
   def live
+    @artist = Artist.find(params[:id])
     url = "https://api.whereby.dev/v1/meetings"
-    playload = {
+    payload = {
       'endDate': "2099-02-18T14:23:00.000Z",
       'fields': ["hostRoomUrl"]
     }
-    header = {"Authorization" =>  "Bearer #{ENV["API_WHEREBY"]}",
-              "Content-Type" => "application/json",
+    headers = { "Authorization" => "Bearer #{ENV["API_WHEREBY"]}",
+                "Content-Type" => "application/json" }
+    RestClient.post(url, payload, headers) { |response, request, result|
+      response = JSON.parse(response.body)
+      @artist.live_started_date = response["startDate"]
+      @artist.live_ended_date = response["endDate"]
+      @artist.visitor_url = response["roomUrl"]
+      @artist.host_url = response["hostRoomUrl"]
     }
-    raise
-    RestClient.post(url, payload, headers={})
+    @artist.save
   end
 
   private

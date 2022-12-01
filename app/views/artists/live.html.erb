@@ -1,6 +1,6 @@
 <div class="artist-card-show">
   <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %></div>
-    <h3 class="artist-card-title"><%= artist.first_name %>-<%= artist.last_name %></h3>
-    <p class="artist-card-text"><%= artist.category %></p>
+    <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
+    <p class="artist-card-text"><%= @artist.category %></p>
   </div>
 </div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_30_111427) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_01_140743) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,11 +50,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_30_111427) do
     t.string "email"
     t.date "live_started_date"
     t.date "live_ended_date"
-    t.text "url_live"
     t.bigint "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
+    t.string "visitor_url"
+    t.string "host_url"
     t.index ["category_id"], name: "index_artists_on_category_id"
     t.index ["user_id"], name: "index_artists_on_user_id"
   end

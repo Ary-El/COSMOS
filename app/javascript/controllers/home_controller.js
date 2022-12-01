@@ -30,7 +30,7 @@ export default class extends Controller {
       ctx.fill();
 
       //Using setTimeout instead of window.requestAnimationFrame for slower speed... window.requestAnimationFrame is approximately equal to setTimeout(func, 17);
-      setTimeout(animate, 30);
+      setTimeout(animate, 100);
     }
     animate();
   }
