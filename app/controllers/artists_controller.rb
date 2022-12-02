@@ -6,6 +6,7 @@ class ArtistsController < ApplicationController
       @artists = Artist.where(category: params[:category])
     else
       @artists = Artist.all
+      @musicians = Artist.where(category: Category.where(name: "Musician").first)
     end
   end
 
