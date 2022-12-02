@@ -1,32 +1,38 @@
-<div class="page-artist">
-  <div class="card artist-card-container">
-    <div class="artist-card-show">
+<div class="align-items-center d-flex h-75 justify-content-center page-artist">
+    <div class="artist-card-show text-center w-50 d-flex flex-column align-items-center justify-content-center">
 
-      <div>
-        <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %>
-
-          <div class="artist-text-show icing">
-            <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
-            <h5 class="artist-card-subtitle"><%= @artist.date_of_birth%></h5>
-          </div>
+        <div class="artist-image-show my-3">
+            <%= cl_image_tag(@artist.photo.key) %>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
-        <div class="artist-card-category icing">
+
+        <div class="my-5">
+            <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
             <h5><%= @artist.category.name %></h5>
-          </div>
-      </div>
+        </div>
 
+        <div class="my-3 w-50">
+          <p><%= @artist.description %></p>
+        </div>
 
+        <div class="bouton-artist d-flex justify-content-between w-25">
+          <%= link_to artists_path, class: "" do %>
+            <i class="fa-solid fa-globe"></i>
+            <p>share</p>
+          <% end %>
+          <%= link_to artists_path, class: "" do %>
+            <i class="fa-solid fa-video"></i>
+            <p>live</p>
+          <% end %>
+          <%= link_to artists_path, class: "" do %>
+            <i class="fa-solid fa-sack-dollar"></i>
+            <p>donate</p>
+          <% end %>
+        </div>
 
-
-      <div class="artist-card-text icing">
-        <p><%= @artist.description %></p>
-      </div>
-
-      <div class="bouton-artist">
-        <%= link_to "Share", artists_path, class: "explore-btn" %>
-        <%= link_to "Live", artists_path, class: "explore-btn" %>
-        <%= link_to "Donate", artists_path, class: "explore-btn" %>
-      </div>
     </div>
-  </div>
 </div>
