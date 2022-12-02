@@ -1,32 +1,11 @@
-<div class="page-artist">
-  <div class="card artist-card-container">
-    <div class="artist-card-show">
-
-      <div>
-        <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %>
-
-          <div class="artist-text-show icing">
-            <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
-            <h5 class="artist-card-subtitle"><%= @artist.date_of_birth%></h5>
-          </div>
-        </div>
-        <div class="artist-card-category icing">
-            <h5><%= @artist.category.name %></h5>
-          </div>
-      </div>
-
-
-
-
-      <div class="artist-card-text icing">
-        <p><%= @artist.description %></p>
-      </div>
-
-      <div class="bouton-artist">
-        <%= link_to "Share", artists_path, class: "explore-btn" %>
-        <%= link_to "Live", artists_path, class: "explore-btn" %>
-        <%= link_to "Donate", artists_path, class: "explore-btn" %>
-      </div>
+<div class="artist-card-show">
+  <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %></div>
+    <div class="artist-text-show">
+      <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
+      <h5 class="artist-card-subtitle"><%= @artist.date_of_birth%></h5>
+      <h5 class="artist-card-text"><%= @artist.category.name %></h5>
+      <p class="artist-card-text"><%= @artist.description %></p>
+      <%= link_to "Live", artists_path, class: "explore-btn" %>
     </div>
   </div>
 </div>
