@@ -1,6 +1,38 @@
-<div class="artist-card-show">
-  <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %></div>
-    <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
-    <p class="artist-card-text"><%= @artist.category %></p>
+<div class="page-artist">
+  <div class="card artist-live-card-container">
+    <div class="artist-card-show">
+
+      <div>
+        <div class="artist-image-live-show"><%= cl_image_tag(@artist.photo.key) %>
+
+          <div class="artist-text-show icing">
+            <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
+            <h5 class="artist-card-subtitle"><%= @artist.date_of_birth%></h5>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="artist-card-live icing">
+        <% if @artist == current_user %>
+          <iframe
+            src="<%= @artist.host_url %>"
+            allow="camera; microphone; fullscreen; speaker; display-capture"
+          ></iframe>
+        <% else %>
+          <iframe
+            src="<%= @artist.visitor_url %>"
+            allow="camera; microphone; fullscreen; speaker; display-capture"
+          ></iframe>
+        <% end %>
+      </div>
+
+      <div class="bouton-artist">
+        <%= link_to "Share", artists_path, class: "explore-btn" %>
+        <%= link_to "Donate", artists_path, class: "explore-btn" %>
+      </div>
+    </div>
   </div>
 </div>

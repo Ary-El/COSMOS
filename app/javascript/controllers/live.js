@@ -7,4 +7,3 @@ room.toggleCamera(true); // Turn camera on
 room.toggleMicrophone(true); // Turn microphone on
 room.toggleCamera(false); // Turn camera off
 room.toggleMicrophone(false); // Turn microphone off
-
