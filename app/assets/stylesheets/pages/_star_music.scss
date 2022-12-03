@@ -21,14 +21,14 @@
 
 /* ARTIST */
 
-.box-artist {
+.box-artist-music {
   height: 400px;
   width: 400px;
   position: absolute;
   z-index: 100;
 }
 
-.star-artist {
+.star-music-artist {
   position: absolute;
   background: white;
   border-radius: 50%;
@@ -71,443 +71,443 @@
   z-index: 1;
 }
 
-.first .star {
+.first .star-music {
   opacity: 0.9;
 }
 
-.star {
+.star-music {
   position: absolute;
   background: white;
   border-radius: 50%;
 }
 
-.star-xs {
+.star-music-xs {
   height: 5px;
   width: 5px;
 }
 
-.star-s {
+.star-music-s {
   height: 10px;
   width: 10px;
 }
 
-.star-m {
+.star-music-m {
   height: 15px;
   width: 15px;
 }
 
-.star-l {
+.star-music-l {
   height: 20px;
   width: 20px;
 }
 
-.star:nth-child(1) {
+.star-music:nth-child(1) {
   bottom: 100px;
   left: 30px;
 }
 
-.star:nth-child(2) {
+.star-music:nth-child(2) {
   bottom: 110px;
   left: 50px;
 }
 
-.star:nth-child(3) {
+.star-music:nth-child(3) {
   bottom: 90px;
   left: 60px;
 }
 
-.star:nth-child(4) {
+.star-music:nth-child(4) {
   bottom: 90px;
   left: 110px;
 }
 
-.star:nth-child(5) {
+.star-music:nth-child(5) {
   bottom: 190px;
   left: 110px;
 }
 
-.star:nth-child(6) {
+.star-music:nth-child(6) {
   top: 220px;
   right: 110px;
 }
 
-.star:nth-child(7) {
+.star-music:nth-child(7) {
   top: 240px;
   right: 180px;
 }
 
-.star:nth-child(8) {
+.star-music:nth-child(8) {
   top: 300px;
   right: 190px;
 }
 
-.star:nth-child(9) {
+.star-music:nth-child(9) {
   top: 150px;
   left: 170px;
 }
 
-.star:nth-child(10) {
+.star-music:nth-child(10) {
   top: 70px;
   right: 170px;
 }
 
-.star:nth-child(11) {
+.star-music:nth-child(11) {
   top: 70px;
   left: 170px;
 }
 
-.star:nth-child(12) {
+.star-music:nth-child(12) {
   top: 130px;
   left: 370px;
 }
 
-.star:nth-child(13) {
+.star-music:nth-child(13) {
       top: 280px;
     left: 150px;
 }
 
-.star:nth-child(14) {
+.star-music:nth-child(14) {
 top: 310px;
     left: 320px;
 }
 
-.star:nth-child(15) {
+.star-music:nth-child(15) {
     top: 60px;
     left: 400px;
 }
 
-.star:nth-child(16) {
+.star-music:nth-child(16) {
 top: 50px;
     left: 280px;
 }
 
-.star:nth-child(17) {
+.star-music:nth-child(17) {
 top: 240px;
     left: 286px;
 }
 
-.star:nth-child(18) {
+.star-music:nth-child(18) {
     top: 224px;
     left: 316px;
 }
 
-.star:nth-child(19) {
+.star-music:nth-child(19) {
 top: 124px;
     left: 356px;
 }
 
-.star:nth-child(20) {
+.star-music:nth-child(20) {
     top: 304px;
     left: 116px;
 }
 
-.star:nth-child(21) {
+.star-music:nth-child(21) {
     top: 294px;
     left: 333px;
 }
 
-.star:nth-child(22) {
+.star-music:nth-child(22) {
     top: 354px;
     left: 153px;
 }
 
-.star:nth-child(23) {
+.star-music:nth-child(23) {
     top: 184px;
     left: 163px;
 }
 
-.star:nth-child(24) {
+.star-music:nth-child(24) {
     top: 264px;
     left: 393px;
 }
-.star:nth-child(25) {
+.star-music:nth-child(25) {
     top: 254px;
     left: 409px;
 }
 
-.star:nth-child(26) {
+.star-music:nth-child(26) {
     top: 84px;
     left: 399px;
 }
 
-.star:nth-child(27) {
+.star-music:nth-child(27) {
     top: 294px;
     left: 359px;
 }
 
-.star:nth-child(28) {
+.star-music:nth-child(28) {
     top: 104px;
     left: 159px;
 }
 
-.star:nth-child(29) {
+.star-music:nth-child(29) {
     top: 264px;
     left: 169px;
 }
 
-.star:nth-child(30) {
+.star-music:nth-child(30) {
     top: 254px;
     left: 159px;
 }
 
-.star:nth-child(31) {
+.star-music:nth-child(31) {
     top: 374px;
     left: 159px;
 }
 
-.star:nth-child(32) {
+.star-music:nth-child(32) {
     top: 94px;
     left: 409px;
 }
 
-.star:nth-child(33) {
+.star-music:nth-child(33) {
     top: 204px;
     left: 169px;
 }
 
-.star:nth-child(34) {
+.star-music:nth-child(34) {
 top: 324px;
     left: 70px;
 }
 
-.star:nth-child(35) {
+.star-music:nth-child(35) {
 top: 334px;
     left: 49px;
 }
 
-.star:nth-child(36) {
+.star-music:nth-child(36) {
 top: 154px;
     left: 229px;
 }
-.star:nth-child(37) {
+.star-music:nth-child(37) {
 top: 154px;
     left: 390px;
 }
-.star:nth-child(38) {
+.star-music:nth-child(38) {
     top: 64px;
     left: 269px;
 }
 
-.star:nth-child(39) {
+.star-music:nth-child(39) {
 top: 124px;
     left: 399px;
 }
 
-.star:nth-child(40) {
+.star-music:nth-child(40) {
     top: 194px;
     left: 409px;
 }
 
-.star:nth-child(41) {
+.star-music:nth-child(41) {
 top: 234px;
     left: 392px;
 }
 
-.star:nth-child(42) {
+.star-music:nth-child(42) {
     top: 131px;
     left: 319px;
 }
 
-.star:nth-child(43) {
+.star-music:nth-child(43) {
     top: 146px;
     left: 243px;
 }
 
-.star:nth-child(44) {
+.star-music:nth-child(44) {
     top: 146px;
     left: 243px;
 }
 
-.star:nth-child(45) {
+.star-music:nth-child(45) {
     top: 76px;
     left: 243px;
 }
 
-.star:nth-child(46) {
+.star-music:nth-child(46) {
 top: 66px;
     left: 393px;
 }
 
-.star:nth-child(47) {
+.star-music:nth-child(47) {
     top: 76px;
     left: 243px;
 }
 
-.star:nth-child(48) {
+.star-music:nth-child(48) {
 top: 40px;
     left: 393px;
 }
 
-.star:nth-child(49) {
+.star-music:nth-child(49) {
     top: 317px;
     left: 63px;
 }
 
-.star:nth-child(49) {
+.star-music:nth-child(49) {
     top: 317px;
     left: 63px;
 }
 
-.star:nth-child(50) {
+.star-music:nth-child(50) {
     top: 327px;
     left: 163px;
 }
 
-.star:nth-child(51) {
+.star-music:nth-child(51) {
     top: 111px;
     left: 163px;
 }
 
-.star:nth-child(52) {
+.star-music:nth-child(52) {
     top: 137px;
     left: 213px;
 }
 
-.star:nth-child(53) {
+.star-music:nth-child(53) {
     top: 137px;
     left: 343px;
 }
 
-.star:nth-child(54) {
+.star-music:nth-child(54) {
 top: 367px;
     left: 146px;
 }
 
-.star:nth-child(55) {
+.star-music:nth-child(55) {
 top: 227px;
     left: 143px;
 }
 
-.star:nth-child(56) {
+.star-music:nth-child(56) {
 top: 137px;
     left: 143px;
 }
 
-.star:nth-child(57) {
+.star-music:nth-child(57) {
 top: 37px;
     left: 333px;
 }
 
-.star:nth-child(58) {
+.star-music:nth-child(58) {
         top: 57px;
     left: 353px;
 }
 
-.star:nth-child(59) {
+.star-music:nth-child(59) {
 top: 217px;
     left: 353px;
 }
 
-.star:nth-child(60) {
+.star-music:nth-child(60) {
 top: 137px;
     left: 260px;
 }
 
-.star:nth-child(61) {
+.star-music:nth-child(61) {
 top: 67px;
     left: 200px;
 }
 
 /* BG */
 
-.second .star:nth-child(1) {
+.second .star-music:nth-child(1) {
     top: 130px;
     left: 230px;
   filter: blur(7px);
 }
 
-.second .star:nth-child(2) {
+.second .star-music:nth-child(2) {
     top: 300px;
     left: 180px;
   filter: blur(7px);
 }
 
-.second .star:nth-child(3) {
+.second .star-music:nth-child(3) {
     top: 100px;
     left: 180px;
   filter: blur(4px);
 }
 
-.second .star:nth-child(4) {
+.second .star-music:nth-child(4) {
     top: 90px;
     left: 380px;
   filter: blur(2px);
 }
 
-.second .star:nth-child(5) {
+.second .star-music:nth-child(5) {
     top: 210px;
     left: 380px;
   filter: blur(10px);
 }
 
-.second .star:nth-child(6) {
+.second .star-music:nth-child(6) {
     top: 410px;
     left: 70px;
   filter: blur(8px);
 }
 
-.second .star:nth-child(7) {
+.second .star-music:nth-child(7) {
     top: 80px;
     left: 160px;
   filter: blur(10px);
 }
 
-.second .star:nth-child(8) {
+.second .star-music:nth-child(8) {
     top: 200px;
     left: 155px;
   filter: blur(5px);
 }
 
-.second .star:nth-child(9) {
+.second .star-music:nth-child(9) {
     top: 220px;
     left: 160px;
   filter: blur(7px);
 }
 
-.second .star:nth-child(10) {
+.second .star-music:nth-child(10) {
     top: 295px;
     left: 340px;
   filter: blur(8px);
 }
-.second .star:nth-child(11) {
+.second .star-music:nth-child(11) {
     top: 50px;
     left: 355px;
   filter: blur(5px);
 }
 
-.second .star:nth-child(12) {
+.second .star-music:nth-child(12) {
     top: 120px;
     left: 350px;
   filter: blur(5px);
 }
 
-.second .star:nth-child(13) {
+.second .star-music:nth-child(13) {
     top: 220px;
     left: 355px;
   filter: blur(5px);
 }
 
-.second .star:nth-child(14) {
+.second .star-music:nth-child(14) {
     top: 380px;
     left: 55px;
   filter: blur(15px);
 }
 
-.third .star:nth-child(1) {
+.third .star-music:nth-child(1) {
     top: 300px;
     left: 70px;
     filter: blur(0);
     animation: move 10s infinite;
 }
 
-.third .star:nth-child(2) {
+.third .star-music:nth-child(2) {
     top: 300px;
     left: 370px;
     filter: blur(0);
     animation: move 5s infinite;
 }
 
-.third .star:nth-child(3) {
+.third .star-music:nth-child(3) {
     top: 100px;
     left: 370px;
     filter: blur(0);
