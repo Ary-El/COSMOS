@@ -8,6 +8,7 @@ class ArtistsController < ApplicationController
       @artists = Artist.all
       @musicians = Artist.where(category: Category.where(name: "Musician").first)
       @photographers = Artist.where(category: Category.where(name: "Photographer").first)
+      @sculptors = Artist.where(category: Category.where(name: "Sculptor").first)
     end
   end
 
