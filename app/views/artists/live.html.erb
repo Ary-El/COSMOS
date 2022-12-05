@@ -1,6 +1,45 @@
-<div class="artist-card-show">
-  <div class="artist-image-show"><%= cl_image_tag(@artist.photo.key) %></div>
-    <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
-    <p class="artist-card-text"><%= @artist.category %></p>
-  </div>
+<div class="align-items-center d-flex h-75 justify-content-center page-artist">
+    <div class="artist-card-show text-center w-50 d-flex flex-column align-items-center justify-content-center">
+
+        <div class="artist-image-show my-3">
+            <%= cl_image_tag(@artist.photo.key) %>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="my-5">
+            <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
+            <h5><%= @artist.category.name %></h5>
+        </div>
+
+        <div class="my-3 w-50">
+          <div class="artist-card-live icing">
+            <% if @artist == current_user %>
+              <iframe
+                src="<%= @artist.host_url %>"
+                allow="camera; microphone; fullscreen; speaker; display-capture"
+              ></iframe>
+            <% else %>
+              <iframe
+                src="<%= @artist.visitor_url %>"
+                allow="camera; microphone; fullscreen; speaker; display-capture"
+              ></iframe>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="bouton-artist d-flex justify-content-between w-25">
+          <%= link_to artists_path, class: "" do %>
+            <i class="fa-solid fa-globe"></i>
+            <p>share</p>
+          <% end %>
+          <%= link_to artists_path, class: "" do %>
+            <i class="fa-solid fa-sack-dollar"></i>
+            <p>donate</p>
+          <% end %>
+        </div>
+    </div>
 </div>

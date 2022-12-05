@@ -10,3 +10,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "pages/live";
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+
+  color: #ffd900;
+}

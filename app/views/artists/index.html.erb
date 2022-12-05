@@ -4,99 +4,206 @@
 
   <div class="music-artists">
         <div class="constellation-music">
-          <div class="box-artist">
-            <% @artists.each do |artist| %>
+          <div class="box-artist-music">
+            <% i  = 0 %>
+            <% @musicians.each do |artist| %>
               <%= link_to artist_path(artist) do %>
                 <%# # A enlever quand les paires seront faites : (le if end) %>
-                <% if artist.id < 3 %>
-                  <div class="star-artist star-s live" style="top: <%= position[artist.id][0] %> ; left: <%= position[artist.id][1]  %>"></div>
+                <% if i < 8  %>
+                  <div class="star-music-artist star-music-s live" style="top: <%= position[i][0] %> ; left: <%= position[i][1]  %>"></div>
                 <% end %>
+                <% i += 1 %>
+
               <% end %>
             <% end %>
 
           </div>
           <div class="first">
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-l"></div>
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-l"></div>
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-l"></div>
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-l"></div>
-            <div class="star star-l"></div>
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-l"></div>
-            <div class="star star-l"></div>
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-l"></div>
-            <div class="star star-l"></div>
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-l"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-l"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
 
-            <div class="star star-m"></div>
-            <div class="star star-m"></div>
-            <div class="star star-m"></div>
-            <div class="star star-m"></div>
-            <div class="star star-m"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-s"></div>
-            <div class="star star-m"></div>
-            <div class="star star-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-s"></div>
+            <div class="star-music star-music-m"></div>
+            <div class="star-music star-music-s"></div>
             <div class="second">
-              <div class="star star-l"></div>
-              <div class="star star-m"></div>
-              <div class="star star-l"></div>
-              <div class="star star-l"></div>
-              <div class="star star-l"></div>
-              <div class="star star-l"></div>
-              <div class="star star-l"></div>
-              <div class="star star-l"></div>
-                      <div class="star star-l"></div>
-              <div class="star star-l"></div>
-              <div class="star star-m"></div>
-                      <div class="star star-l"></div>
-              <div class="star star-l"></div>
-              <div class="star star-l"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-m"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
+                      <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-m"></div>
+                      <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
               <div class="third">
-                <div class="star star-xs"></div>
-                <div class="star star-xs"></div>
-                <div class="star star-xs"></div>
+                <div class="star-music star-music-xs"></div>
+                <div class="star-music star-music-xs"></div>
+                <div class="star-music star-music-xs"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+    <div class="mphotographer-artists">
+        <div class="constellation-photographer">
+          <div class="box-artist-photographer">
+            <% i  = 0 %>
+            <% @photographers.each do |artist| %>
+              <%= link_to artist_path(artist) do %>
+                <%# # A enlever quand les paires seront faites : (le if end) %>
+                <% if i < 8  %>
+                  <div class="star-photographer-artist star-photographer-s live" style="top: <%= position[i][0] %> ; left: <%= position[i][1]  %>"></div>
+                <% end %>
+                <% i += 1 %>
+
+              <% end %>
+            <% end %>
+
+          </div>
+          <div class="first">
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-s"></div>
+            <div class="second">
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-m"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+                      <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-m"></div>
+                      <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="star-photographer star-photographer-l"></div>
+              <div class="third">
+                <div class="star-photographer star-photographer-xs"></div>
+                <div class="star-photographer star-photographer-xs"></div>
+                <div class="star-photographer star-photographer-xs"></div>
               </div>
             </div>
           </div>
