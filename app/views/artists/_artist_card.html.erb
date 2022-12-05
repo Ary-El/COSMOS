@@ -4,7 +4,7 @@
   <% end %>
   <div class="artist-card-body">
     <h3 class="artist-card-title"><%= artist.first_name %>-<%= artist.last_name %></h3>
-    <h5 class="artist-card-subtitle"><%= animal.date_of_birth%></h5>
+    <h5 class="artist-card-subtitle"><%= artist.date_of_birth%></h5>
     <p class="artist-card-text"><%= artist.category %></p>
     <%= link_to artist_path(artist) do %>
       <i class="btn btn-gradient"></i>

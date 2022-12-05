@@ -7,12 +7,13 @@
   <div class="music-artists">
         <div class="constellation-music">
           <div class="box-artist-music">
-            <% i  = 0 %>
+            <% i = 0 %>
             <% @musicians.each do |artist| %>
-              <%= link_to artist_path(artist) do %>
+              <%= link_to artist_path(artist), class: 'artist-star' do %>
                 <%# # A enlever quand les paires seront faites : (le if end) %>
                 <% if i < 8  %>
                   <div class="star-music-artist star-music-s live" style="top: <%= position_musician[i][0] %> ; left: <%= position_musician[i][1]  %>"></div>
+                  <%= render 'artist_info_window', artist: artist %>
                 <% end %>
                 <% i += 1 %>
 
@@ -70,7 +71,6 @@
             <div class="star-music star-music-s"></div>
             <div class="star-music star-music-s"></div>
             <div class="star-music star-music-s"></div>
-
             <div class="star-music star-music-m"></div>
             <div class="star-music star-music-m"></div>
             <div class="star-music star-music-m"></div>
@@ -92,10 +92,10 @@
               <div class="star-music star-music-l"></div>
               <div class="star-music star-music-l"></div>
               <div class="star-music star-music-l"></div>
-                      <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
               <div class="star-music star-music-l"></div>
               <div class="star-music star-music-m"></div>
-                      <div class="star-music star-music-l"></div>
+              <div class="star-music star-music-l"></div>
               <div class="star-music star-music-l"></div>
               <div class="star-music star-music-l"></div>
               <div class="third">
@@ -113,10 +113,11 @@
           <div class="box-artist-photographer">
             <% i  = 0 %>
             <% @photographers.each do |artist| %>
-              <%= link_to artist_path(artist) do %>
+              <%= link_to artist_path(artist), class: 'artist-star' do %>
                 <%# # A enlever quand les paires seront faites : (le if end) %>
                 <% if i < 8  %>
                   <div class="star-photographer-artist star-photographer-s live" style="top: <%= position_photographer[i][0] %> ; left: <%= position_photographer[i][1]  %>"></div>
+                  <%= render 'artist_info_window', artist: artist %>
                 <% end %>
                 <% i += 1 %>
 
@@ -220,6 +221,7 @@
                 <%# # A enlever quand les paires seront faites : (le if end) %>
                 <% if i < 8  %>
                   <div class="star-sculptor-artist star-sculptor-s live" style="top: <%= position_sculptor[i][0] %> ; left: <%= position_sculptor[i][1]  %>"></div>
+                  <%= render 'artist_info_window', artist: artist %>
                 <% end %>
                 <% i += 1 %>
 
@@ -311,7 +313,5 @@
           </div>
         </div>
       </div>
-</div>
-
-
+  </div>
 </div>

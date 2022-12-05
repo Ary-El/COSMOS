@@ -51,6 +51,10 @@ class ArtistsController < ApplicationController
     @artist.save
   end
 
+  def donate
+    @artist = Artist.find(params[:id])
+  end
+
   private
 
   def artist_params
