@@ -45,7 +45,7 @@ textarea {
   padding: 0;
 }
 
-button {
+.contact  {
   background-color: #98554F;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
@@ -57,7 +57,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.contact:hover {
   transition: all 0.5s ease-in-out;
   background-color: #FDFEFF;
   color: #98554F;
