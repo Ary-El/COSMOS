@@ -8,4 +8,7 @@ class Artist < ApplicationRecord
   validates :email, presence: true
   validates :category, presence: true
 
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end

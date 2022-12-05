@@ -1,0 +1,9 @@
+<div class="star-info-window">
+  <div class='constellation-window-text'>
+   <%= artist.full_name %>
+  </div>
+  <% if artist.photo.attached? %>
+    <%= cl_image_tag(artist.photo.key, :width => 150, :crop => "pad", class:'star-info-window-img') %>
+  <% end %>
+
+</div>
