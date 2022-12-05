@@ -8,7 +8,6 @@ class Artist < ApplicationRecord
   validates :date_of_birth, presence: true
   validates :email, presence: true
   validates :category, presence: true
-
   def full_name
     "#{first_name} #{last_name}"
   end

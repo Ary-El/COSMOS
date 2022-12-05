@@ -32,6 +32,8 @@
         </div>
 
         <div class="bouton-artist d-flex justify-content-between w-25">
+          <%= render 'copy_link', value: live_artist_url(@artist), cta: 'Share' %>
+
           <%= link_to artists_path, class: "" do %>
             <i class="fa-solid fa-globe"></i>
             <p>share</p>

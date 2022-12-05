@@ -1,0 +1,428 @@
+/* WHEN AN ARTIST IS LIVE */
+
+.live {
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  from {
+    background: #ffffff91;
+    box-shadow: 0px 0px 10px white;
+    opacity: 0.8;
+  }
+  to {
+    box-shadow: 0px 0px 10px white;
+    opacity: 1;
+  }
+}
+
+/* CONSTELLATION */
+/* ARTIST */
+.box-sculptor-artist {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+}
+.star-sculptor-artist {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+/* BG */
+.constellation-sculptor {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mettre un bg img pour la forme */
+.first {
+  filter: blur(2px);
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-size: 100%;
+  background-position: center;
+}
+.second {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-size: 300%;
+  background-position: center;
+  z-index: -1;
+}
+.third {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-size: 300%;
+  background-position: center;
+  z-index: 1;
+}
+.first .star-sculptor {
+  opacity: 0.9;
+}
+.star-sculptor {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+.star-sculptor-xs {
+  height: 5px;
+  width: 5px;
+}
+.star-sculptor-s {
+  height: 10px;
+  width: 10px;
+}
+.star-sculptor-m {
+  height: 15px;
+  width: 15px;
+}
+.star-sculptor-l {
+  height: 20px;
+  width: 20px;
+}
+.star-sculptor:nth-child(1) {
+    bottom: 293px;
+    left: 156px;
+}
+.star-sculptor:nth-child(2) {
+    bottom: 256px;
+    left: 177px;
+}
+.star-sculptor:nth-child(3) {
+  bottom: 106px;
+  left: 162px;
+}
+.star-sculptor:nth-child(4) {
+  bottom: 94px;
+  left: 175px;
+}
+.star-sculptor:nth-child(5) {
+  bottom: 190px;
+  left: 187px;
+}
+.star-sculptor:nth-child(6) {
+  top: 220px;
+  right: 174px;
+}
+.star-sculptor:nth-child(7) {
+  top: 243px;
+  right: 176px;
+}
+.star-sculptor:nth-child(8) {
+  top: 345px;
+    right: 190px;
+}
+.star-sculptor:nth-child(9) {
+  top: 18px;
+  left: 156px;
+}
+.star-sculptor:nth-child(10) {
+  top: 51px;
+  right: 256px;
+}
+.star-sculptor:nth-child(11) {
+  top: 49px;
+  left: 155px;
+}
+.star-sculptor:nth-child(12) {
+  top: 137px;
+  left: 307px;
+}
+.star-sculptor:nth-child(13) {
+      top: 208px;
+    left: 204px;
+}
+.star-sculptor:nth-child(14) {
+top: 337px;
+    left: 320px;
+}
+.star-sculptor:nth-child(15) {
+    top: 130px;
+    left: 290px;
+}
+.star-sculptor:nth-child(16) {
+top: 91px;
+    left: 251px;
+}
+.star-sculptor:nth-child(17) {
+top: 175px;
+    left: 307px;
+}
+.star-sculptor:nth-child(18) {
+    top: 199px;
+    left: 275px;
+}
+.star-sculptor:nth-child(19) {
+top: 423px;
+    left: 326px;
+}
+.star-sculptor:nth-child(20) {
+    top: 321px;
+    left: 180px;
+}
+.star-sculptor:nth-child(21) {
+    top: 301px;
+    left: 326px;
+}
+.star-sculptor:nth-child(22) {
+    top: 354px;
+    left: 205px;
+}
+.star-sculptor:nth-child(23) {
+    top: 171px;
+    left: 153px;
+}
+.star-sculptor:nth-child(24) {
+    top: 360px;
+    left: 332px;
+}
+.star-sculptor:nth-child(25) {
+    top: 316px;
+    left: 298px;
+}
+.star-sculptor:nth-child(26) {
+    top: 122px;
+    left: 322px;
+}
+.star-sculptor:nth-child(27) {
+    top: 280px;
+    left: 325px;
+}
+.star-sculptor:nth-child(28) {
+    top: 84px;
+    left: 210px;
+}
+.star-sculptor:nth-child(29) {
+    top: 264px;
+    left: 204px;
+}
+.star-sculptor:nth-child(30) {
+    top: 241px;
+    left: 212px;
+}
+.star-sculptor:nth-child(31) {
+    top: 339px;
+    left: 243px;
+}
+.star-sculptor:nth-child(32) {
+    top: 102px;
+    left: 311px;
+}
+.star-sculptor:nth-child(33) {
+    top: 139px;
+    left: 169px;
+}
+.star-sculptor:nth-child(34) {
+top: 485px;
+    left: 197px;
+}
+.star-sculptor:nth-child(35) {
+top: 437px;
+    left: 187px;
+}
+.star-sculptor:nth-child(36) {
+top: 198px;
+    left: 259px;
+}
+.star-sculptor:nth-child(37) {
+top: 326px;
+    left: 272px;
+}
+.star-sculptor:nth-child(38) {
+    top: 23px;
+    left: 234px;
+}
+.star-sculptor:nth-child(39) {
+top: 95px;
+    left: 288px;
+}
+.star-sculptor:nth-child(40) {
+    top: 191px;
+    left: 289px;
+}
+.star-sculptor:nth-child(41) {
+top: 333px;
+    left: 337px;
+}
+.star-sculptor:nth-child(42) {
+    top: 81px;
+    left: 235px;
+}
+.star-sculptor:nth-child(43) {
+    top: 40px;
+    left: 240px;
+}
+.star-sculptor:nth-child(44) {
+    top: 10px;
+    left: 223px;
+}
+.star-sculptor:nth-child(45) {
+    top: 416px;
+    left: 226px;
+}
+.star-sculptor:nth-child(46) {
+    top: 400px;
+    left: 333px;
+}
+.star-sculptor:nth-child(47) {
+    top: 453px;
+    left: 221px;
+}
+.star-sculptor:nth-child(48) {
+    top: 453px;
+    left: 326px;
+}
+.star-sculptor:nth-child(49) {
+    top: 151px;
+    left: 158px;
+}
+.star-sculptor:nth-child(50) {
+    top: 395px;
+    left: 303px;
+}
+.star-sculptor:nth-child(51) {
+    top: 111px;
+    left: 190px;
+}
+.star-sculptor:nth-child(52) {
+    top: 83px;
+    left: 187px;
+}
+.star-sculptor:nth-child(53) {
+    top: 481px;
+    left: 331px;
+}
+.star-sculptor:nth-child(54) {
+    top: 383px;
+    left: 222px;
+}
+.star-sculptor:nth-child(55) {
+    top: 227px;
+    left: 162px;
+}
+.star-sculptor:nth-child(56) {
+    top: 75px;
+    left: 168px;
+}
+.star-sculptor:nth-child(57) {
+    top: 428px;
+    left: 311px;
+}
+.star-sculptor:nth-child(58) {
+    top: 486px;
+    left: 306px;
+}
+.star-sculptor:nth-child(59) {
+    top: 360px;
+    left: 272px;
+}
+.star-sculptor:nth-child(60) {
+    top: 483px;
+    left: 251px;
+}
+.star-sculptor:nth-child(61) {
+    top: 459px;
+    left: 191px;
+}
+/* BG */
+.second .star-sculptor:nth-child(1) {
+    top: 388px;
+    left: 196px;
+  filter: blur(4px);
+}
+.second .star-sculptor:nth-child(2) {
+    top: 361px;
+    left: 180px;
+  filter: blur(7px);
+}
+.second .star-sculptor:nth-child(3) {
+    top: 478px;
+    left: 216px;
+  filter: blur(4px);
+}
+.second .star-sculptor:nth-child(4) {
+    top: -6px;
+    left: 197px;
+  filter: blur(2px);
+}
+.second .star-sculptor:nth-child(5) {
+    top: -5px;
+    left: 177px;
+  filter: blur(2px);
+}
+.second .star-sculptor:nth-child(6) {
+    top: 415px;
+    left: 177px;
+  filter: blur(4px);
+}
+.second .star-sculptor:nth-child(7) {
+    top: 65px;
+    left: 154px;
+  filter: blur(10px);
+}
+.second .star-sculptor:nth-child(8) {
+    top: 164px;
+    left: 183px;
+  filter: blur(5px);
+}
+.second .star-sculptor:nth-child(9) {
+    top: 339px;
+    left: 218px;
+  filter: blur(4px);
+}
+.second .star-sculptor:nth-child(10) {
+    top: 263px;
+    left: 315px;
+  filter: blur(8px);
+}
+.second .star-sculptor:nth-child(11) {
+    top: 217px;
+    left: 156px;
+  filter: blur(5px);
+}
+.second .star-sculptor:nth-child(12) {
+    top: 479px;
+    left: 280px;
+  filter: blur(5px);
+}
+.second .star-sculptor:nth-child(13) {
+    top: 435px;
+    left: 217px;
+  filter: blur(5px);
+}
+.second .star-sculptor:nth-child(14) {
+    top: 195px;
+    left: 304px;
+  filter: blur(4px);
+}
+.third .star-sculptor:nth-child(1) {
+    top: 225px;
+    left: 193px;
+    filter: blur(0);
+    animation: move 10s infinite;
+}
+.third .star-sculptor:nth-child(2) {
+    top: 467px;
+    left: 317px;
+    filter: blur(0);
+    animation: move 5s infinite;
+}
+.third .star-sculptor:nth-child(3) {
+    top: 122px;
+    left: 273px;
+    filter: blur(0);
+    animation: move 12s infinite;
+}
+@keyframes move {
+  from {
+    transform: translate(10px, -10px);
+  } to {
+    transform: translate(0px, -30px);
+  }
+}

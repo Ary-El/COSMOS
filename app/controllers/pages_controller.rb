@@ -4,4 +4,10 @@ class PagesController < ApplicationController
   def home
     @artists = Artist.all
   end
+
+  def news
+  end
+
+  def contact
+  end
 end
