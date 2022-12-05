@@ -35,3 +35,9 @@
         </div>
     </div>
 </div>
+
+
+
+<% if @artist.donates.any?  %>
+  <%= @artist.donates.pluck(:amount).sum %>
+<% end %>

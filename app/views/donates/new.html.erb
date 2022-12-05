@@ -16,8 +16,8 @@
 
 
                 <%= simple_form_for [@artist, @donate] do |f| %>
-                <%= f.input :amount %>
-                <%= f.submit %>
+                <%= f.input :amount, collection: ['3€', '5€', '10€'] %>
+                <%= f.submit class:"paypal-img" %>
                 <% end %>
 
 
