@@ -1,0 +1,67 @@
+<!-- Donation Form START -->
+<div class="paypal-form" >
+    <div class="paypal-header">
+        <h4 class="header-text">Donate via Paypal</h4>
+        <img src="https://neculaifantanaru.com/paypal.png" alt="Alternate Text" />
+    </div>
+    <!-- Identify your business so that you can collect the payments. -->
+    <div class="paypal-body">
+        <div class="col">
+            <div class="body-text">
+                <h4>RECURRENT DONATION</h4>
+                <p>Donate monthly to support <br>{artist.full_name}'</p>
+            </div>
+            <div class="paypal-content">
+                <!-- PayPal DONATION BUTTON WITH COMBO BOX. -->
+
+                <form action="#">
+
+                    <!-- Identify your business so that you can collect the payments. -->
+                    <input type="hidden" name="business" value="cosmos@gmail.com">
+
+                    <!-- Specify a Donate button. -->
+                    <input type="hidden" name="cmd" value="_donations">
+
+                    <!-- Specify details about the contribution -->
+                    <input type="hidden" name="item_name" value="Donation">
+                    <input type="hidden" name="item_number" value="Donation">
+                    <select name="amount"><option value="3.00">&euro;3.00</option><option value="5.00">&euro;5.00</option><option value="10.00">&euro;10.00</option><option value="25.00">&euro;25.00</option><option value="50.00">&euro;50.00</option></select>
+                    <input type="hidden" name="currency_code" value="EUR">
+
+                    <!-- Display the payment button. -->
+                    <input class="paypal-img" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                </form>
+
+
+
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="body-text">
+                <h4>SINGLE DONATION</h4>
+                <p>Donate the desired amount to support <br>'#{artist.full_name}'</p>
+            </div>
+            <div class="paypal-content">
+                <form action="#">
+                    <input type="hidden" name="hosted_button_id" value="77FLYC2Z7JBUL" />
+                    <input class="paypal-img" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="paypal-contact">
+    <h4>Donate by Bank Transfer</h4>
+    <p>
+        <span>Account Ron: </span>
+        RO34INGB0000999900448439</p>
+    <div class="text-muted">
+        Open account at CA Bank
+    </div>
+</div>
+
+<!-- Donation Form Finnish -->

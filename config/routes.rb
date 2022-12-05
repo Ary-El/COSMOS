@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :artists, only: %i[index show]
   get "artists/:id/live", to: "artists#live", as: "live_artist"
+  get "artists/:id/donate", to: 'artists#donate', as: "donate_artist"
 end
