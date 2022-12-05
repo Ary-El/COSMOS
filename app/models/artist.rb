@@ -7,5 +7,4 @@ class Artist < ApplicationRecord
   validates :date_of_birth, presence: true
   validates :email, presence: true
   validates :category, presence: true
-
 end
