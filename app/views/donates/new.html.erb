@@ -9,28 +9,27 @@
         <div class="col">
             <div class="body-text">
                 <h4>RECURRENT DONATION</h4>
-                <p>Donate monthly to support <br>{artist.full_name}'</p>
+                <p>Donate monthly to support <br> <%= @artist.full_name %> </p>
             </div>
             <div class="paypal-content">
                 <!-- PayPal DONATION BUTTON WITH COMBO BOX. -->
 
-                <form action="#">
 
-                    <!-- Identify your business so that you can collect the payments. -->
-                    <input type="hidden" name="business" value="cosmos@gmail.com">
+                <%= simple_form_for [@artist, @donate] do |f| %>
+                <%= f.input :amount %>
+                <%= f.submit %>
+                <% end %>
 
-                    <!-- Specify a Donate button. -->
-                    <input type="hidden" name="cmd" value="_donations">
 
-                    <!-- Specify details about the contribution -->
-                    <input type="hidden" name="item_name" value="Donation">
-                    <input type="hidden" name="item_number" value="Donation">
+
+                  <%#   <!-- Specify details about the contribution -->
+
                     <select name="amount"><option value="3.00">&euro;3.00</option><option value="5.00">&euro;5.00</option><option value="10.00">&euro;10.00</option><option value="25.00">&euro;25.00</option><option value="50.00">&euro;50.00</option></select>
-                    <input type="hidden" name="currency_code" value="EUR">
+
 
                     <!-- Display the payment button. -->
                     <input class="paypal-img" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                </form>
+                </form> %>
 
 
 
@@ -40,7 +39,7 @@
         <div class="col">
             <div class="body-text">
                 <h4>SINGLE DONATION</h4>
-                <p>Donate the desired amount to support <br>'#{artist.full_name}'</p>
+                <p>Donate the desired amount to support <br><%= @artist.full_name %></p>
             </div>
             <div class="paypal-content">
                 <form action="#">

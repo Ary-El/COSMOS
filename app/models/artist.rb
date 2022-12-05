@@ -2,6 +2,7 @@ class Artist < ApplicationRecord
   belongs_to :category
   belongs_to :user
   has_one_attached :photo
+  has_many :donate
 
   validates :first_name, :last_name, presence: true
   validates :date_of_birth, presence: true
