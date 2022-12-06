@@ -56,11 +56,10 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
-  def my_profile
-    @artist = current_user.artist
+
+  def alphabetic_artist
+    @artists = Artist.all
   end
-
-
 
   private
 

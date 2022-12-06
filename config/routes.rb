@@ -15,6 +15,6 @@ Rails.application.routes.draw do
   # get "artists/:id/live", to: "artists#live", as: "live_artist"
   get "news", to: "pages#news", as: "news"
   get "contacts", to: "pages#contacts", as: "contacts"
+  get "all_artists", to: "artists#alphabetic_artist"
   get "faq", to: "pages#faq", as: "faq"
-  # get "artists/:id/my_profile", to: "artists#my_profile", as: "my_profile_artist"
 end
