@@ -1,0 +1,428 @@
+/* WHEN AN ARTIST IS LIVE */
+
+.live {
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  from {
+    background: #ffffff91;
+    box-shadow: 0px 0px 10px white;
+    opacity: 0.8;
+  }
+  to {
+    box-shadow: 0px 0px 10px white;
+    opacity: 1;
+  }
+}
+
+/* CONSTELLATION */
+/* ARTIST */
+.box-painter-artist {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+}
+.star-painter-artist {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+/* BG */
+.constellation-painter {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mettre un bg img pour la forme */
+.first {
+  filter: blur(2px);
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-size: 100%;
+  background-position: center;
+}
+.second {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-size: 300%;
+  background-position: center;
+  z-index: -1;
+}
+.third {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-size: 300%;
+  background-position: center;
+  z-index: 1;
+}
+.first .star-painter {
+  opacity: 0.9;
+}
+.star-painter {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+.star-painter-xs {
+  height: 5px;
+  width: 5px;
+}
+.star-painter-s {
+  height: 10px;
+  width: 10px;
+}
+.star-painter-m {
+  height: 15px;
+  width: 15px;
+}
+.star-painter-l {
+  height: 20px;
+  width: 20px;
+}
+.star-painter:nth-child(1) {
+  bottom: 228px;
+  left: 27px;
+}
+.star-painter:nth-child(2) {
+  bottom: 258px;
+  left: 31px;
+}
+.star-painter:nth-child(3) {
+  bottom: 132px;
+  left: 30px;
+}
+.star-painter:nth-child(4) {
+  bottom: 170px;
+  left: 24px;
+}
+.star-painter:nth-child(5) {
+  bottom: 103px;
+  left: 46px;
+}
+.star-painter:nth-child(6) {
+  top: 453px;
+  right: 360px;
+}
+.star-painter:nth-child(7) {
+  top: 412px;
+  right: 427px;
+}
+.star-painter:nth-child(8) {
+  top: 431px;
+  right: 398px;
+}
+.star-painter:nth-child(9) {
+  top: 444px;
+  left: 257px;
+}
+.star-painter:nth-child(10) {
+  top: 424px;
+  right: 241px;
+}
+.star-painter:nth-child(11) {
+  top: 464px;
+  left: 218px;
+}
+.star-painter:nth-child(12) {
+  top: 459px;
+  left: 158px;
+}
+.star-painter:nth-child(13) {
+  top: 426px;
+  left: 291px;
+}
+.star-painter:nth-child(14) {
+  top: 410px;
+  left: 321px;
+}
+.star-painter:nth-child(15) {
+  top: 65px;
+  left: 198px;
+}
+.star-painter:nth-child(16) {
+  top: 118px;
+  left: 91px;
+}
+.star-painter:nth-child(17) {
+  top: 360px;
+  left: 341px;
+}
+.star-painter:nth-child(18) {
+  top: 418px;
+  left: 139px;
+}
+.star-painter:nth-child(19) {
+  top: 124px;
+  left: 278px;
+}
+.star-painter:nth-child(20) {
+  top: 313px;
+  left: 354px;
+}
+.star-painter:nth-child(21) {
+  top: 218px;
+  left: 334px;
+}
+.star-painter:nth-child(22) {
+  top: 198px;
+  left: 43px;
+}
+.star-painter:nth-child(23) {
+  top: 84px;
+  left: 133px;
+}
+.star-painter:nth-child(24) {
+  top: 285px;
+  left: 19px;
+}
+.star-painter:nth-child(25) {
+  top: 142px;
+  left: 73px;
+}
+.star-painter:nth-child(26) {
+  top: 344px;
+  left: 356px;
+}
+.star-painter:nth-child(27) {
+  top: 177px;
+  left: 305px;
+}
+.star-painter:nth-child(28) {
+  top: 389px;
+  left: 338px;
+}
+.star-painter:nth-child(29) {
+  top: 69px;
+  left: 171px;
+}
+.star-painter:nth-child(30) {
+  top: 73px;
+  left: 235px;
+}
+.star-painter:nth-child(31) {
+  top: 89px;
+  left: 259px;
+}
+.star-painter:nth-child(32) {
+  top: 179px;
+  left: 124px;
+}
+.star-painter:nth-child(33) {
+  top: 196px;
+  left: 326px;
+}
+.star-painter:nth-child(34) {
+  top: 343px;
+  left: 62px;
+}
+.star-painter:nth-child(35) {
+  top: 331px;
+  left: 127px;
+}
+.star-painter:nth-child(36) {
+  top: 326px;
+  left: 104px;
+}
+.star-painter:nth-child(37) {
+  top: 154px;
+  left: 291px;
+}
+.star-painter:nth-child(38) {
+  top: 100px;
+  left: 113px;
+}
+.star-painter:nth-child(39) {
+  top: 325px;
+  left: 281px;
+}
+.star-painter:nth-child(40) {
+  top: 334px;
+  left: 250px;
+}
+.star-painter:nth-child(41) {
+  top: 334px;
+  left: 310px;
+}
+.star-painter:nth-child(42) {
+  top: 241px;
+  left: 71px;
+}
+.star-painter:nth-child(43) {
+  top: 158px;
+  left: 104px;
+}
+.star-painter:nth-child(44) {
+  top: 357px;
+  left: 232px;
+}
+.star-painter:nth-child(45) {
+  top: 386px;
+  left: 153px;
+}
+.star-painter:nth-child(46) {
+  top: 367px;
+  left: 192px;
+}
+.star-painter:nth-child(47) {
+  top: 349px;
+  left: 143px;
+}
+.star-painter:nth-child(48) {
+  top: 255px;
+  left: 99px;
+}
+.star-painter:nth-child(49) {
+  top: 328px;
+  left: 81px;
+}
+.star-painter:nth-child(50) {
+  top: 136px;
+  left: 199px;
+}
+.star-painter:nth-child(51) {
+  top: 288px;
+  left: 96px;
+}
+.star-painter:nth-child(52) {
+  top: 468px;
+  left: 191px;
+}
+.star-painter:nth-child(53) {
+  top: 343px;
+  left: 328px;
+}
+.star-painter:nth-child(54) {
+  top: 271px;
+  left: 357px;
+}
+.star-painter:nth-child(55) {
+  top: 107px;
+  left: 273px;
+}
+.star-painter:nth-child(56) {
+  top: 188px;
+  left: 156px;
+}
+.star-painter:nth-child(57) {
+  top: 154px;
+  left: 199px;
+}
+.star-painter:nth-child(58) {
+  top: 97px;
+  left: 173px;
+}
+.star-painter:nth-child(59) {
+  top: 387px;
+  left: 233px;
+}
+.star-painter:nth-child(60) {
+  top: 167px;
+  left: 56px;
+}
+.star-painter:nth-child(61) {
+  top: 119px;
+  left: 195px;
+}
+/* BG */
+.second .star-painter:nth-child(1) {
+  top: 133px;
+  left: 147px;
+  filter: blur(7px);
+}
+.second .star-painter:nth-child(2) {
+  top: 364px;
+  left: 159px;
+  filter: blur(7px);
+}
+.second .star-painter:nth-child(3) {
+    top: 180px;
+    left: 180px;
+  filter: blur(4px);
+}
+.second .star-painter:nth-child(4) {
+  top: 243px;
+  left: 349px;
+  filter: blur(2px);
+}
+.second .star-painter:nth-child(5) {
+  top: 373px;
+  left: 276px;
+  filter: blur(10px);
+}
+.second .star-painter:nth-child(6) {
+  top: 372px;
+  left: 97px;
+  filter: blur(8px);
+}
+.second .star-painter:nth-child(7) {
+  top: 284px;
+  left: 61px;
+  filter: blur(10px);
+}
+.second .star-painter:nth-child(8) {
+  top: 368px;
+  left: 212px;
+  filter: blur(5px);
+}
+.second .star-painter:nth-child(9) {
+  top: 413px;
+  left: 189px;
+  filter: blur(7px);
+}
+.second .star-painter:nth-child(10) {
+  top: 291px;
+  left: 354px;
+  filter: blur(8px);
+}
+.second .star-painter:nth-child(11) {
+  top: 466px;
+  left: 192px;
+  filter: blur(5px);
+}
+.second .star-painter:nth-child(12) {
+  top: 440px;
+  left: 100px;
+  filter: blur(5px);
+}
+.second .star-painter:nth-child(13) {
+  top: 240px;
+  left: 23px;
+  filter: blur(5px);
+}
+.second .star-painter:nth-child(14) {
+  top: 69px;
+  left: 214px;
+  filter: blur(15px);
+}
+.third .star-painter:nth-child(1) {
+  top: 300px;
+  left: 70px;
+  filter: blur(0);
+  animation: move 10s infinite;
+}
+.third .star-painter:nth-child(2) {
+  top: 300px;
+  left: 337px;
+  filter: blur(0);
+  animation: move 5s infinite;
+}
+.third .star-painter:nth-child(3) {
+  top: 284px;
+  left: 222px;
+  filter: blur(0);
+  animation: move 12s infinite;
+}
+@keyframes move {
+  from {
+    transform: translate(10px, -10px);
+  } to {
+    transform: translate(0px, -30px);
+  }
+}

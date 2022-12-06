@@ -34,14 +34,11 @@
         <div class="bouton-artist d-flex justify-content-between w-25">
           <%= render 'copy_link', value: live_artist_url(@artist), cta: 'Share' %>
 
-          <%= link_to artists_path, class: "" do %>
-            <i class="fa-solid fa-globe"></i>
-            <p>share</p>
-          <% end %>
-          <%= link_to artist_donates_path(@artist), class: "" do %>
+          <%= link_to new_artist_donate_path(@artist), class: "" do %>
             <i class="fa-solid fa-sack-dollar"></i>
             <p>donate</p>
           <% end %>
         </div>
     </div>
 </div>
+
