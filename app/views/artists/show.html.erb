@@ -10,14 +10,23 @@
             <div class="dot"></div>
         </div>
 
-        <div class="my-5">
+        <div class="my-2">
             <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
             <h5><%= @artist.category.name %></h5>
         </div>
+        <i class="fa-solid fa-sack-dollar"></i>
+        <% if @artist.donates.any?  %>
+          <%= @artist.donates.pluck(:amount).sum %>€
+        <% else %>
+          0€
+        <% end %>
 
         <div class="my-3 w-50">
           <p><%= @artist.description %></p>
         </div>
+
+
+
         <div class="bouton-artist d-flex justify-content-between align-items-center w-25">
           <%= render 'copy_link', value: artist_url(@artist), cta: 'Share' %>
 
@@ -25,16 +34,12 @@
             <i class="fa-solid fa-video"></i>
             <p>live</p>
           <% end %>
-          <%= link_to artist_donates_path(@artist), class: "" do %>
+          <%= link_to  new_artist_donate_path(@artist), class: "" do %>
             <i class="fa-solid fa-sack-dollar"></i>
             <p>donate</p>
           <% end %>
         </div>
     </div>
+
+
 </div>
-
-
-
-<% if @artist.donates.any?  %>
-  <%= @artist.donates.pluck(:amount).sum %>
-<% end %>
