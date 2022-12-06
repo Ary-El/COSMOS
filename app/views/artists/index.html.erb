@@ -1,6 +1,7 @@
-<% position_musician = [["140px", "130px"], ["150px", "330px"], ["240px", "170px"], ["40px", "380px"], ["200px", "340px"], ["140px", "390px"], ["240px", "120px"], ["340px", "210px"]] %>
+<% position_musician = [["485px", "117px"], ["129px", "222px"], ["294px", "377px"], ["290px", "172px"], ["112px", "174px"], ["318px", "327px"], ["411px", "343px"], ["37px", "295px"]] %>
 <% position_photographer = [["140px", "130px"], ["150px", "330px"], ["240px", "170px"], ["40px", "380px"], ["200px", "340px"], ["140px", "390px"], ["240px", "120px"], ["340px", "210px"]] %>
 <% position_sculptor = [["140px", "130px"], ["150px", "330px"], ["240px", "170px"], ["40px", "380px"], ["200px", "340px"], ["140px", "390px"], ["240px", "120px"], ["340px", "210px"]] %>
+<% position_painter = [["140px", "130px"], ["150px", "330px"], ["240px", "170px"], ["40px", "380px"], ["200px", "340px"], ["140px", "390px"], ["240px", "120px"], ["340px", "210px"]] %>
 
 <div class="container-index">
 
@@ -314,4 +315,108 @@
         </div>
       </div>
   </div>
+
+  <div class="painter-artists">
+        <div class="constellation-painter">
+          <div class="box-painter-artist">
+            <% i  = 0 %>
+            <% @painters.each do |artist| %>
+              <%= link_to artist_path(artist) do %>
+                <%# # A enlever quand les paires seront faites : (le if end) %>
+                <% if i < 8  %>
+                  <div class="star-painter-artist star-painter-s live" style="top: <%= position_painter[i][0] %> ; left: <%= position_painter[i][1]  %>"></div>
+                  <%= render 'artist_info_window', artist: artist %>
+                <% end %>
+                <% i += 1 %>
+
+              <% end %>
+            <% end %>
+          </div>
+          <div class="first">
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-l"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="star-painter star-painter-m"></div>
+            <div class="star-painter star-painter-s"></div>
+            <div class="second">
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-m"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+                      <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-m"></div>
+                      <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="star-painter star-painter-l"></div>
+              <div class="third">
+                <div class="star-painter star-painter-xs"></div>
+                <div class="star-painter star-painter-xs"></div>
+                <div class="star-painter star-painter-xs"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
 </div>
