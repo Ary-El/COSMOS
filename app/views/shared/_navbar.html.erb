@@ -9,7 +9,7 @@
                 <li><%= link_to "Artists", artists_path, class: "dropdown-item" %></li>
                 <li><%= link_to "News", news_path, class: "dropdown-item" %></li>
                 <li role="separator" class="divider"></li>
-                <li><%= link_to "FAQs", artists_path, class: "dropdown-item" %></li>
+                <li><%= link_to "FAQs", faq_path, class: "dropdown-item" %></li>
                 <li role="separator" class="divider"></li>
                 <li><%= link_to "Contacts", contacts_path, class: "dropdown-item" %></li>
               </ul>
@@ -24,7 +24,6 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
@@ -37,8 +36,12 @@
           <li class="nav-item dropdown">
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "My profile", "#", class: "dropdown-item" %>
-              <%= link_to "Start Live", "#", class: "dropdown-item" %>
+              <% if current_user && current_user.artist %>
+                <%= link_to "My profile", artist_path(current_user.artist), class: "dropdown-item" %>
+              <% end %>
+              <% if current_user && current_user.artist %>
+                <%= link_to "Start Live", live_artist_path(current_user.artist), class: "dropdown-item" %>
+              <% end %>
               <%= link_to "Message", "#", class: "dropdown-item" %>
               <%= link_to "Activity", "#", class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>

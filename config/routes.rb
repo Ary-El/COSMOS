@@ -6,9 +6,15 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :artists, only: %i[index show] do
+    member do
+      get :live
+      get :my_profile
+    end
     resources :donates, only: [:new, :create]
   end
-  get "artists/:id/live", to: "artists#live", as: "live_artist"
+  # get "artists/:id/live", to: "artists#live", as: "live_artist"
   get "news", to: "pages#news", as: "news"
   get "contacts", to: "pages#contacts", as: "contacts"
+  get "faq", to: "pages#faq", as: "faq"
+  # get "artists/:id/my_profile", to: "artists#my_profile", as: "my_profile_artist"
 end
