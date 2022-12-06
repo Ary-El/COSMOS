@@ -9,10 +9,10 @@
           <div class="box-artist-music">
             <% i = 0 %>
             <% @musicians.each do |artist| %>
-              <%= link_to artist_path(artist), class: 'artist-star' do %>
-                <%# # A enlever quand les paires seront faites : (le if end) %>
                 <% if i < 8  %>
-                  <div class="star-music-artist star-music-s live" style="top: <%= position_musician[i][0] %> ; left: <%= position_musician[i][1]  %>"></div>
+              <%= link_to artist_path(artist), class: 'artist-star', style: "top: #{position_musician[i][0]}; left: #{position_musician[i][1]}" do %>
+                <%# # A enlever quand les paires seront faites : (le if end) %>
+                  <div class="star-music-artist star-music-s live"></div>
                   <%= render 'artist_info_window', artist: artist %>
                 <% end %>
                 <% i += 1 %>

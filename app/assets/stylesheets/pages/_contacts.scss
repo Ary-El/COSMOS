@@ -18,19 +18,14 @@
   margin-bottom: 20px;
 }
 
-h2 , label {
+
+.div-contact {
+  h2 , label {
   display: block;
   text-transform: uppercase;
   font-weight: 700;
   color: #FDFEFF;
 }
-
-.contact-talk {
-  width: 360px;
-  font-size: 4rem;
-}
-
-
 input {
   width: 100%;
   height: 1.8rem;
@@ -44,6 +39,13 @@ textarea {
   border: 0;
   padding: 0;
 }
+}
+
+.contact-talk {
+  width: 360px;
+  font-size: 4rem;
+}
+
 
 .contact  {
   background-color: #98554F;
