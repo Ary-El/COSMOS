@@ -58,7 +58,6 @@ class ArtistsController < ApplicationController
 
   def alphabetic_artist
     @artists = Artist.all
-    @artists.order(first_name: :asc)
   end
 
   private
