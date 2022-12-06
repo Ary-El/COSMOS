@@ -23,9 +23,11 @@
             <i class="fa-solid fa-globe"></i>
             <p>share</p>
           <% end %>
-          <%= link_to live_artist_path(@artist), class: "" do %>
-            <i class="fa-solid fa-video"></i>
-            <p>live</p>
+          <% if @artist.user == current_user %>
+            <%= link_to live_artist_path(@artist), class: "" do %>
+              <i class="fa-solid fa-video"></i>
+              <p>live</p>
+            <% end %>
           <% end %>
           <%= link_to artist_donates_path(@artist), class: "" do %>
             <i class="fa-solid fa-sack-dollar"></i>
