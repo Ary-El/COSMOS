@@ -17,7 +17,7 @@
 
         <div class="my-3 w-50">
           <div class="artist-card-live icing">
-            <% if @artist == current_user %>
+            <% if @artist.user == current_user %>
               <iframe
                 src="<%= @artist.host_url %>"
                 allow="camera; microphone; fullscreen; speaker; display-capture"
@@ -41,4 +41,3 @@
         </div>
     </div>
 </div>
-
