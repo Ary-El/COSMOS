@@ -6,10 +6,10 @@ class ArtistsController < ApplicationController
       @artists = Artist.where(category: params[:category])
     else
       @artists = Artist.all
-      @musicians = Artist.where(category: Category.where(name: "Musician").first)
-      @photographers = Artist.where(category: Category.where(name: "Photographer").first)
-      @sculptors = Artist.where(category: Category.where(name: "Sculptor").first)
-      @painters = Artist.where(category: Category.where(name: "Painter").first)
+      @musicians = Artist.where(category: Category.where(name: "Musician").first).reverse
+      @photographers = Artist.where(category: Category.where(name: "Photographer").first).reverse
+      @sculptors = Artist.where(category: Category.where(name: "Sculptor").first).reverse
+      @painters = Artist.where(first_name: 'Moulino') + Artist.where(category: Category.where(name: "Painter").first)
     end
   end
 
