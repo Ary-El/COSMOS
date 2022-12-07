@@ -56,6 +56,11 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
+
+  def alphabetic_artist
+    @artists = Artist.all
+  end
+
   private
 
   def artist_params

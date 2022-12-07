@@ -1,5 +1,6 @@
 require "open-uri"
 
+Donate.destroy_all
 Artist.destroy_all
 Category.destroy_all
 User.destroy_all
@@ -1575,4 +1576,49 @@ artist101 = Artist.new(
 artist101.save!
 
 file = URI.open("http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQHRghFM0GSkZBPVxFRUJ7fAn6uUJNRnVjYJrFSGkrXJJs--QVfI5vZNkKO2R-Ihp5b")
-artist101.photo.attach(io: file, filename: "leonard")
+artist101.photo.attach(io: File.read(file), filename: "leonard")
+
+user102 = User.create(email: 'Moujonhson@gmail.fr', password: "123456")
+artist102 = Artist.new(
+  first_name: 'Mou',
+  last_name: 'Jonhson',
+  date_of_birth: '1956-08-12',
+  email: 'Moujonhson@gmail.fr',
+  description: "Moujonhson is an American guitarist, songwriter and singer, founder of the Anglo-American group The Moujonhson Experience, active from 1966 to 1970.",
+  category: musician,
+  user: user102
+)
+artist102.save!
+
+file = File.open(File.join(File.dirname(__FILE__), "../app/assets/images/photo1.jpg"))
+artist102.photo.attach(io: file, filename: "leonard")
+
+user103 = User.create(email: 'Mouthor@yahoo.fr', password: "123456")
+artist103 = Artist.new(
+  first_name: 'Mou',
+  last_name: 'Thor',
+  date_of_birth: '1990-06-04',
+  email: 'Thor@yahoo.fr',
+  description: "This renowned French artist is considered the father of modern sculpture.ThorThor sculpts The Bronze Age, which will mark a turning point in his artistic career. At his peak, around 50 assistants worked in his studio",
+  category: sculptor,
+  user: user103
+)
+artist103.save!
+
+file = File.open(File.join(File.dirname(__FILE__), "../app/assets/images/photo2.jpg"))
+artist103.photo.attach(io: file, filename: "leonard")
+
+user104 = User.create(email: 'Moulino@laposte.fr', password: "123456")
+artist104 = Artist.new(
+  first_name: 'Moulino',
+  last_name: 'pan y vino',
+  date_of_birth: '1996-11-11',
+  email: 'Marcelino@laposte.fr',
+  description: "Born in 1996 in Spain, Marcelino pan y vino is one of the most famous artists of all time. He revolutionized the visual arts by introducing new forms and creating new techniques. His works have been exhibited around the world and sold for record prices.",
+  category: painter,
+  user: user104
+)
+artist104.save!
+
+file = File.open(File.join(File.dirname(__FILE__), "../app/assets/images/photo3.jpg"))
+artist104.photo.attach(io: file, filename: "leonard")
