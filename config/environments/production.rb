@@ -1,9 +1,9 @@
 require "active_support/core_ext/integer/time"
 
-Rails.application.routes.default_url_options[:host] = 'https://cosmos.herokuapp.com'
+Rails.application.routes.default_url_options[:host] = 'https://www.kossmos.xyz'
 Rails.application.configure do
-  config.action_controller.default_url_options = { host: "https://cosmos.herokuapp.com" }
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
+  config.action_controller.default_url_options = { host: "https://www.kossmos.xyz" }
+  config.action_mailer.default_url_options = { host: "https://www.kossmos.xyz" }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
