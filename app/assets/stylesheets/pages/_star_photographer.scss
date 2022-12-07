@@ -22,7 +22,7 @@
   height: 400px;
   width: 400px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
 }
 .star-photographer-artist {
   position: absolute;
@@ -61,7 +61,7 @@
   width: 500px;
   background-size: 300%;
   background-position: center;
-  z-index: 1;
+  z-index: -1;
 }
 .first .star-photographer {
   opacity: 0.9;

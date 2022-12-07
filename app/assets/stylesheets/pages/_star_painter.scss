@@ -22,7 +22,7 @@
   height: 400px;
   width: 400px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
 }
 .star-painter-artist {
   position: absolute;
@@ -39,15 +39,16 @@
 }
 
 /* Mettre un bg img pour la forme */
-.first {
+.first-painter {
   filter: blur(2px);
   position: relative;
   height: 500px;
   width: 500px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1250/1250468.png?w=740&t=st=1670405129~exp=1670405729~hmac=8fd6faae530450eae5c4335cc1e727f36a7fa74874f0aee9de245ec5b3ee51f5");
   background-size: 100%;
   background-position: center;
 }
-.second {
+.second-painter {
   position: relative;
   height: 500px;
   width: 500px;
@@ -55,13 +56,13 @@
   background-position: center;
   z-index: -1;
 }
-.third {
+.third-painter {
   position: relative;
   height: 500px;
   width: 500px;
   background-size: 300%;
   background-position: center;
-  z-index: 1;
+  z-index: -1;
 }
 .first .star-painter {
   opacity: 0.9;
