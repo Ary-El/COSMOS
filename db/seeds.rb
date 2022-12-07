@@ -1576,7 +1576,7 @@ artist101 = Artist.new(
 artist101.save!
 
 file = URI.open("http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQHRghFM0GSkZBPVxFRUJ7fAn6uUJNRnVjYJrFSGkrXJJs--QVfI5vZNkKO2R-Ihp5b")
-artist101.photo.attach(io: File.read(file), filename: "leonard")
+artist101.photo.attach(io: file, filename: "leonard")
 
 user102 = User.create(email: 'Moujonhson@gmail.fr', password: "123456")
 artist102 = Artist.new(
