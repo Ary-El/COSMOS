@@ -22,7 +22,7 @@
   height: 400px;
   width: 400px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
 }
 .star-painter-artist {
   position: absolute;
@@ -39,7 +39,7 @@
 }
 
 /* Mettre un bg img pour la forme */
-.first {
+.first-painter {
   filter: blur(2px);
   position: relative;
   height: 500px;
@@ -47,7 +47,7 @@
   background-size: 100%;
   background-position: center;
 }
-.second {
+.second-painter {
   position: relative;
   height: 500px;
   width: 500px;
@@ -55,13 +55,13 @@
   background-position: center;
   z-index: -1;
 }
-.third {
+.third-painter {
   position: relative;
   height: 500px;
   width: 500px;
   background-size: 300%;
   background-position: center;
-  z-index: 1;
+  z-index: -1;
 }
 .first .star-painter {
   opacity: 0.9;

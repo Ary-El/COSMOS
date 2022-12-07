@@ -108,107 +108,107 @@
         </div>
   </div>
 
-    <div class="photographer-artists">
-        <div class="constellation-photographer">
-          <div class="box-artist-photographer">
-            <% i = 0 %>
-            <% @photographers.each do |artist| %>
-                <% if i < 8  %>
-              <%= link_to artist_path(artist), class: 'artist-star', style: "top: #{position_photographer[i][0]}; left: #{position_photographer[i][1]}" do %>
-                <%# # A enlever quand les paires seront faites : (le if end) %>
-                  <div class="star-photographer-artist star-photographer-s live"></div>
-                  <%= render 'artist_info_window', artist: artist %>
-                <% end %>
-                <% i += 1 %>
+  <div class="photographer-artists">
+      <div class="constellation-photographer">
+        <div class="box-artist-photographer">
+          <% i = 0 %>
+          <% @photographers.each do |artist| %>
+              <% if i < 8  %>
+            <%= link_to artist_path(artist), class: 'artist-star', style: "top: #{position_photographer[i][0]}; left: #{position_photographer[i][1]}" do %>
+              <%# # A enlever quand les paires seront faites : (le if end) %>
+                <div class="star-photographer-artist star-photographer-s live"></div>
+                <%= render 'artist_info_window', artist: artist %>
               <% end %>
+              <% i += 1 %>
             <% end %>
-          </div>
-          <div class="first">
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-l"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
+          <% end %>
+        </div>
+        <div class="first">
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-l"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
 
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="star-photographer star-photographer-m"></div>
+          <div class="star-photographer star-photographer-s"></div>
+          <div class="second">
+            <div class="star-photographer star-photographer-l"></div>
             <div class="star-photographer star-photographer-m"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+                    <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
             <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="star-photographer star-photographer-m"></div>
-            <div class="star-photographer star-photographer-s"></div>
-            <div class="second">
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-m"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-                      <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-m"></div>
-                      <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="star-photographer star-photographer-l"></div>
-              <div class="third">
-                <div class="star-photographer star-photographer-xs"></div>
-                <div class="star-photographer star-photographer-xs"></div>
-                <div class="star-photographer star-photographer-xs"></div>
-              </div>
+                    <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="star-photographer star-photographer-l"></div>
+            <div class="third">
+              <div class="star-photographer star-photographer-xs"></div>
+              <div class="star-photographer star-photographer-xs"></div>
+              <div class="star-photographer star-photographer-xs"></div>
             </div>
           </div>
         </div>
+      </div>
   </div>
 
   <div class="sculptor-artists">
@@ -328,7 +328,7 @@
               <% end %>
             <% end %>
           </div>
-          <div class="first">
+          <div class="first-painter">
             <div class="star-painter star-painter-s"></div>
             <div class="star-painter star-painter-m"></div>
             <div class="star-painter star-painter-l"></div>
@@ -390,7 +390,7 @@
             <div class="star-painter star-painter-s"></div>
             <div class="star-painter star-painter-m"></div>
             <div class="star-painter star-painter-s"></div>
-            <div class="second">
+            <div class="second-painter">
               <div class="star-painter star-painter-l"></div>
               <div class="star-painter star-painter-m"></div>
               <div class="star-painter star-painter-l"></div>
@@ -405,7 +405,7 @@
                       <div class="star-painter star-painter-l"></div>
               <div class="star-painter star-painter-l"></div>
               <div class="star-painter star-painter-l"></div>
-              <div class="third">
+              <div class="third-painter">
                 <div class="star-painter star-painter-xs"></div>
                 <div class="star-painter star-painter-xs"></div>
                 <div class="star-painter star-painter-xs"></div>
