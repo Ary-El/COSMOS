@@ -1,21 +1,30 @@
 <div class="align-items-center d-flex h-75 justify-content-center page-artist">
     <div class="artist-card-show text-center w-50 d-flex flex-column align-items-center justify-content-center">
 
-        <div class="artist-image-show my-3">
+        <div class="artist-image-show-live my-3">
             <%= cl_image_tag(@artist.photo.key) %>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
         </div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
 
-        <div class="my-5">
-            <h3 class="artist-card-title"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
+        <div class="my-5-live">
+            <h3 class="artist-card-title-live"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
             <h5><%= @artist.category.name %></h5>
         </div>
 
-        <div class="my-3 w-50">
+        <div class="bouton-artist d-flex justify-content-between w-25-live">
+          <%= render 'copy_link', value: live_artist_url(@artist), cta: 'Share' %>
+
+          <%= link_to new_artist_donate_path(@artist), class: "" do %>
+            <i class="fa-solid fa-sack-dollar"></i>
+            <p>donate</p>
+          <% end %>
+        </div>
+
+        <div class="my-3-live w-50">
           <div class="artist-card-live icing">
             <% if @artist.user == current_user %>
               <iframe
@@ -31,13 +40,5 @@
           </div>
         </div>
 
-        <div class="bouton-artist d-flex justify-content-between w-25">
-          <%= render 'copy_link', value: live_artist_url(@artist), cta: 'Share' %>
-
-          <%= link_to new_artist_donate_path(@artist), class: "" do %>
-            <i class="fa-solid fa-sack-dollar"></i>
-            <p>donate</p>
-          <% end %>
-        </div>
     </div>
 </div>

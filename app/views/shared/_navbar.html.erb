@@ -3,7 +3,6 @@
     <ul class="nav navbar-nav">
             <li class="dropdown">
             <i class="fa-solid fa-list"></i>
-              <%# <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a> %>
               <ul class="dropdown-menu">
                 <li><%= link_to "Categories", artists_path, class: "dropdown-item" %></li>
                 <li><%= link_to "Artists", all_artists_path, class: "dropdown-item" %></li>
@@ -17,6 +16,7 @@
           </ul>
       </div>
     </nav>
+    
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "cosmos-logo.png" %>
     <% end %>
