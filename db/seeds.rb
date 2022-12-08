@@ -717,7 +717,7 @@ artist46 = Artist.new(
 )
 artist46.save!
 
-file = URI.open("file:///Users/Bilou/Downloads/20728798_10207479721070596_1935528936005971565_o.jpeg")
+file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
 artist46.photo.attach(io: file, filename: "leonard")
 
 user47 = User.create(email: 'Alexplusdinspi@icloud.com', password: "123456")
@@ -732,8 +732,8 @@ artist47 = Artist.new(
 )
 artist47.save!
 
-file = URI.open("https://www.melody.tv/wp-content/uploads/2022/08/Julio-IGLESIAS-02-1980%E2%88%8FXDR-INA-scaled.jpg")
-artist47.photo.attach(io: file, filename: "leonard")
+file = File.open(File.join(File.dirname(__FILE__), "../app/assets/images/photo5.png"))
+artist47.photo.attach(io: file, filename: "alex")
 
 user48 = User.create(email: 'Jimihendrix@yahoo.fr', password: "123456")
 artist48 = Artist.new(
