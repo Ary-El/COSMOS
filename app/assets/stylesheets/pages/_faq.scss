@@ -19,7 +19,7 @@ p {
 
 div.seperator {
   width: 7.5em;
-  background-color: #ffd900;
+  background-color: #1E90FF;
   height: 0.17em;
   margin-left: -1.8em;
 }
@@ -54,7 +54,7 @@ summary {
 }
 
 summary:hover {
-  color: #ffd900;
+  color: #1E90FF;
 }
 
 details[open] summary ~ * {
@@ -67,11 +67,11 @@ details[open] summary ~ * {
 }
 
 details[open] summary {
-  color: yellow;
+  color: #1E90FF;
 }
 
 details[open] p {
-  border-left: 2px solid #ffd900;
+  border-left: 2px solid #1E90FF;
   margin-left: 55px;
   padding-left: 25px;
   opacity: 100;
@@ -108,7 +108,7 @@ summary:after {
   background: transparent;
   border-radius: 0.3em;
   content: "+";
-  color: #ffd900;
+  color: #1E90FF;
   float: left;
   font-size: 1.8em;
   font-weight: bold;
