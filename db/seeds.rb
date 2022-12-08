@@ -717,15 +717,15 @@ artist46 = Artist.new(
 )
 artist46.save!
 
-file = URI.open("https://i.scdn.co/image/ab6761610000e5ebfd98d7f727ec81ace8be1669")
+file = URI.open("file:///Users/Bilou/Downloads/20728798_10207479721070596_1935528936005971565_o.jpeg")
 artist46.photo.attach(io: file, filename: "leonard")
 
-user47 = User.create(email: 'julioIglesias@icloud.com', password: "123456")
+user47 = User.create(email: 'Alexplusdinspi@icloud.com', password: "123456")
 artist47 = Artist.new(
-  first_name: 'Julio',
-  last_name: 'Iglesias',
+  first_name: 'Alexandre',
+  last_name: 'Plusdinspiration',
   date_of_birth: '1943-09-23',
-  email: 'julioIglesias@icloud.com',
+  email: 'Alexplusdinspi@icloud.com',
   description: "Crooner, lover of women, Julio Iglesias is one of the best sellers of records. Like the Beatles or Elvis Presley, he managed the feat of remaining in the top places of American hits at the start of the 80s with no less than six albums.",
   category: musician,
   user: user47

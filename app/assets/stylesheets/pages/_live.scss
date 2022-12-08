@@ -1,9 +1,78 @@
 iframe {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   border-radius: 10px;
 }
 
 .artist-card-live.icing{
-  margin-left: -25px;
+  margin-left: -75px;
+}
+
+.my-5-live {
+  margin-top: -13rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.my-3-live {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  margin-top: -35px;
+}
+
+.w-25-live {
+  width: 30% !important;
+}
+
+.artist-image-show-live img {
+  border: 3px white solid;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px #ffffffcc;
+  height: 200px;
+  margin-right: 710px;
+  object-fit: cover;
+  width: 203px;
+  -o-object-fit: cover;
+}
+
+.dot {
+  position: absolute;
+  left: 210px;
+  background: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.dot:nth-child(3) {
+  left: 232px;
+  -webkit-animation: move 7s infinite;
+  animation: move 7s infinite;
+  top: 117px;
+}
+
+.dot:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  filter: blur(4px);
+  top: 180px;
+  left: 212px;
+  opacity: 0.6;
+  -webkit-animation: move 17s infinite;
+  animation: move 17s infinite;
+}
+
+.dot:nth-child(5) {
+  width: 81px;
+  height: 80px;
+  filter: blur(8px);
+  top: 227px;
+  left: 216px;
+  opacity: 0.3;
+}
+
+.dot:nth-child(6) {
+  top: 140px;
+  left: 195px;
+  -webkit-animation: move 12s infinite;
+  animation: move 12s infinite;
 }

@@ -1,14 +1,16 @@
 .star-info-window-img {
-  width: 240px;
-  height: 240px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px white solid;
   box-shadow: 0 6px 30px #ffffffcc;
 }
+
 .constellation-window-text {
   font-family: Poppings;
-  font-size: xx-large;
+  font-size: large;
+  text-align: center;
 }
 
 .artist-image-show {
