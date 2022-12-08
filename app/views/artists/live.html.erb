@@ -1,35 +1,39 @@
-<div class="align-items-center d-flex h-75 justify-content-center page-artist">
-    <div class="artist-card-show text-center w-50 d-flex flex-column align-items-center justify-content-center">
 
-        <div class="artist-image-show-live my-3">
+    <div class="align-items-center d-flex justify-content-between page-artist w-100">
+
+      <div class="d-flex flex-column justify-content-center align-items-center w-25 px-3">
+        <div class="artist-image-show smaller">
             <%= cl_image_tag(@artist.photo.key) %>
-        </div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
 
-        <div class="my-5-live">
-            <h3 class="artist-card-title-live"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
-            <h5><%= @artist.category.name %></h5>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
 
-        <div class="bouton-artist d-flex justify-content-between w-25-live">
+        <div class="my-5">
+            <h3 class="artist-card-title-live text-center"><%= @artist.first_name %>-<%= @artist.last_name %></h3>
+            <h5 class=" text-center"><%= @artist.category.name %></h5>
+        </div>
+        <div class="bouton-artist d-flex justify-content-between w-50">
           <%= render 'copy_link', value: live_artist_url(@artist), cta: 'Share' %>
 
-          <%= link_to new_artist_donate_path(@artist), class: "" do %>
+          <%= link_to new_artist_donate_path(@artist), class: "text-center" do %>
             <i class="fa-solid fa-sack-dollar"></i>
             <p>donate</p>
           <% end %>
         </div>
+      </div>
 
-        <div class="my-3-live w-50">
-          <div class="artist-card-live icing">
+
+        <div class="my-3-live w-75">
+          <div class="">
             <% if @artist.user == current_user %>
               <iframe
                 src="<%= @artist.host_url %>"
                 allow="camera; microphone; fullscreen; speaker; display-capture"
+                class="px-3 w-100"
               ></iframe>
             <% else %>
               <iframe
@@ -41,4 +45,3 @@
         </div>
 
     </div>
-</div>

@@ -1,9 +1,18 @@
 iframe {
-  height: 500px;
-  width: 500px;
-  border-radius: 10px;
+  padding: 0 30px;
+  width: 100%;
+  height: 80vh;
+  border-radius: 20px;
 }
 
+.box-cQz1 {
+  min-width: 100% !important;
+}
+
+.relativeWrapper-3Dv7 {
+  display: none !important;
+  opacity: 0 !important;
+}
 
 .artist-card-live.icing{
   margin-left: -75px;
@@ -24,15 +33,9 @@ iframe {
   width: 30% !important;
 }
 
-.artist-image-show-live img {
-  border: 3px white solid;
-  border-radius: 50%;
-  box-shadow: 0 6px 20px #ffffffcc;
-  height: 200px;
-  margin-right: 710px;
-  object-fit: cover;
-  width: 203px;
-  -o-object-fit: cover;
+.artist-image-show.smaller img {
+  height: 180px;
+  width: 180px;
 }
 
 .dot {
