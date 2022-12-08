@@ -2,6 +2,7 @@
   justify-content: space-between;
   background-image: url( https://www.manufosela.es/shooting_stars/hori.png), url( https://www.manufosela.es/shooting_stars/stars_5.png);
   background-repeat: repeat-x, repeat-x repeat-y;
+  padding: 20px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -17,10 +18,6 @@
 color: white;
 }
 
-.navbar, .navbar-brand {
-  padding: 0;
-}
-
 .navbar-brand {
   padding-left: 15%;
 }
@@ -30,4 +27,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 .fa-list{
   margin-left: 20px;
   font-size: 20px;
+}
+
+
+.nav .dropdown img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
 }
