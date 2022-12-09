@@ -27,7 +27,21 @@
     height: 100%;
   }
 
-.artist-star:hover .star-info-window { display:block!important;}
+.artist-star:hover {
+  .star-info-window {
+  display:block!important;
+  transform:scale(1.8);
+}
+  .star-info-window.Photographer {
+    transform: rotate(16deg) scale(1.8);
+  }
+
+  .star-info-window.Musician {
+  transform: rotate(-15deg) scale(1.8);
+  }
+}
+
+
 .artist-star {
   position: absolute;
 }
@@ -49,11 +63,11 @@
 /* BG */
 
 .constellation-music {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  transform: rotate(15deg);
 }
 
 
