@@ -31,11 +31,12 @@
 }
 /* BG */
 .constellation-photographer {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  transform: rotate(-16deg);
+  margin-top: 45%;
 }
 
 /* Mettre un bg img pour la forme */
