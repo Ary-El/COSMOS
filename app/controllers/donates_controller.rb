@@ -17,7 +17,8 @@ class DonatesController < ApplicationController
     end
     @donate.save!
     #rediction vers la show the artist et dans la show d'artist afficher le montant total
-    redirect_to artist_path( @artist)
+    redirect_to live_artist_path(@artist)
+
   end
 
   private

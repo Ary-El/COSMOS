@@ -18,7 +18,14 @@
         </div>
         <div class="bouton-artist d-flex justify-content-between w-50">
           <%= render 'copy_link', value: live_artist_url(@artist), cta: 'Share' %>
-
+          <div>
+            <i class="fa-solid fa-donate" style="font-size: 19px; margin-left: 4px;"></i>
+            <% if @artist.donates.any?  %>
+              <p><%= @artist.donates.pluck(:amount).sum %>€</p>
+            <% else %>
+              <p>0€</p>
+            <% end %>
+          </div>
           <%= link_to new_artist_donate_path(@artist), class: "text-center" do %>
             <i class="fa-solid fa-sack-dollar"></i>
             <p>donate</p>
